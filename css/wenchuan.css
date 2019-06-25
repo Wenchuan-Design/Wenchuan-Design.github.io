@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i|Roboto+Mono&display=swap");
+::selection {
+  background-color: #ebebeb; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.MathJax_Display {
+  display: flex;
+  padding: 0.5em;
+  overflow-x: auto;
+  /* box-sizing:border-box; */ }
+  .MathJax_Display .MathJax {
+    display: inline-block;
+    width: 100%; }
+
+img {
+  vertical-align: middle;
+  width: 100%; }
+
+.imgFrame {
+  position: relative;
+  overflow: hidden; }
+  .imgFrame img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover; }
+  .imgFrame.ratioAuto img {
+    width: 100%;
+    position: static; }
+  .imgFrame.ratio1to1 {
+    padding-bottom: 100%; }
+  .imgFrame.ratio16to9 {
+    padding-bottom: 56.25%; }
+  .imgFrame.ratio4to3 {
+    padding-bottom: 75%; }
+  .imgFrame.round {
+    padding-bottom: 100%;
+    border-radius: 50%; }
+
+* {
+  box-sizing: border-box;
+  scroll-margin-block-start: 100px; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Source Sans", sans-serif; }
+
+.markdown-body p, .markdown-body hr, .markdown-body .reference, .markdown-body > img, .markdown-body > .imgFrame, .markdown-body > figure, .markdown-body details > img, .markdown-body details > .imgFrame, .markdown-body details > figure, .markdown-body li > img, .markdown-body li > .imgFrame, .markdown-body li > figure, .markdown-body blockquote > img, .markdown-body blockquote > .imgFrame, .markdown-body blockquote > figure, .markdown-body blockquote, .markdown-body table, .markdown-body details, .markdown-body pre[class*="language-"], .cardGallery {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.articleCard:hover {
+  background-color: #fafafa; }
+
+.articleCard, .markdown-body .styleOutput {
+  border: 1px solid rgba(0, 0, 0, 0.08); }
+
+.articleCard, .markdown-body .styleOutput {
+  border-radius: 4px; }
+
+.articleCard {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+
+.markdown-body {
+  background-color: white;
+  color: #333333;
+  letter-spacing: 0.2px;
+  line-height: 1.75;
+  max-width: 800px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* Separate line b/c rules are thrown out if selector is invalid.
+   * IE11 and old Edge versions don't support :focus-within. */ }
+  .markdown-body > :first-child {
+    margin-top: 0; }
+  .markdown-body p {
+    margin-bottom: 1rem; }
+  .markdown-body p a, .markdown-body li a, .markdown-body table a, .markdown-body blockquote a {
+    color: #307FEC; }
+    .markdown-body p a:hover, .markdown-body li a:hover, .markdown-body table a:hover, .markdown-body blockquote a:hover {
+      text-decoration: underline; }
+  .markdown-body hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #d6d6d6; }
+  .markdown-body .reference {
+    font-size: 14px; }
+  .markdown-body sup, .markdown-body sub {
+    font-size: smaller;
+    line-height: 1; }
+  .markdown-body sup {
+    vertical-align: super; }
+  .markdown-body sub {
+    vertical-align: sub; }
+  .markdown-body figure figcaption, .markdown-body figure figcaption p {
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin-top: 0.5rem; }
+  .markdown-body figure figcaption {
+    color: #858585; }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold; }
+  .markdown-body h1 {
+    font-size: 2.5rem; }
+  .markdown-body h2 {
+    font-size: 1.875rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d6d6d6; }
+  .markdown-body h3 {
+    font-size: 1.5rem; }
+  .markdown-body h4 {
+    font-size: 1.25rem; }
+  .markdown-body h5 {
+    font-size: 1rem; }
+  .markdown-body h6 {
+    font-size: 1rem;
+    opacity: 0.48; }
+  .markdown-body blockquote {
+    background-color: #fafafa;
+    color: #858585;
+    padding: 1rem 1rem;
+    border-left: 4px solid #ebebeb; }
+    .markdown-body blockquote > :first-child {
+      margin-top: 0; }
+    .markdown-body blockquote > :last-child {
+      margin-bottom: 0; }
+  .markdown-body table {
+    text-align: left;
+    overflow-x: auto;
+    /* display:inline-block */ }
+    .markdown-body table * {
+      vertical-align: middle; }
+    .markdown-body table th {
+      font-weight: bold;
+      background-color: #fafafa; }
+    .markdown-body table th, .markdown-body table td {
+      line-height: 1.5;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ebebeb; }
+    .markdown-body table th:hover {
+      background-color: #f5f5f5; }
+    .markdown-body table td:hover {
+      background-color: #fafafa; }
+  .markdown-body table.fullWidth {
+    width: 100%; }
+  .markdown-body ul, .markdown-body ol {
+    padding-left: 2rem; }
+  .markdown-body ol {
+    list-style-type: decimal; }
+  .markdown-body ul {
+    list-style-type: disc; }
+  .markdown-body li ul {
+    list-style-type: circle; }
+  .markdown-body li li ul {
+    list-style-type: square; }
+  .markdown-body ol ol,
+  .markdown-body ul ol {
+    list-style-type: lower-roman; }
+  .markdown-body ul ul ol,
+  .markdown-body ul ol ol,
+  .markdown-body ol ul ol,
+  .markdown-body ol ol ol {
+    list-style-type: lower-alpha; }
+  .markdown-body ul .task-list-item {
+    list-style-type: none; }
+    .markdown-body ul .task-list-item input {
+      margin-left: -1.25rem;
+      -webkit-transform: translate(0, -50%);
+      margin-top: 0.875rem;
+      vertical-align: middle; }
+  .markdown-body details {
+    margin-left: 1rem; }
+    .markdown-body details summary {
+      margin-left: -1rem; }
+  .markdown-body .styleOutput {
+    padding: 2rem;
+    position: relative;
+    transition: 300ms box-shadow; }
+    .markdown-body .styleOutput:hover {
+      box-shadow: inset 2rem 0 0 #f5f5f5, inset 0 2rem 0 #f5f5f5, inset -2rem 0 0 #f5f5f5, inset 0 -2rem 0 #f5f5f5; }
+  .markdown-body pre[class*="language-"] {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04); }
+  .markdown-body pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.75em;
+    counter-reset: linenumber; }
+  .markdown-body pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit; }
+  .markdown-body .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.75em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #d6d6d6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .markdown-body .line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber; }
+  .markdown-body .line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #adadad;
+    display: block;
+    padding-right: 0.75em;
+    text-align: right; }
+  .markdown-body div.code-toolbar > .toolbar {
+    position: absolute;
+    top: 0.3em;
+    right: 0.2em;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; }
+  .markdown-body div.code-toolbar:hover > .toolbar {
+    opacity: 1; }
+  .markdown-body div.code-toolbar:focus-within > .toolbar {
+    opacity: 1; }
+  .markdown-body div.code-toolbar > .toolbar .toolbar-item {
+    display: inline-block; }
+  .markdown-body div.code-toolbar > .toolbar a {
+    cursor: pointer; }
+  .markdown-body div.code-toolbar > .toolbar button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+  .markdown-body div.code-toolbar > .toolbar a,
+  .markdown-body div.code-toolbar > .toolbar button,
+  .markdown-body div.code-toolbar > .toolbar span {
+    color: #bbb;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+    background: #f5f2f0;
+    background: rgba(224, 224, 224, 0.2);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em; }
+  .markdown-body div.code-toolbar > .toolbar a:hover,
+  .markdown-body div.code-toolbar > .toolbar a:focus,
+  .markdown-body div.code-toolbar > .toolbar button:hover,
+  .markdown-body div.code-toolbar > .toolbar button:focus,
+  .markdown-body div.code-toolbar > .toolbar span:hover,
+  .markdown-body div.code-toolbar > .toolbar span:focus {
+    color: inherit;
+    text-decoration: none; }
+  .markdown-body code,
+  .markdown-body code[class*="language-"],
+  .markdown-body pre[class*="language-"] {
+    color: #333333;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none; }
+  .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code {
+    margin: 0;
+    padding: 0 2px; }
+  .markdown-body *:not(pre) > code {
+    color: #5c5c5c; }
+  .markdown-body pre[class*="language-"]::-moz-selection, .markdown-body pre[class*="language-"] ::-moz-selection,
+  .markdown-body code[class*="language-"]::-moz-selection, .markdown-body code[class*="language-"] ::-moz-selection {
+    text-shadow: none; }
+  .markdown-body pre[class*="language-"]::selection, .markdown-body pre[class*="language-"] ::selection,
+  .markdown-body code[class*="language-"]::selection, .markdown-body code[class*="language-"] ::selection {
+    text-shadow: none; }
+  @media print {
+    .markdown-body code[class*="language-"],
+    .markdown-body pre[class*="language-"] {
+      text-shadow: none; } }
+  .markdown-body pre[class*="language-"] {
+    padding: 1rem;
+    overflow: auto; }
+  .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code,
+  .markdown-body pre[class*="language-"] {
+    border-radius: 4px; }
+  .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code {
+    margin: 0;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.04);
+    white-space: normal; }
+  .markdown-body *:not(pre) > code {
+    color: #5c5c5c; }
+  .markdown-body .token.comment,
+  .markdown-body .token.prolog,
+  .markdown-body .token.doctype,
+  .markdown-body .token.cdata {
+    color: #c2c2c2; }
+  .markdown-body .token.punctuation {
+    color: #858585; }
+  .markdown-body .namespace {
+    opacity: 0.7; }
+  .markdown-body .token.property,
+  .markdown-body .token.tag,
+  .markdown-body .token.boolean,
+  .markdown-body .token.number,
+  .markdown-body .token.constant,
+  .markdown-body .token.symbol,
+  .markdown-body .token.deleted {
+    color: #be2db4; }
+  .markdown-body .token.selector,
+  .markdown-body .token.attr-name,
+  .markdown-body .token.string,
+  .markdown-body .token.char,
+  .markdown-body .token.builtin,
+  .markdown-body .token.inserted {
+    color: #21b460; }
+  .markdown-body .token.operator,
+  .markdown-body .token.entity,
+  .markdown-body .token.url,
+  .markdown-body .language-css .token.string,
+  .markdown-body .style .token.string {
+    color: #c76f1e; }
+  .markdown-body .token.atrule,
+  .markdown-body .token.attr-value,
+  .markdown-body .token.keyword {
+    color: #307FEC; }
+  .markdown-body .token.function,
+  .markdown-body .token.class-name {
+    color: #F43A3A; }
+  .markdown-body .token.regex,
+  .markdown-body .token.important,
+  .markdown-body .token.variable {
+    color: #FF9E4D; }
+  .markdown-body .token.important,
+  .markdown-body .token.bold {
+    font-weight: bold; }
+  .markdown-body .token.italic {
+    font-style: italic; }
+  .markdown-body .token.entity {
+    cursor: help; }
+  .markdown-body mark {
+    background-color: #FDD8D8;
+    padding: 0.375em 0; }
+    .markdown-body mark.red {
+      background-color: #FDD8D8; }
+    .markdown-body mark.orange {
+      background-color: #FFEEDB; }
+    .markdown-body mark.yellow {
+      background-color: #FFF9D2; }
+    .markdown-body mark.green {
+      background-color: #E0FAE8; }
+    .markdown-body mark.cyan {
+      background-color: #DCF6FC; }
+    .markdown-body mark.blue {
+      background-color: #D6E5FB; }
+    .markdown-body mark.purple {
+      background-color: #E2DEF5; }
+    .markdown-body mark.pink {
+      background-color: #FDE0FA; }
+  .markdown-body u {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 2px; }
+    .markdown-body u.dashed {
+      border-bottom-style: dashed; }
+    .markdown-body u.red {
+      border-color: #F99C9C; }
+    .markdown-body u.orange {
+      border-color: #FFD4A6; }
+    .markdown-body u.yellow {
+      border-color: #FFEF8F; }
+    .markdown-body u.green {
+      border-color: #B0F2C6; }
+    .markdown-body u.cyan {
+      border-color: #A6E8F6; }
+    .markdown-body u.blue {
+      border-color: #97BFF5; }
+    .markdown-body u.purple {
+      border-color: #B6ABE6; }
+    .markdown-body u.pink {
+      border-color: #F9B2F3; }
+  .markdown-body strong {
+    font-weight: bold; }
+  .markdown-body b {
+    font-weight: bold; }
+  .markdown-body del {
+    text-decoration: line-through;
+    opacity: 0.64; }
+  .markdown-body em {
+    font-style: italic; }
+
+.articleCard {
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0ms background-color; }
+  .articleCard .link {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .articleCard .imgFrame {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden; }
+    .articleCard .imgFrame img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover; }
+  .articleCard .info {
+    position: relative;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
+    margin: 0;
+    padding: 1rem; }
+    .articleCard .info .title {
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.5;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; }
+    .articleCard .info .brief {
+      font-size: 0.875rem;
+      line-height: 22px;
+      margin-top: 8px;
+      color: #858585;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+
+.cardGallery .titleBar, .cardGallery .empty,
+.cardGallery .articleCard,
+.cardGallery figure {
+  margin-right: 1rem; }
+
+.cardGallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-bottom: 1.5rem; }
+  .cardGallery .titleBar {
+    width: 100%;
+    height: 3rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08); }
+    .cardGallery .titleBar .title {
+      font-size: 1.125rem;
+      line-height: 3rem;
+      font-weight: bold;
+      float: left; }
+    .cardGallery .titleBar .iconList {
+      font-size: 0.875rem;
+      line-height: 3rem;
+      font-weight: normal;
+      float: right;
+      color: #858585; }
+      .cardGallery .titleBar .iconList li {
+        list-style-type: none;
+        float: left;
+        margin-left: 1rem; }
+  .cardGallery img {
+    margin: 0; }
+  .cardGallery .empty,
+  .cardGallery .articleCard,
+  .cardGallery figure {
+    flex: 1 1 40%; }
+    @media screen and (max-width: 520px) {
+      .cardGallery .empty,
+      .cardGallery .articleCard,
+      .cardGallery figure {
+        flex: 1 1 100%; } }

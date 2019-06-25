@@ -1,0 +1,37 @@
+ul, ol
+  padding-left: 2rem
+
+ol
+  list-style-type: decimal
+
+ul
+  list-style-type: disc
+
+li
+  ul
+    list-style-type: circle
+
+  li ul
+    list-style-type: square
+
+ol ol,
+ul ol
+  list-style-type: lower-roman
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol
+  list-style-type: lower-alpha
+
+ul
+  .task-list-item
+
+    list-style-type: none
+
+    input
+      // float: left
+      margin-left: -1.25rem
+      -webkit-transform: translate(0, -50%)
+      margin-top: 0.875rem
+      vertical-align: middle

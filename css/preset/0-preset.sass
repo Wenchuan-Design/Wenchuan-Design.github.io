@@ -1,0 +1,41 @@
+@import "z-reset"
+@import "mathjax"
+@import "img"
+
+*
+  box-sizing: border-box
+  scroll-margin-block-start: 100px
+
+html
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  font-family: 'Source Sans', sans-serif
+
+
+%pLikeMargin
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+%bgHover
+  background-color: $hexBg2
+
+%mainBorder
+  border: 1px solid $rgbaLightPale
+
+%mainBorderRadius
+  border-radius: 4px
+
+%mainShadow
+  box-shadow: 0 2px 8px $rgbaLightPale
+
+%mainBox
+  @extend %mainBorder
+  @extend %mainBorderRadius
+  @extend %mainShadow
+
+@mixin textOverflow($lines)
+  text-overflow: ellipsis
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: $lines
+  -webkit-box-orient: vertical
