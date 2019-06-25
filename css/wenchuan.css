@@ -182,7 +182,8 @@ body {
   .markdown-body table {
     display: flex;
     text-align: left;
-    overflow-x: auto; }
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
     .markdown-body table * {
       vertical-align: middle; }
     .markdown-body table th {
