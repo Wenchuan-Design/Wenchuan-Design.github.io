@@ -1,6 +1,7 @@
 %codeBlockStyle
 	background-color: $rgbaBg2
 	border: 1px solid $rgbaBg1
+	padding: 1.25rem
 	// @extend %mainBorder
 
 
@@ -11,6 +12,7 @@
 code,
 code[class*="language-"],
 pre[class*="language-"]
+
 	color: $hexDark
 	// background: none
 	// text-shadow: 0 1px white
@@ -62,7 +64,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection
 pre[class*="language-"]
 	@extend %codeBlockStyle
 	@extend %pLikeMargin
-	padding: 1rem
 	overflow: auto
 	// @extend %mainBorder
 	// background: $rgbaBg2
