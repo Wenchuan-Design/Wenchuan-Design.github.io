@@ -50,6 +50,7 @@ table {
   display: flex;
   padding: 0.5em;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   /* box-sizing:border-box; */ }
   .MathJax_Display .MathJax {
     display: inline-block;
