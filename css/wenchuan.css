@@ -65,20 +65,19 @@ img {
   .imgFrame img {
     width: 100%;
     height: 100%;
-    position: absolute;
     object-fit: cover; }
-  .imgFrame.ratioAuto img {
-    width: 100%;
-    position: static; }
   .imgFrame.ratio1to1 {
     padding-bottom: 100%; }
+    .imgFrame.ratio1to1 img {
+      position: absolute; }
   .imgFrame.ratio16to9 {
     padding-bottom: 56.25%; }
+    .imgFrame.ratio16to9 img {
+      position: absolute; }
   .imgFrame.ratio4to3 {
     padding-bottom: 75%; }
-  .imgFrame.round {
-    padding-bottom: 100%;
-    border-radius: 50%; }
+    .imgFrame.ratio4to3 img {
+      position: absolute; }
 
 * {
   box-sizing: border-box;
@@ -88,6 +87,9 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-family: "Source Sans", sans-serif; }
+
+body {
+  overflow-x: hidden; }
 
 .markdown-body p, .markdown-body hr, .markdown-body .reference, .markdown-body > img, .markdown-body > .imgFrame, .markdown-body > figure, .markdown-body details > img, .markdown-body details > .imgFrame, .markdown-body details > figure, .markdown-body li > img, .markdown-body li > .imgFrame, .markdown-body li > figure, .markdown-body blockquote > img, .markdown-body blockquote > .imgFrame, .markdown-body blockquote > figure, .markdown-body blockquote, .markdown-body table, .markdown-body details, .markdown-body pre[class*="language-"], .cardGallery {
   margin-top: 1rem;
@@ -178,9 +180,9 @@ html {
     .markdown-body blockquote > :last-child {
       margin-bottom: 0; }
   .markdown-body table {
+    display: flex;
     text-align: left;
-    overflow-x: auto;
-    /* display:inline-block */ }
+    overflow-x: auto; }
     .markdown-body table * {
       vertical-align: middle; }
     .markdown-body table th {
@@ -194,8 +196,6 @@ html {
       background-color: #f5f5f5; }
     .markdown-body table td:hover {
       background-color: #fafafa; }
-  .markdown-body table.fullWidth {
-    width: 100%; }
   .markdown-body ul, .markdown-body ol {
     padding-left: 2rem; }
   .markdown-body ol {
@@ -527,12 +527,13 @@ html {
         margin-left: 1rem; }
   .cardGallery img {
     margin: 0; }
-  .cardGallery .empty,
-  .cardGallery .articleCard,
-  .cardGallery figure {
-    flex: 1 1 40%; }
-    @media screen and (max-width: 520px) {
-      .cardGallery .empty,
-      .cardGallery .articleCard,
-      .cardGallery figure {
-        flex: 1 1 100%; } }
+
+.markdown-body .cardGallery .empty,
+.markdown-body .cardGallery .articleCard,
+.markdown-body .cardGallery figure {
+  flex: 1 1 40%; }
+  @media only screen and (max-width: 414px) {
+    .markdown-body .cardGallery .empty,
+    .markdown-body .cardGallery .articleCard,
+    .markdown-body .cardGallery figure {
+      flex: 1 1 100%; } }

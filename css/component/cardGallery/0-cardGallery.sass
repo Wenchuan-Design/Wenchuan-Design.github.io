@@ -1,0 +1,33 @@
+@import "articlecard"
+
+$galleryMarginFix: 1rem
+
+%galleryMarginFix
+  margin-right: $galleryMarginFix
+
+.cardGallery
+  @import "titleBar"
+
+  display: flex
+  flex-wrap: wrap
+  margin-right: -$galleryMarginFix
+  @extend %pLikeMargin
+  margin-bottom: 1.5rem
+
+  img
+    margin: 0
+
+  .titleBar, .empty,
+  .articleCard,
+  figure
+    @extend %galleryMarginFix
+
+.markdown-body
+  .cardGallery
+    .empty,
+    .articleCard,
+    figure
+      flex: 1 1 40%
+
+      @media only screen and (max-width: $iPhonePlus)
+        flex: 1 1 100%
