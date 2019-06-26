@@ -11,6 +11,7 @@
        url('./open-sans-v16-latin/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./open-sans-v16-latin/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
+
 /* open-sans-600 - latin */
 @font-face {
   font-family: 'Open Sans';

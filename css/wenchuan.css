@@ -463,6 +463,7 @@ body {
     font-style: italic; }
 
 .articleCard {
+  width: 370px;
   margin-top: 1rem;
   position: relative;
   overflow: hidden;
@@ -537,6 +538,10 @@ body {
         margin-left: 1rem; }
   .cardGallery img {
     margin: 0; }
+  .cardGallery .titleBar, .cardGallery .empty,
+  .cardGallery .articleCard,
+  .cardGallery figure {
+    margin-top: 1rem; }
 
 .markdown-body .cardGallery .empty,
 .markdown-body .cardGallery .articleCard,
@@ -547,3 +552,5 @@ body {
     .markdown-body .cardGallery .articleCard,
     .markdown-body .cardGallery figure {
       flex: 1 1 100%; } }
+.markdown-body .cardGallery .articleCard:last-of-type {
+  display: inline-flex; }
