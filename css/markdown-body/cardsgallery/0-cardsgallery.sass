@@ -12,14 +12,21 @@ $galleryTitleHeight: 3rem
   @extend %resetHeading
   @extend %resetParagraph
 
+  margin: $galleryMargin 0
+
   @import "1-titlebar"
 
+  // display: inline-block
+  display: inline-block
+  vertical-align: middle
+
   ul.cardList
-    // display: flex
-    flex-wrap: wrap
+    // display: inline-block
     margin-right: -$galleryMargin
     // @extend %pLikeMargin
     margin-bottom: 1.5rem
+
+
     // 这个地方我做了一点点修正，下面如果还是 1rem 看上去太短了
 
     li.empty
@@ -30,18 +37,6 @@ $galleryTitleHeight: 3rem
       @extend %galleryMarginFix
       margin-top: $galleryMargin
       // 其实在里面，我单独写了 margin-top: 1rem，但在 .cardGallery 下，可能会涉及修改间距
-
-
-    // Grid 一行中的卡片数量
-    @mixin oneColumn
-      li.empty, li, figure
-        flex: 1 1 100%
-
-    @mixin twoColumn
-      li.empty, li, figure
-        flex: 1 1 40%
-        @media only screen and (max-width: $iPhonePlus)
-          flex: 1 1 100%
 
 
     // & to ul.cardList
