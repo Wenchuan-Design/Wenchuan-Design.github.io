@@ -552,5 +552,3 @@ body {
     .markdown-body .cardGallery .articleCard,
     .markdown-body .cardGallery figure {
       flex: 1 1 100%; } }
-.markdown-body .cardGallery .articleCard:last-of-type {
-  display: inline-flex; }
