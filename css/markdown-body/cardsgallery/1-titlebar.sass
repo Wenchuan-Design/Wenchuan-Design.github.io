@@ -1,0 +1,22 @@
+.titleBar
+  width: 100%
+  height: $galleryTitleHeight
+  box-shadow: inset 0 -1px 0 $rgbaLightPale
+
+  h1
+    font-size: $titleSize
+    line-height: $galleryTitleHeight
+    font-weight: bold
+    float: left
+
+  ul.iconList
+    font-size: $iconListSize
+    line-height: $galleryTitleHeight
+    font-weight: normal
+    float: right
+    color: $hexGrey
+
+    li
+      // li 已经在上层 .cardsGallery 中 reset 了
+      float: left
+      margin-left: 1rem

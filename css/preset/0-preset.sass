@@ -37,6 +37,11 @@ body
   @extend %mainBorderRadius
   @extend %mainShadow
 
+%removeMainBox
+  border: none
+  border-radius: none
+  box-shadow: none
+
 @mixin textOverflow($lines)
   text-overflow: ellipsis
   overflow: hidden
