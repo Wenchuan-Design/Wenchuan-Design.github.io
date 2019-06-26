@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto&display=swap");
+@import url(font/0-font.css);
 ::selection {
   background-color: #ebebeb; }
 
@@ -124,6 +124,13 @@ body {
    * IE11 and old Edge versions don't support :focus-within. */ }
   .markdown-body > :first-child {
     margin-top: 0; }
+  .markdown-body p, .markdown-body li {
+    hyphens: auto;
+    text-align: justify; }
+    @media only screen and (max-width: 414px) {
+      .markdown-body p, .markdown-body li {
+        hyphens: none;
+        text-align: left; } }
   .markdown-body p {
     margin-bottom: 1rem; }
   .markdown-body p a, .markdown-body li a, .markdown-body table a, .markdown-body blockquote a {
@@ -343,7 +350,8 @@ body {
     .markdown-body pre[class*="language-"] {
       text-shadow: none; } }
   .markdown-body pre[class*="language-"] {
-    overflow: auto; }
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
   .markdown-body *:not(pre) > code[class*="language-"],
   .markdown-body *:not(pre) > code,
   .markdown-body pre[class*="language-"] {
