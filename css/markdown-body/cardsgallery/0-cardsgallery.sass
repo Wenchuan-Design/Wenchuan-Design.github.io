@@ -3,9 +3,19 @@ $galleryMargin: 1rem
 %galleryMarginFix
   margin-right: $galleryMargin
 
-$titleSize: 1.125rem
-$iconListSize: 0.875rem
-$galleryTitleHeight: 3rem
+@mixin cardsColumn($input)
+  li
+    @if $input == 1
+      flex: 0 1 100%
+
+    @if $input == 2
+      flex: 0 1 calc(50% - 1rem)
+      @media only screen and (max-width: $iPhonePlus)
+        flex: 0 1 100%
+
+    @if $input == 3
+      flex: 0 1 calc(33.333% - 1rem)
+
 
 .cardsGallery
   @extend %resetList
@@ -17,32 +27,34 @@ $galleryTitleHeight: 3rem
   @import "1-titlebar"
 
   // display: inline-block
-  display: inline-block
   vertical-align: middle
 
+
+  // begin container of the cards
   ul.cardList
-    // display: inline-block
+    display: flex
+    flex-wrap: wrap
     margin-right: -$galleryMargin
-    // @extend %pLikeMargin
-    margin-bottom: 1.5rem
 
+    &[class*="grid-"]
 
-    // 这个地方我做了一点点修正，下面如果还是 1rem 看上去太短了
+      @include cardsColumn(2)
 
-    li.empty
-      @extend %removeMainBox
+      li
+        @extend %galleryMarginFix
+        margin-bottom: $galleryMargin
+        position: relative
 
-    .titleBar, li.empty, li,
-    figure
-      @extend %galleryMarginFix
-      margin-top: $galleryMargin
-      // 其实在里面，我单独写了 margin-top: 1rem，但在 .cardGallery 下，可能会涉及修改间距
+      // begin import to .cardList
+      @import "bigcover"
+      // end import to .cardList
 
+  // end container of the cards
 
-    // & to ul.cardList
-    @import "bigcover"
-
-
+&.big
+  .cardsGallery ul.cardList
+    &.grid
+      @include cardsColumn(3)
 
 
 

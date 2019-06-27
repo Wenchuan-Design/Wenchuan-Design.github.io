@@ -1,13 +1,10 @@
-&.bigCover
+&[class*="-bigCover"]
+
   @extend %resetLink
 
   li
-    width: calc(50% - 16px)
-    float: left
-    margin-top: 1rem
-    position: relative
     @extend %mainBox
-    overflow: hidden
+    @extend %bgHoverAndClick
 
     .imgFrame
       margin: 0
@@ -40,5 +37,10 @@
         color: $hexGrey
         @include textOverflow(2)
 
-    &:not(.empty):hover
-      @extend %bgHover
+  &[class*="-hideCover"]
+    li .imgFrame
+      display: none
+
+  &[class*="-hideBrief"]
+    li .info p
+      display: none

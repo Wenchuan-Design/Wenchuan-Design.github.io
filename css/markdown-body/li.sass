@@ -35,3 +35,20 @@ ul
       -webkit-transform: translate(0, -50%)
       margin-top: 0.875rem
       vertical-align: middle
+
+.tableOfContent
+  ul, ol
+    @extend %resetLink
+
+    a
+
+      &:hover
+        text-decoration: underline
+
+
+    li
+      font-weight: bold
+
+    ul, ol
+      li
+        font-weight: normal

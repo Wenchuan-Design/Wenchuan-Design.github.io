@@ -63,10 +63,10 @@ table {
   margin: 0;
   padding: 0; }
 
-.markdown-body .cardsGallery ul.cardList.bigCover a {
+.markdown-body .tableOfContent ul a, .markdown-body .tableOfContent ol a, .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] a {
   color: inherit;
   text-decoration: none; }
-  .markdown-body .cardsGallery ul.cardList.bigCover a:hover {
+  .markdown-body .tableOfContent ul a:hover, .markdown-body .tableOfContent ol a:hover, .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] a:hover {
     color: inherit;
     text-decoration: none; }
 
@@ -120,22 +120,23 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-.markdown-body .cardsGallery ul.cardList.bigCover li:not(.empty):hover {
-  background-color: #fafafa; }
-
-.markdown-body .cardsGallery ul.cardList.bigCover li, .markdown-body .styleOutput {
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li, .markdown-body .styleOutput {
   border: 1px solid rgba(0, 0, 0, 0.08); }
 
-.markdown-body .cardsGallery ul.cardList.bigCover li, .markdown-body .styleOutput {
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li, .markdown-body .styleOutput {
   border-radius: 4px; }
 
-.markdown-body .cardsGallery ul.cardList.bigCover li {
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
-.markdown-body .cardsGallery ul.cardList li.empty {
-  border: none;
-  border-radius: none;
-  box-shadow: none; }
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li:hover {
+  background-color: #fafafa; }
+
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li:active {
+  background-color: #f5f5f5; }
+
+.markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li {
+  cursor: pointer; }
 
 .markdown-body {
   background-color: white;
@@ -252,6 +253,12 @@ body {
       -webkit-transform: translate(0, -50%);
       margin-top: 0.875rem;
       vertical-align: middle; }
+  .markdown-body .tableOfContent ul a:hover, .markdown-body .tableOfContent ol a:hover {
+    text-decoration: underline; }
+  .markdown-body .tableOfContent ul li, .markdown-body .tableOfContent ol li {
+    font-weight: bold; }
+  .markdown-body .tableOfContent ul ul li, .markdown-body .tableOfContent ul ol li, .markdown-body .tableOfContent ol ul li, .markdown-body .tableOfContent ol ol li {
+    font-weight: normal; }
   .markdown-body details {
     margin-left: 1rem; }
     .markdown-body details summary {
@@ -483,17 +490,16 @@ body {
     opacity: 0.64; }
   .markdown-body em {
     font-style: italic; }
-  .markdown-body .cardsGallery ul.cardList .titleBar, .markdown-body .cardsGallery ul.cardList li.empty, .markdown-body .cardsGallery ul.cardList li,
-  .markdown-body .cardsGallery ul.cardList figure {
+  .markdown-body .cardsGallery ul.cardList[class*="grid-"] li {
     margin-right: 1rem; }
   .markdown-body .cardsGallery {
     margin: 1rem 0;
-    display: inline-block;
     vertical-align: middle; }
     .markdown-body .cardsGallery .titleBar {
       width: 100%;
       height: 3rem;
-      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08); }
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+      margin-bottom: 1rem; }
       .markdown-body .cardsGallery .titleBar h1 {
         font-size: 1.125rem;
         line-height: 3rem;
@@ -509,48 +515,54 @@ body {
           float: left;
           margin-left: 1rem; }
     .markdown-body .cardsGallery ul.cardList {
-      margin-right: -1rem;
-      margin-bottom: 1.5rem; }
-      .markdown-body .cardsGallery ul.cardList .titleBar, .markdown-body .cardsGallery ul.cardList li.empty, .markdown-body .cardsGallery ul.cardList li,
-      .markdown-body .cardsGallery ul.cardList figure {
-        margin-top: 1rem; }
-      .markdown-body .cardsGallery ul.cardList.bigCover li {
-        width: calc(50% - 16px);
-        float: left;
-        margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -1rem; }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"] li {
+        flex: 0 1 calc(50% - 1rem); }
+        @media only screen and (max-width: 414px) {
+          .markdown-body .cardsGallery ul.cardList[class*="grid-"] li {
+            flex: 0 1 100%; } }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"] li {
+        margin-bottom: 1rem;
+        position: relative; }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li .imgFrame {
+        margin: 0;
         position: relative;
+        padding-bottom: 56.25%;
         overflow: hidden; }
-        .markdown-body .cardsGallery ul.cardList.bigCover li .imgFrame {
-          margin: 0;
-          position: relative;
-          padding-bottom: 56.25%;
-          overflow: hidden; }
-          .markdown-body .cardsGallery ul.cardList.bigCover li .imgFrame img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            object-fit: cover; }
-        .markdown-body .cardsGallery ul.cardList.bigCover li .info {
-          position: relative;
-          box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
-          margin: 0;
-          padding: 1rem; }
-          .markdown-body .cardsGallery ul.cardList.bigCover li .info h1 {
-            font-size: 1rem;
-            font-weight: bold;
-            line-height: 1.5;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical; }
-          .markdown-body .cardsGallery ul.cardList.bigCover li .info p {
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            margin-top: 0.5rem;
-            color: #858585;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical; }
+        .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li .imgFrame img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover; }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li .info {
+        position: relative;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
+        margin: 0;
+        padding: 1rem; }
+        .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li .info h1 {
+          font-size: 1rem;
+          font-weight: bold;
+          line-height: 1.5;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical; }
+        .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"] li .info p {
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+          margin-top: 0.5rem;
+          color: #858585;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"][class*="-hideCover"] li .imgFrame {
+        display: none; }
+      .markdown-body .cardsGallery ul.cardList[class*="grid-"][class*="-bigCover"][class*="-hideBrief"] li .info p {
+        display: none; }
+  .markdown-body.big .cardsGallery ul.cardList.grid li {
+    flex: 0 1 calc(33.333% - 1rem); }
