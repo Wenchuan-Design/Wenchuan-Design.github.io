@@ -39,3 +39,5 @@
        url('./roboto-mono-v6-latin/roboto-mono-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./roboto-mono-v6-latin/roboto-mono-v6-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Mono&display=swap');

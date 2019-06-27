@@ -1,29 +1,27 @@
 ul, ol
   padding-left: 2rem
 
+// ordered-list
 ol
   list-style-type: decimal
 
+li ol
+  list-style-type: lower-roman
+
+li li ol
+  list-style-type: lower-alpha
+
+// unordered-list
 ul
   list-style-type: disc
 
-li
-  ul
-    list-style-type: circle
+li ul
+  list-style-type: circle
 
-  li ul
-    list-style-type: square
+li li ul
+  list-style-type: square
 
-ol ol,
-ul ol
-  list-style-type: lower-roman
-
-ul ul ol,
-ul ol ol,
-ol ul ol,
-ol ol ol
-  list-style-type: lower-alpha
-
+// to-do-list
 ul
   .task-list-item
 
@@ -36,9 +34,10 @@ ul
       margin-top: 0.875rem
       vertical-align: middle
 
-.tableOfContent
+// table of contents
+.tableOfContents
   ul, ol
-    @extend %resetLink
+    @include reset(a)
 
     a
 
@@ -52,3 +51,36 @@ ul
     ul, ol
       li
         font-weight: normal
+
+// special
+// alphabet
+ol
+  &.abc
+    > li
+      list-style-type: lower-alpha
+
+  &.ABC
+    > li
+      list-style-type: upper-alpha
+
+  &.Greek
+    > li
+      list-style-type: lower-greek
+
+  &.georgian
+    > li
+      list-style-type: georgian
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

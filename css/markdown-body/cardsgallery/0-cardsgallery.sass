@@ -18,9 +18,9 @@ $galleryMargin: 1rem
 
 
 .cardsGallery
-  @extend %resetList
-  @extend %resetHeading
-  @extend %resetParagraph
+  @include reset(li)
+  @include reset(h)
+  @include reset(p)
 
   margin: $galleryMargin 0
 
