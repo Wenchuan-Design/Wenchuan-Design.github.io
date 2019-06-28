@@ -1,0 +1,56 @@
+&, &[class="wikiLike-"]
+
+  ul
+    li
+      margin-bottom: $galleryMargin * 2
+
+
+      figure
+        margin: 0
+
+        .imgFrame
+          @include reset(a)
+          @extend %bgHoverAndClick
+
+
+          margin: 0
+          position: relative
+
+          padding-bottom: 100%
+          overflow: hidden
+          @extend %mainBorder
+
+
+          img
+
+            width: 100%
+
+            padding: 1rem
+            height: 100%
+            position: absolute
+            object-fit: contain
+
+
+        @media only screen and (max-width: $iPhonePlus)
+          .imgFrame
+            padding-bottom: 0
+            overflow: auto
+            border: none
+
+            img
+              padding: 0
+              height: auto
+              position: static
+
+  &[class*="-test"]
+    ul
+      li
+        figure
+
+          .imgFrame
+            padding-bottom: auto
+
+            img
+
+              padding: 0
+              object-fit: cover
