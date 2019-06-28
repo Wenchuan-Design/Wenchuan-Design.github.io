@@ -17,7 +17,7 @@ $galleryMargin: 1rem
       flex: 0 1 calc(33.333% - 1rem)
 
 
-.cardsGallery
+.cardGallery
   @include reset(li)
   @include reset(h)
   @include reset(p)
@@ -47,12 +47,13 @@ $galleryMargin: 1rem
 
       // begin import to .cardList
       @import "bigcover"
+      @import "figlist"
       // end import to .cardList
 
   // end container of the cards
 
 &.big
-  .cardsGallery ul.cardList
+  .cardGallery ul.cardList
     &.grid
       @include cardsColumn(3)
 

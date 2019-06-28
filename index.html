@@ -9,14 +9,12 @@
     <!-- <link rel="stylesheet" href="./css/wenchuanNotes.css"> -->
     <link rel="stylesheet" href="./css/wenchuan.css">
 
-    <script src="./js/codehightlight.js"></script>
-
     <script type="text/x-mathjax-config">
       // begin added: The MathJax was too bold, so I add this, change default scale value 100 to 93;
       MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        "HTML-CSS": { scale: 100}
-      });
+          extensions: ["tex2jax.js"],
+          "HTML-CSS": { scale: 100}
+        });
       // end added
       MathJax.Hub.Config({
         tex2jax: {
@@ -30,161 +28,82 @@
   </head>
   <body>
 
+    <!-- begin markdown-body -->
     <div class="markdown-body">
+      <h1>Figure Grid</h1>
 
-      <h1>In this page</h1>
+      <audio controls>
+        <source src="https://upload.wikimedia.org/wikipedia/commons/0/00/CELLO_LIVE_PERFORMANCES_JOHN_MICHEL-J_S_Bach_Gamba_Sonata_in_g_1st_mvt.ogg" type="audio/ogg">
+      </audio>
 
-      <h2>Sapientiam perveniri</h2>
+      <h2>Van Gogh</h2>
 
-      <ul>
-        <li>ssssss</li>
-      </ul>
+      <p>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</p>
 
-      <ul>
-      <li><a href="#overview">Overview</a>
-      <ul>
-      <li><a href="#philosophy">Philosophy</a>
-      <ul>
-      <li><a href="#html">Inline HTML</a></li>
-      <li><a href="#autoescape">Automatic Escaping for Special Characters</a></li>
-      </ul></li>
-      </ul></li>
-      <li><a href="#block">Block Elements</a>
-      <ul>
-      <li><a href="#p">Paragraphs and Line Breaks</a></li>
-      <li><a href="#header">Headers</a></li>
-      <li><a href="#blockquote">Blockquotes</a></li>
-      <li><a href="#list">Lists</a></li>
-      <li><a href="#precode">Code Blocks</a></li>
-      <li><a href="#hr">Horizontal Rules</a></li>
-      </ul></li>
-      <li><a href="#span">Span Elements</a>
-      <ul>
-      <li><a href="#link">Links</a></li>
-      <li><a href="#em">Emphasis</a></li>
-      <li><a href="#code">Code</a></li>
-      <li><a href="#img">Images</a></li>
-      </ul></li>
-      <li><a href="#misc">Miscellaneous</a>
-      <ul>
-      <li><a href="#backslash">Backslash Escapes</a></li>
-      <li><a href="#autolink">Automatic Links</a></li>
-      </ul></li>
-      </ul>
+      <h3>Paris</h3>
 
+      <div class="cardGallery">
 
+        <div class="titleBar">
+          <h1>Examples</h1>
+        </div>
 
+        <ul class="cardList grid-framedFigList">
 
-      <p>Non <em>Wenchuan</em> eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam<sup>this</sup>, et iis quidem non admodum indoctis, totum hoc displicet philosophari. <strong>quidam autem non tam id <a href="">reprehendunt</a>, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.</strong></p>
+          <li>
+            <figure>
+              <div class="imgFrame">
+                <a href="https://en.wikipedia.org/wiki/File:Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg/1280px-Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg">
+                </a>
+              </div>
+              <figcaption>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</figcaption>
+            </figure>
+          </li>
 
-      $$
-      x \in S - \bigcup A_i
-       \iff [x\in S,\; x \notin \bigcup A_i]
-       \iff (\forall i)\;[x \in S, \;x \notin A_i]
-       \iff (\forall i)\; x \in S - A_i
-       \iff x \in \bigcap(S - A_i),
-      $$
+          <li>
+            <figure>
+              <div class="imgFrame">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/949px-Vincent_Willem_van_Gogh_127.jpg">
+              </div>
+              <figcaption>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</figcaption>
+            </figure>
+          </li>
 
-      <pre><code class="language-javascript">function hasTouch() {
-          return &#39;ontouchstart&#39; in document.documentElement
-                 || navigator.maxTouchPoints &gt; 0
-                 || navigator.msMaxTouchPoints &gt; 0;
-      }
+          <li>
+            <figure>
+              <div class="imgFrame">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1518px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg">
+              </div>
+              <figcaption>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</figcaption>
+            </figure>
+          </li>
 
-      if (hasTouch()) { // remove all :hover stylesheets
-          try { // prevent exception on browsers not supporting DOM styleSheets properly
-              for (var si in document.styleSheets) {
-                  var styleSheet = document.styleSheets[si];
-                  if (!styleSheet.rules) continue;
+          <li>
+            <figure>
+              <div class="imgFrame">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Van_Gogh_-_Zypressen_mit_zwei_weiblichen_Figuren.jpeg/946px-Van_Gogh_-_Zypressen_mit_zwei_weiblichen_Figuren.jpeg">
+              </div>
+              <figcaption>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</figcaption>
+            </figure>
+          </li>
 
-                  for (var ri = styleSheet.rules.length - 1; ri &gt;= 0; ri--) {
-                      if (!styleSheet.rules[ri].selectorText) continue;
+          <li>
+            <figure>
+              <div class="imgFrame">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/1570px-Irises-Vincent_van_Gogh.jpg">
+              </div>
+              <figcaption>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</figcaption>
+            </figure>
+          </li>
 
-                      if (styleSheet.rules[ri].selectorText.match(&#39;:hover&#39;)) {
-                          styleSheet.deleteRule(ri);
-                      }
-                  }
-              }
-          } catch (ex) {}
-      }</code></pre>
-
-      <h2>Non eram nescius</h2>
-
-      <p>Contra quos omnis dicendum breviter existimo. Quamquam philosophiae quidem vituperatoribus satis responsum est eo libro, quo a nobis philosophia defensa et collaudata est, cum esset accusata et vituperata ab Hortensio. qui liber cum et tibi probatus videretur et iis, quos ego posse iudicare arbitrarer, plura suscepi veritus ne movere hominum studia viderer, retinere non posse. Qui autem, si maxime hoc placeat, moderatius tamen id volunt fieri, difficilem quandam temperantiam postulant in eo, quod semel admissum coerceri reprimique non potest, ut propemodum iustioribus utamur illis, qui omnino avocent a philosophia, quam his, qui rebus infinitis modum constituant in reque eo meliore, quo maior sit, mediocritatem desiderent.</p>
-
-      <div class="styleOutput">
-        <h1>Heading 1</h1>
-
-        <h2>Heading 2</h2>
-
-        <h3>Heading 3</h3>
-
-        <h4>Heading 4</h4>
-
-        <h5>Heading 5</h5>
-
-        <h6>Heading 6</h6>
+        </ul>
       </div>
 
-
-      <p><em>Non eram nescius</em>, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam, et iis quidem non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.</p>
-
-      <div class="styleOutput">
-        <p>Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret.</p>
-      </div>
-
-      <h2>Reference</h2>
-
-      <div class="reference">
-        <ol>
-          <li>Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent.</li>
-          <li>Contra quos omnis dicendum breviter existimo.</li>
-        </ol>
-      </div>
-
-      <ol>
-        <li>1
-          <ol class="ABC">
-            <li>1
-              <ol>
-                <li>1</li>
-              </ol>
-            </li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-            <li>s</li>
-          </ol>
-        </li>
-      </ol>
-
+      <p>Donec et elit eget nisl <a href="">vulputate</a> cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</p>
     </div>
+    <!-- end markdown-body -->
+
 
   </body>
 </html>
