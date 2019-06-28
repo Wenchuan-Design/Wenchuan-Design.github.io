@@ -3,7 +3,7 @@ img
   vertical-align: middle
   width: 100%
 
-.imgFrame
+[class*="imgFrame"]
   position: relative
   overflow: hidden
   // 这条写在 markdown-body 里面：margin: 24px 0
@@ -13,17 +13,22 @@ img
     height: 100%
     object-fit: cover
 
-  &.ratio1to1
+  &[class*="-ratio1to1"]
     padding-bottom: 100%
     img
       position: absolute
 
-  &.ratio16to9
+  &[class*="-ratio16to9"]
     padding-bottom: 56.25%
     img
       position: absolute
 
-  &.ratio4to3
+  &[class*="ratio4to3"]
     padding-bottom: 75%
+    img
+      position: absolute
+
+  &[class*="ratio2to1"]
+    padding-bottom: 50%
     img
       position: absolute

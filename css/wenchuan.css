@@ -72,26 +72,26 @@ table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li, .md .styleOutput, .markdown-body .styleOutput, .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame {
+.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li, .md figure table tr, .markdown-body figure table tr, .md .styleOutput, .markdown-body .styleOutput, .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
   border: 1px solid rgba(0, 0, 0, 0.08); }
 
-.md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li, .md .styleOutput, .markdown-body .styleOutput {
+.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li, .md .styleOutput, .markdown-body .styleOutput {
   border-radius: 4px; }
 
-.md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li {
+.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li {
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
   background-color: white; }
-  .md .imgGallery ul li figure .imgFrame:hover, .markdown-body .imgGallery ul li figure .imgFrame:hover, .md .cardGallery[class*="bigCover-"] ul li:hover, .markdown-body .cardGallery[class*="bigCover-"] ul li:hover {
+  .md .imgGallery ul li figure .imgFrame:hover, .markdown-body .imgGallery ul li figure .imgFrame:hover, .md .cardGallery[class*="bigCover"] ul li:hover, .markdown-body .cardGallery[class*="bigCover"] ul li:hover {
     background-color: #fafafa; }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li {
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
   background-color: white; }
-  .md .imgGallery ul li figure .imgFrame:active, .markdown-body .imgGallery ul li figure .imgFrame:active, .md .cardGallery[class*="bigCover-"] ul li:active, .markdown-body .cardGallery[class*="bigCover-"] ul li:active {
+  .md .imgGallery ul li figure .imgFrame:active, .markdown-body .imgGallery ul li figure .imgFrame:active, .md .cardGallery[class*="bigCover"] ul li:active, .markdown-body .cardGallery[class*="bigCover"] ul li:active {
     background-color: #f5f5f5; }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover-"] ul li, .markdown-body .cardGallery[class*="bigCover-"] ul li {
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
   cursor: pointer; }
 
 .MathJax_Display {
@@ -108,24 +108,28 @@ img {
   vertical-align: middle;
   width: 100%; }
 
-.imgFrame {
+[class*="imgFrame"] {
   position: relative;
   overflow: hidden; }
-  .imgFrame img {
+  [class*="imgFrame"] img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  .imgFrame.ratio1to1 {
+  [class*="imgFrame"][class*="-ratio1to1"] {
     padding-bottom: 100%; }
-    .imgFrame.ratio1to1 img {
+    [class*="imgFrame"][class*="-ratio1to1"] img {
       position: absolute; }
-  .imgFrame.ratio16to9 {
+  [class*="imgFrame"][class*="-ratio16to9"] {
     padding-bottom: 56.25%; }
-    .imgFrame.ratio16to9 img {
+    [class*="imgFrame"][class*="-ratio16to9"] img {
       position: absolute; }
-  .imgFrame.ratio4to3 {
+  [class*="imgFrame"][class*="ratio4to3"] {
     padding-bottom: 75%; }
-    .imgFrame.ratio4to3 img {
+    [class*="imgFrame"][class*="ratio4to3"] img {
+      position: absolute; }
+  [class*="imgFrame"][class*="ratio2to1"] {
+    padding-bottom: 50%; }
+    [class*="imgFrame"][class*="ratio2to1"] img {
       position: absolute; }
 
 * {
@@ -213,7 +217,6 @@ body {
     .md blockquote > :last-child, .markdown-body blockquote > :last-child {
       margin-bottom: 0; }
   .md table, .markdown-body table {
-    display: flex;
     text-align: left;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; }
@@ -230,6 +233,22 @@ body {
       background-color: #f5f5f5; }
     .md table td:hover, .markdown-body table td:hover {
       background-color: #fafafa; }
+  .md figure table, .markdown-body figure table {
+    margin: 0; }
+    .md figure table tr, .markdown-body figure table tr {
+      padding: 1rem; }
+      .md figure table tr th, .md figure table tr td, .markdown-body figure table tr th, .markdown-body figure table tr td {
+        padding: 0;
+        border: none;
+        margin-left: 1rem;
+        padding: 0.5rem; }
+        .md figure table tr th:not(:first-child), .md figure table tr td:not(:first-child), .markdown-body figure table tr th:not(:first-child), .markdown-body figure table tr td:not(:first-child) {
+          padding-left: 0; }
+        .md figure table tr th img, .md figure table tr td img, .markdown-body figure table tr th img, .markdown-body figure table tr td img {
+          margin: 0;
+          padding: 0; }
+        .md figure table tr th:hover, .md figure table tr td:hover, .markdown-body figure table tr th:hover, .markdown-body figure table tr td:hover {
+          background-color: inherit; }
   .md ul, .md ol, .markdown-body ul, .markdown-body ol {
     padding-left: 2rem; }
   .md ol, .markdown-body ol {
@@ -702,39 +721,39 @@ body {
         .md .imgGallery .titleBar ul.iconList li, .markdown-body .imgGallery .titleBar ul.iconList li {
           float: left;
           margin-left: 1rem; }
-    .md .imgGallery ul li, .md .imgGallery[class="wikiLike-"] ul li, .markdown-body .imgGallery ul li, .markdown-body .imgGallery[class="wikiLike-"] ul li {
+    .md .imgGallery ul li, .md .imgGallery[class="wikiLike"] ul li, .markdown-body .imgGallery ul li, .markdown-body .imgGallery[class="wikiLike"] ul li {
       margin-bottom: 2rem; }
-      .md .imgGallery ul li figure, .md .imgGallery[class="wikiLike-"] ul li figure, .markdown-body .imgGallery ul li figure, .markdown-body .imgGallery[class="wikiLike-"] ul li figure {
+      .md .imgGallery ul li figure, .md .imgGallery[class="wikiLike"] ul li figure, .markdown-body .imgGallery ul li figure, .markdown-body .imgGallery[class="wikiLike"] ul li figure {
         margin: 0; }
-        .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame {
+        .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
           margin: 0;
           position: relative;
           padding-bottom: 100%;
           overflow: hidden; }
-          .md .imgGallery ul li figure .imgFrame a, .md .imgGallery ul li figure .imgFrame .markdown-body a, .md .imgGallery ul li figure .imgFrame .markdown-body.big a, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame a, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body a, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body.big a, .markdown-body .imgGallery ul li figure .imgFrame a, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body a, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body.big a, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame a, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body a, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body.big a {
+          .md .imgGallery ul li figure .imgFrame a, .md .imgGallery ul li figure .imgFrame .markdown-body a, .md .imgGallery ul li figure .imgFrame .markdown-body.big a, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame a, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body a, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body.big a, .markdown-body .imgGallery ul li figure .imgFrame a, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body a, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body.big a, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame a, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body a, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body.big a {
             color: inherit;
             text-decoration: none; }
-            .md .imgGallery ul li figure .imgFrame a:hover, .md .imgGallery ul li figure .imgFrame .markdown-body a:hover, .md .imgGallery ul li figure .imgFrame .markdown-body.big a:hover, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame a:hover, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body a:hover, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body.big a:hover, .markdown-body .imgGallery ul li figure .imgFrame a:hover, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body a:hover, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body.big a:hover, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame a:hover, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body a:hover, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame .markdown-body.big a:hover {
+            .md .imgGallery ul li figure .imgFrame a:hover, .md .imgGallery ul li figure .imgFrame .markdown-body a:hover, .md .imgGallery ul li figure .imgFrame .markdown-body.big a:hover, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame a:hover, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body a:hover, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body.big a:hover, .markdown-body .imgGallery ul li figure .imgFrame a:hover, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body a:hover, .markdown-body .imgGallery ul li figure .imgFrame .markdown-body.big a:hover, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame a:hover, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body a:hover, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame .markdown-body.big a:hover {
               color: inherit;
               text-decoration: none; }
-          .md .imgGallery ul li figure .imgFrame img, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame img {
+          .md .imgGallery ul li figure .imgFrame img, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame img {
             width: 100%;
             padding: 1rem;
             height: 100%;
             position: absolute;
             object-fit: contain; }
         @media only screen and (max-width: 414px) {
-          .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame {
+          .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
             padding-bottom: 0;
             overflow: auto;
             border: none; }
-            .md .imgGallery ul li figure .imgFrame img, .md .imgGallery[class="wikiLike-"] ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike-"] ul li figure .imgFrame img {
+            .md .imgGallery ul li figure .imgFrame img, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame img {
               padding: 0;
               height: auto;
               position: static; } }
-    .md .imgGallery[class*="-test"] ul li figure .imgFrame, .md .imgGallery[class="wikiLike-"][class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike-"][class*="-test"] ul li figure .imgFrame {
+    .md .imgGallery[class*="-test"] ul li figure .imgFrame, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame {
       padding-bottom: auto; }
-      .md .imgGallery[class*="-test"] ul li figure .imgFrame img, .md .imgGallery[class="wikiLike-"][class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike-"][class*="-test"] ul li figure .imgFrame img {
+      .md .imgGallery[class*="-test"] ul li figure .imgFrame img, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame img {
         padding: 0;
         object-fit: cover; }
   .md .cardGallery .titleBar, .markdown-body .cardGallery .titleBar {
@@ -757,28 +776,28 @@ body {
       .md .cardGallery .titleBar ul.iconList li, .markdown-body .cardGallery .titleBar ul.iconList li {
         float: left;
         margin-left: 1rem; }
-  .md .cardGallery[class*="bigCover-"] a, .md .cardGallery[class*="bigCover-"] .markdown-body a, .md .cardGallery[class*="bigCover-"] .markdown-body.big a, .markdown-body .cardGallery[class*="bigCover-"] a, .markdown-body .cardGallery[class*="bigCover-"] .markdown-body a, .markdown-body .cardGallery[class*="bigCover-"] .markdown-body.big a {
+  .md .cardGallery[class*="bigCover"] a, .md .cardGallery[class*="bigCover"] .markdown-body a, .md .cardGallery[class*="bigCover"] .markdown-body.big a, .markdown-body .cardGallery[class*="bigCover"] a, .markdown-body .cardGallery[class*="bigCover"] .markdown-body a, .markdown-body .cardGallery[class*="bigCover"] .markdown-body.big a {
     color: inherit;
     text-decoration: none; }
-    .md .cardGallery[class*="bigCover-"] a:hover, .md .cardGallery[class*="bigCover-"] .markdown-body a:hover, .md .cardGallery[class*="bigCover-"] .markdown-body.big a:hover, .markdown-body .cardGallery[class*="bigCover-"] a:hover, .markdown-body .cardGallery[class*="bigCover-"] .markdown-body a:hover, .markdown-body .cardGallery[class*="bigCover-"] .markdown-body.big a:hover {
+    .md .cardGallery[class*="bigCover"] a:hover, .md .cardGallery[class*="bigCover"] .markdown-body a:hover, .md .cardGallery[class*="bigCover"] .markdown-body.big a:hover, .markdown-body .cardGallery[class*="bigCover"] a:hover, .markdown-body .cardGallery[class*="bigCover"] .markdown-body a:hover, .markdown-body .cardGallery[class*="bigCover"] .markdown-body.big a:hover {
       color: inherit;
       text-decoration: none; }
-  .md .cardGallery[class*="bigCover-"] ul li .imgFrame, .markdown-body .cardGallery[class*="bigCover-"] ul li .imgFrame {
+  .md .cardGallery[class*="bigCover"] ul li .imgFrame, .markdown-body .cardGallery[class*="bigCover"] ul li .imgFrame {
     margin: 0;
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden; }
-    .md .cardGallery[class*="bigCover-"] ul li .imgFrame img, .markdown-body .cardGallery[class*="bigCover-"] ul li .imgFrame img {
+    .md .cardGallery[class*="bigCover"] ul li .imgFrame img, .markdown-body .cardGallery[class*="bigCover"] ul li .imgFrame img {
       width: 100%;
       height: 100%;
       position: absolute;
       object-fit: cover; }
-  .md .cardGallery[class*="bigCover-"] ul li .info, .markdown-body .cardGallery[class*="bigCover-"] ul li .info {
+  .md .cardGallery[class*="bigCover"] ul li .info, .markdown-body .cardGallery[class*="bigCover"] ul li .info {
     position: relative;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
     margin: 0;
     padding: 1rem; }
-    .md .cardGallery[class*="bigCover-"] ul li .info h1, .markdown-body .cardGallery[class*="bigCover-"] ul li .info h1 {
+    .md .cardGallery[class*="bigCover"] ul li .info h1, .markdown-body .cardGallery[class*="bigCover"] ul li .info h1 {
       font-size: 1rem;
       font-weight: bold;
       line-height: 1.5;
@@ -787,7 +806,7 @@ body {
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical; }
-    .md .cardGallery[class*="bigCover-"] ul li .info p, .markdown-body .cardGallery[class*="bigCover-"] ul li .info p {
+    .md .cardGallery[class*="bigCover"] ul li .info p, .markdown-body .cardGallery[class*="bigCover"] ul li .info p {
       font-size: 0.875rem;
       line-height: 1.375rem;
       margin-top: 0.5rem;
@@ -797,15 +816,15 @@ body {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; }
-  .md .cardGallery[class*="bigCover-"][class*="-hideCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover-"][class*="-hideCover"] li .imgFrame {
+  .md .cardGallery[class*="bigCover"][class*="-hideCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover"][class*="-hideCover"] li .imgFrame {
     display: none; }
-  .md .cardGallery[class*="bigCover-"][class*="-hideCover"] li .info, .markdown-body .cardGallery[class*="bigCover-"][class*="-hideCover"] li .info {
+  .md .cardGallery[class*="bigCover"][class*="-hideCover"] li .info, .markdown-body .cardGallery[class*="bigCover"][class*="-hideCover"] li .info {
     box-shadow: none; }
-  .md .cardGallery[class*="bigCover-"][class*="-hideBrief"] li .info p, .markdown-body .cardGallery[class*="bigCover-"][class*="-hideBrief"] li .info p {
+  .md .cardGallery[class*="bigCover"][class*="-hideBrief"] li .info p, .markdown-body .cardGallery[class*="bigCover"][class*="-hideBrief"] li .info p {
     display: none; }
-  .md .cardGallery[class*="bigCover-"][class*="-smallCover"] li, .markdown-body .cardGallery[class*="bigCover-"][class*="-smallCover"] li {
+  .md .cardGallery[class*="bigCover"][class*="-smallCover"] li, .markdown-body .cardGallery[class*="bigCover"][class*="-smallCover"] li {
     margin-bottom: 1rem; }
-    .md .cardGallery[class*="bigCover-"][class*="-smallCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover-"][class*="-smallCover"] li .imgFrame {
+    .md .cardGallery[class*="bigCover"][class*="-smallCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover"][class*="-smallCover"] li .imgFrame {
       padding-bottom: 0;
       float: left;
       width: 108px;
