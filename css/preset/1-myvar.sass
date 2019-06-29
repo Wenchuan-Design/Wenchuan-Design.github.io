@@ -6,8 +6,10 @@
   margin-top: 2rem
   margin-bottom: 2rem
 
+$mainBorder: 1px solid $rgbaLightPale
+
 %mainBorder
-  border: 1px solid $rgbaLightPale
+  border: $mainBorder
 
 %mainBorderRadius
   border-radius: 4px
@@ -17,6 +19,7 @@
 
 %mainBox
   @extend %mainBorder
+  // @include mainBorder(all)
   @extend %mainBorderRadius
   @extend %mainShadow
 

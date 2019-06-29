@@ -1,5 +1,5 @@
 &, &[class="wikiLike"]
-
+  @include cardsColumn(2)
   ul
     li
       margin-bottom: $galleryMargin * 2
@@ -7,6 +7,9 @@
 
       figure
         margin: 0
+        display: block
+        figcaption
+          display: block
 
         .imgFrame
           @include reset(a)
@@ -43,14 +46,24 @@
               position: static
 
   &[class*="-test"]
+    @include cardsColumn(1)
     ul
       li
+
         figure
-
+          display: flex
+          // display: table-row !important
           .imgFrame
-            padding-bottom: auto
+            flex: 1 1 calc(50% - 1rem)
+            display: table-cell
+            margin-right: 1rem
+            padding-bottom: 50%
 
-            img
+          figcaption
+            display: table-cell
+            margin: 0
+            flex: 1 1 calc(50% - 1rem)
+            vertical-align: middle
 
-              padding: 0
-              object-fit: cover
+          img
+            display: table-cell

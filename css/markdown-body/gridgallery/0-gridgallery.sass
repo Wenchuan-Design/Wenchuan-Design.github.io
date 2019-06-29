@@ -15,26 +15,18 @@ $galleryMargin: 1rem
 
     @if $input == 3
       flex: 0 1 calc(33.333% - 1rem)
-      @media only screen and (max-width: 600px)
+      @media only screen and (max-width: $markdownBody)
         flex: 0 1 calc(50% - 1rem)
       @media only screen and (max-width: $iPhonePlus)
         flex: 0 1 100%
-
-    @if $input == 4
-      flex: 0 1 calc(25% - 1rem)
-      @media only screen and (max-width: $iPad)
-        flex: 0 1 calc(33.333% - 1rem)
-      @media only screen and (max-width: 600px)
-        flex: 0 1 calc(50% - 1rem)
-      @media only screen and (max-width: $iPhonePlus)
-        flex: 1 1 100%
 
 .imgGallery,
 .cardGallery
   @include reset(li)
   @include reset(h)
   @include reset(p)
-  margin-top: $galleryMargin * 2
+  // margin-top: $galleryMargin * 2
+  @include cardsColumn(2)
 
   vertical-align: middle
 
@@ -50,31 +42,22 @@ $galleryMargin: 1rem
       margin-bottom: $galleryMargin
       position: relative
 
-  &.grid
-    @include cardsColumn(2)
-
-  &.grid-small
-    @include cardsColumn(3)
-
 &.big
-  .cardGallery ul
-    &.grid
-      @include cardsColumn(3)
-
-    &.grid-small
-      @include cardsColumn(4)
+  .cardGallery,
+  .imgGallery
+    @include cardsColumn(3)
 
 // ===================================
 // Begin Import
 // ===================================
 .imgGallery
+  @extend %imgLikeMargin
   margin-bottom: -$galleryMargin
-  @import "1-titlebar"
   @import "framedFigList"
 
 .cardGallery
-  @import "1-titlebar"
-  @import "bigcover"
+  @extend %imgLikeMargin
+  @import "articlelist"
 
 
 

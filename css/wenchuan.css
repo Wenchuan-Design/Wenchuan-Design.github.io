@@ -68,30 +68,35 @@ table {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-.md > img, .md > .imgFrame, .md > figure, .md details > img, .md details > .imgFrame, .md details > figure, .md li > img, .md li > .imgFrame, .md li > figure, .md blockquote > img, .md blockquote > .imgFrame, .md blockquote > figure, .markdown-body > img, .markdown-body > .imgFrame, .markdown-body > figure, .markdown-body details > img, .markdown-body details > .imgFrame, .markdown-body details > figure, .markdown-body li > img, .markdown-body li > .imgFrame, .markdown-body li > figure, .markdown-body blockquote > img, .markdown-body blockquote > .imgFrame, .markdown-body blockquote > figure {
+.md figure, .markdown-body figure, .md .imgGallery, .markdown-body .imgGallery, .md .cardGallery, .markdown-body .cardGallery {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li, .md figure table tr, .markdown-body figure table tr, .md .styleOutput, .markdown-body .styleOutput, .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
+.md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li, .md figure table tr, .markdown-body figure table tr, .md .styleOutput, .markdown-body .styleOutput, .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
   border: 1px solid rgba(0, 0, 0, 0.08); }
 
-.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li, .md .styleOutput, .markdown-body .styleOutput {
+.md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li, .md .styleOutput, .markdown-body .styleOutput {
   border-radius: 4px; }
 
-.md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
+.md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
+.md .cardGallery[class*="articleList"][class*="-list"] li, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li {
+  border: none;
+  border-radius: none;
+  box-shadow: none; }
+
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li {
   background-color: white; }
-  .md .imgGallery ul li figure .imgFrame:hover, .markdown-body .imgGallery ul li figure .imgFrame:hover, .md .cardGallery[class*="bigCover"] ul li:hover, .markdown-body .cardGallery[class*="bigCover"] ul li:hover {
+  .md .imgGallery ul li figure .imgFrame:hover, .markdown-body .imgGallery ul li figure .imgFrame:hover, .md .cardGallery[class*="articleList"] ul li:hover, .markdown-body .cardGallery[class*="articleList"] ul li:hover {
     background-color: #fafafa; }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li {
   background-color: white; }
-  .md .imgGallery ul li figure .imgFrame:active, .markdown-body .imgGallery ul li figure .imgFrame:active, .md .cardGallery[class*="bigCover"] ul li:active, .markdown-body .cardGallery[class*="bigCover"] ul li:active {
+  .md .imgGallery ul li figure .imgFrame:active, .markdown-body .imgGallery ul li figure .imgFrame:active, .md .cardGallery[class*="articleList"] ul li:active, .markdown-body .cardGallery[class*="articleList"] ul li:active {
     background-color: #f5f5f5; }
 
-.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="bigCover"] ul li, .markdown-body .cardGallery[class*="bigCover"] ul li {
+.md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame, .md .cardGallery[class*="articleList"] ul li, .markdown-body .cardGallery[class*="articleList"] ul li {
   cursor: pointer; }
 
 .MathJax_Display {
@@ -106,7 +111,7 @@ table {
 
 img {
   vertical-align: middle;
-  width: 100%; }
+  max-width: 100%; }
 
 [class*="imgFrame"] {
   position: relative;
@@ -180,13 +185,27 @@ body {
     vertical-align: super; }
   .md sub, .markdown-body sub {
     vertical-align: sub; }
-  .md figure figcaption, .md figure figcaption p, .markdown-body figure figcaption, .markdown-body figure figcaption p {
-    text-align: left;
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    margin-top: 0.5rem; }
-  .md figure figcaption, .markdown-body figure figcaption {
-    color: #858585; }
+  .md figure, .markdown-body figure {
+    display: table;
+    margin-left: auto;
+    margin-right: auto; }
+    .md figure figcaption, .markdown-body figure figcaption {
+      display: table-caption;
+      caption-side: bottom; }
+    .md figure figcaption, .md figure figcaption p, .markdown-body figure figcaption, .markdown-body figure figcaption p {
+      text-align: left;
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      margin-top: 0.5rem;
+      margin-bottom: 0; }
+    .md figure figcaption > p:first-of-type, .markdown-body figure figcaption > p:first-of-type {
+      margin-top: 0; }
+    .md figure figcaption, .markdown-body figure figcaption {
+      color: #858585; }
+    .md figure.small, .markdown-body figure.small {
+      max-width: 600px; }
+    .md figure.smaller, .markdown-body figure.smaller {
+      max-width: 414px; }
   .md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     line-height: 1.25;
     margin-top: 1.5em;
@@ -570,7 +589,6 @@ body {
   .md .imgGallery,
   .md .cardGallery, .markdown-body .imgGallery,
   .markdown-body .cardGallery {
-    margin-top: 2rem;
     vertical-align: middle; }
     .md .imgGallery ul, .md .imgGallery ol, .md .imgGallery .markdown-body ul, .md .imgGallery .markdown-body ol, .md .imgGallery .markdown-body.big ul, .md .imgGallery .markdown-body.big ol,
     .md .cardGallery ul,
@@ -646,6 +664,15 @@ body {
     .markdown-body .cardGallery .markdown-body.big p {
       margin: 0;
       padding: 0; }
+    .md .imgGallery li,
+    .md .cardGallery li, .markdown-body .imgGallery li,
+    .markdown-body .cardGallery li {
+      flex: 0 1 calc(50% - 1rem); }
+      @media only screen and (max-width: 414px) {
+        .md .imgGallery li,
+        .md .cardGallery li, .markdown-body .imgGallery li,
+        .markdown-body .cardGallery li {
+          flex: 0 1 100%; } }
     .md .imgGallery ul,
     .md .cardGallery ul, .markdown-body .imgGallery ul,
     .markdown-body .cardGallery ul {
@@ -657,74 +684,34 @@ body {
       .markdown-body .cardGallery ul li {
         margin-bottom: 1rem;
         position: relative; }
-    .md .imgGallery.grid li,
-    .md .cardGallery.grid li, .markdown-body .imgGallery.grid li,
-    .markdown-body .cardGallery.grid li {
-      flex: 0 1 calc(50% - 1rem); }
-      @media only screen and (max-width: 414px) {
-        .md .imgGallery.grid li,
-        .md .cardGallery.grid li, .markdown-body .imgGallery.grid li,
-        .markdown-body .cardGallery.grid li {
-          flex: 0 1 100%; } }
-    .md .imgGallery.grid-small li,
-    .md .cardGallery.grid-small li, .markdown-body .imgGallery.grid-small li,
-    .markdown-body .cardGallery.grid-small li {
-      flex: 0 1 calc(33.333% - 1rem); }
-      @media only screen and (max-width: 600px) {
-        .md .imgGallery.grid-small li,
-        .md .cardGallery.grid-small li, .markdown-body .imgGallery.grid-small li,
-        .markdown-body .cardGallery.grid-small li {
-          flex: 0 1 calc(50% - 1rem); } }
-      @media only screen and (max-width: 414px) {
-        .md .imgGallery.grid-small li,
-        .md .cardGallery.grid-small li, .markdown-body .imgGallery.grid-small li,
-        .markdown-body .cardGallery.grid-small li {
-          flex: 0 1 100%; } }
-  .md.big .cardGallery ul.grid li, .markdown-body.big .cardGallery ul.grid li {
+  .md.big .cardGallery li,
+  .md.big .imgGallery li, .markdown-body.big .cardGallery li,
+  .markdown-body.big .imgGallery li {
     flex: 0 1 calc(33.333% - 1rem); }
-    @media only screen and (max-width: 600px) {
-      .md.big .cardGallery ul.grid li, .markdown-body.big .cardGallery ul.grid li {
+    @media only screen and (max-width: 800px) {
+      .md.big .cardGallery li,
+      .md.big .imgGallery li, .markdown-body.big .cardGallery li,
+      .markdown-body.big .imgGallery li {
         flex: 0 1 calc(50% - 1rem); } }
     @media only screen and (max-width: 414px) {
-      .md.big .cardGallery ul.grid li, .markdown-body.big .cardGallery ul.grid li {
+      .md.big .cardGallery li,
+      .md.big .imgGallery li, .markdown-body.big .cardGallery li,
+      .markdown-body.big .imgGallery li {
         flex: 0 1 100%; } }
-  .md.big .cardGallery ul.grid-small li, .markdown-body.big .cardGallery ul.grid-small li {
-    flex: 0 1 calc(25% - 1rem); }
-    @media only screen and (max-width: 768px) {
-      .md.big .cardGallery ul.grid-small li, .markdown-body.big .cardGallery ul.grid-small li {
-        flex: 0 1 calc(33.333% - 1rem); } }
-    @media only screen and (max-width: 600px) {
-      .md.big .cardGallery ul.grid-small li, .markdown-body.big .cardGallery ul.grid-small li {
-        flex: 0 1 calc(50% - 1rem); } }
-    @media only screen and (max-width: 414px) {
-      .md.big .cardGallery ul.grid-small li, .markdown-body.big .cardGallery ul.grid-small li {
-        flex: 1 1 100%; } }
   .md .imgGallery, .markdown-body .imgGallery {
     margin-bottom: -1rem; }
-    .md .imgGallery .titleBar, .markdown-body .imgGallery .titleBar {
-      width: 100%;
-      height: 3rem;
-      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-      margin-bottom: 1rem;
-      margin-top: -1rem; }
-      .md .imgGallery .titleBar h1, .markdown-body .imgGallery .titleBar h1 {
-        font-size: 1.125rem;
-        color: #adadad;
-        line-height: 3rem;
-        float: left; }
-      .md .imgGallery .titleBar ul.iconList, .markdown-body .imgGallery .titleBar ul.iconList {
-        font-size: 0.875rem;
-        line-height: 3rem;
-        font-weight: normal;
-        float: right;
-        color: #858585; }
-        .md .imgGallery .titleBar ul.iconList li, .markdown-body .imgGallery .titleBar ul.iconList li {
-          float: left;
-          margin-left: 1rem; }
+    .md .imgGallery li, .md .imgGallery[class="wikiLike"] li, .markdown-body .imgGallery li, .markdown-body .imgGallery[class="wikiLike"] li {
+      flex: 0 1 calc(50% - 1rem); }
+      @media only screen and (max-width: 414px) {
+        .md .imgGallery li, .md .imgGallery[class="wikiLike"] li, .markdown-body .imgGallery li, .markdown-body .imgGallery[class="wikiLike"] li {
+          flex: 0 1 100%; } }
     .md .imgGallery ul li, .md .imgGallery[class="wikiLike"] ul li, .markdown-body .imgGallery ul li, .markdown-body .imgGallery[class="wikiLike"] ul li {
       margin-bottom: 2rem; }
       .md .imgGallery ul li figure, .md .imgGallery[class="wikiLike"] ul li figure, .markdown-body .imgGallery ul li figure, .markdown-body .imgGallery[class="wikiLike"] ul li figure {
-        margin: 0; }
+        margin: 0;
+        display: block; }
+        .md .imgGallery ul li figure figcaption, .md .imgGallery[class="wikiLike"] ul li figure figcaption, .markdown-body .imgGallery ul li figure figcaption, .markdown-body .imgGallery[class="wikiLike"] ul li figure figcaption {
+          display: block; }
         .md .imgGallery ul li figure .imgFrame, .md .imgGallery[class="wikiLike"] ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"] ul li figure .imgFrame {
           margin: 0;
           position: relative;
@@ -751,53 +738,44 @@ body {
               padding: 0;
               height: auto;
               position: static; } }
-    .md .imgGallery[class*="-test"] ul li figure .imgFrame, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame {
-      padding-bottom: auto; }
-      .md .imgGallery[class*="-test"] ul li figure .imgFrame img, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame img, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame img {
-        padding: 0;
-        object-fit: cover; }
-  .md .cardGallery .titleBar, .markdown-body .cardGallery .titleBar {
-    width: 100%;
-    height: 3rem;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-    margin-bottom: 1rem;
-    margin-top: -1rem; }
-    .md .cardGallery .titleBar h1, .markdown-body .cardGallery .titleBar h1 {
-      font-size: 1.125rem;
-      color: #adadad;
-      line-height: 3rem;
-      float: left; }
-    .md .cardGallery .titleBar ul.iconList, .markdown-body .cardGallery .titleBar ul.iconList {
-      font-size: 0.875rem;
-      line-height: 3rem;
-      font-weight: normal;
-      float: right;
-      color: #858585; }
-      .md .cardGallery .titleBar ul.iconList li, .markdown-body .cardGallery .titleBar ul.iconList li {
-        float: left;
-        margin-left: 1rem; }
-  .md .cardGallery[class*="bigCover"] a, .md .cardGallery[class*="bigCover"] .markdown-body a, .md .cardGallery[class*="bigCover"] .markdown-body.big a, .markdown-body .cardGallery[class*="bigCover"] a, .markdown-body .cardGallery[class*="bigCover"] .markdown-body a, .markdown-body .cardGallery[class*="bigCover"] .markdown-body.big a {
+    .md .imgGallery[class*="-test"] li, .md .imgGallery[class="wikiLike"][class*="-test"] li, .markdown-body .imgGallery[class*="-test"] li, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] li {
+      flex: 0 1 100%; }
+    .md .imgGallery[class*="-test"] ul li figure, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure, .markdown-body .imgGallery[class*="-test"] ul li figure, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure {
+      display: flex; }
+      .md .imgGallery[class*="-test"] ul li figure .imgFrame, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class*="-test"] ul li figure .imgFrame, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure .imgFrame {
+        flex: 1 1 calc(50% - 1rem);
+        display: table-cell;
+        margin-right: 1rem;
+        padding-bottom: 50%; }
+      .md .imgGallery[class*="-test"] ul li figure figcaption, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure figcaption, .markdown-body .imgGallery[class*="-test"] ul li figure figcaption, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure figcaption {
+        display: table-cell;
+        margin: 0;
+        flex: 1 1 calc(50% - 1rem);
+        vertical-align: middle; }
+      .md .imgGallery[class*="-test"] ul li figure img, .md .imgGallery[class="wikiLike"][class*="-test"] ul li figure img, .markdown-body .imgGallery[class*="-test"] ul li figure img, .markdown-body .imgGallery[class="wikiLike"][class*="-test"] ul li figure img {
+        display: table-cell; }
+  .md .cardGallery[class*="articleList"] a, .md .cardGallery[class*="articleList"] .markdown-body a, .md .cardGallery[class*="articleList"] .markdown-body.big a, .markdown-body .cardGallery[class*="articleList"] a, .markdown-body .cardGallery[class*="articleList"] .markdown-body a, .markdown-body .cardGallery[class*="articleList"] .markdown-body.big a {
     color: inherit;
     text-decoration: none; }
-    .md .cardGallery[class*="bigCover"] a:hover, .md .cardGallery[class*="bigCover"] .markdown-body a:hover, .md .cardGallery[class*="bigCover"] .markdown-body.big a:hover, .markdown-body .cardGallery[class*="bigCover"] a:hover, .markdown-body .cardGallery[class*="bigCover"] .markdown-body a:hover, .markdown-body .cardGallery[class*="bigCover"] .markdown-body.big a:hover {
+    .md .cardGallery[class*="articleList"] a:hover, .md .cardGallery[class*="articleList"] .markdown-body a:hover, .md .cardGallery[class*="articleList"] .markdown-body.big a:hover, .markdown-body .cardGallery[class*="articleList"] a:hover, .markdown-body .cardGallery[class*="articleList"] .markdown-body a:hover, .markdown-body .cardGallery[class*="articleList"] .markdown-body.big a:hover {
       color: inherit;
       text-decoration: none; }
-  .md .cardGallery[class*="bigCover"] ul li .imgFrame, .markdown-body .cardGallery[class*="bigCover"] ul li .imgFrame {
+  .md .cardGallery[class*="articleList"] ul li .imgFrame, .markdown-body .cardGallery[class*="articleList"] ul li .imgFrame {
     margin: 0;
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden; }
-    .md .cardGallery[class*="bigCover"] ul li .imgFrame img, .markdown-body .cardGallery[class*="bigCover"] ul li .imgFrame img {
+    .md .cardGallery[class*="articleList"] ul li .imgFrame img, .markdown-body .cardGallery[class*="articleList"] ul li .imgFrame img {
       width: 100%;
       height: 100%;
       position: absolute;
       object-fit: cover; }
-  .md .cardGallery[class*="bigCover"] ul li .info, .markdown-body .cardGallery[class*="bigCover"] ul li .info {
+  .md .cardGallery[class*="articleList"] ul li .info, .markdown-body .cardGallery[class*="articleList"] ul li .info {
     position: relative;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
     margin: 0;
     padding: 1rem; }
-    .md .cardGallery[class*="bigCover"] ul li .info h1, .markdown-body .cardGallery[class*="bigCover"] ul li .info h1 {
+    .md .cardGallery[class*="articleList"] ul li .info h4, .markdown-body .cardGallery[class*="articleList"] ul li .info h4 {
       font-size: 1rem;
       font-weight: bold;
       line-height: 1.5;
@@ -806,7 +784,7 @@ body {
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical; }
-    .md .cardGallery[class*="bigCover"] ul li .info p, .markdown-body .cardGallery[class*="bigCover"] ul li .info p {
+    .md .cardGallery[class*="articleList"] ul li .info p, .markdown-body .cardGallery[class*="articleList"] ul li .info p {
       font-size: 0.875rem;
       line-height: 1.375rem;
       margin-top: 0.5rem;
@@ -816,20 +794,62 @@ body {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical; }
-  .md .cardGallery[class*="bigCover"][class*="-hideCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover"][class*="-hideCover"] li .imgFrame {
+  .md .cardGallery[class*="articleList"][class*="-hideCover"] li .imgFrame, .markdown-body .cardGallery[class*="articleList"][class*="-hideCover"] li .imgFrame {
     display: none; }
-  .md .cardGallery[class*="bigCover"][class*="-hideCover"] li .info, .markdown-body .cardGallery[class*="bigCover"][class*="-hideCover"] li .info {
+  .md .cardGallery[class*="articleList"][class*="-hideCover"] li .info, .markdown-body .cardGallery[class*="articleList"][class*="-hideCover"] li .info {
     box-shadow: none; }
-  .md .cardGallery[class*="bigCover"][class*="-hideBrief"] li .info p, .markdown-body .cardGallery[class*="bigCover"][class*="-hideBrief"] li .info p {
+  .md .cardGallery[class*="articleList"][class*="-hideBrief"] li .info p, .markdown-body .cardGallery[class*="articleList"][class*="-hideBrief"] li .info p {
     display: none; }
-  .md .cardGallery[class*="bigCover"][class*="-smallCover"] li, .markdown-body .cardGallery[class*="bigCover"][class*="-smallCover"] li {
+  .md .cardGallery[class*="articleList"][class*="-smallCover"] li, .markdown-body .cardGallery[class*="articleList"][class*="-smallCover"] li {
     margin-bottom: 1rem; }
-    .md .cardGallery[class*="bigCover"][class*="-smallCover"] li .imgFrame, .markdown-body .cardGallery[class*="bigCover"][class*="-smallCover"] li .imgFrame {
+    .md .cardGallery[class*="articleList"][class*="-smallCover"] li .imgFrame, .markdown-body .cardGallery[class*="articleList"][class*="-smallCover"] li .imgFrame {
       padding-bottom: 0;
       float: left;
       width: 108px;
       height: 108px;
       margin-right: 1rem;
       overflow: hidden; }
+    .md .cardGallery[class*="articleList"][class*="-smallCover"] li .info, .markdown-body .cardGallery[class*="articleList"][class*="-smallCover"] li .info {
+      border: none !important;
+      box-shadow: none !important; }
+      .md .cardGallery[class*="articleList"][class*="-smallCover"] li .info p, .markdown-body .cardGallery[class*="articleList"][class*="-smallCover"] li .info p {
+        display: -webkit-box !important; }
+  .md .cardGallery[class*="articleList"][class*="-list"] li, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li {
+    flex: 1 1 100% !important;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+    .md .cardGallery[class*="articleList"][class*="-list"] li:first-child, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.08); }
+    .md .cardGallery[class*="articleList"][class*="-list"] li .imgFrame, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .imgFrame {
+      display: none; }
+    .md .cardGallery[class*="articleList"][class*="-list"] li .info, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info {
+      box-shadow: none;
+      display: flex;
+      padding: 0; }
+      .md .cardGallery[class*="articleList"][class*="-list"] li .info h4, .md .cardGallery[class*="articleList"][class*="-list"] li .info p, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info h4, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 3rem; }
+      .md .cardGallery[class*="articleList"][class*="-list"] li .info h4, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info h4 {
+        margin-left: calc(2.5rem - 2px);
+        padding-right: 0.5rem; }
+        .md .cardGallery[class*="articleList"][class*="-list"] li .info h4::before, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info h4::before {
+          content: "";
+          position: absolute;
+          transform: translate(0, -50%);
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.16);
+          top: 50%;
+          left: 1rem; }
+      .md .cardGallery[class*="articleList"][class*="-list"] li .info p, .markdown-body .cardGallery[class*="articleList"][class*="-list"] li .info p {
+        padding-left: 0.5rem;
+        flex: 1 1 1px; }
   .md audio, .markdown-body audio {
     width: 100%; }

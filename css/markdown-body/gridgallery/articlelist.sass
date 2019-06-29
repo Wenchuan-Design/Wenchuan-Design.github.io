@@ -1,0 +1,130 @@
+&[class*="articleList"]
+
+  @include reset(a)
+
+  ul
+    li
+      @extend %mainBox
+      @extend %bgHoverAndClick
+      // display: flex
+
+      .imgFrame
+        margin: 0
+        position: relative
+        padding-bottom: 56.25%
+        overflow: hidden
+
+        img
+          width: 100%
+          height: 100%
+          position: absolute
+          object-fit: cover
+
+      .info
+        position: relative
+        box-shadow: 0 -1px 0 $rgbaBg1
+        margin: 0
+        padding: 1rem
+
+        h4
+          font-size: 1rem
+          font-weight: bold
+          line-height: 1.5
+          @include textOverflow(1)
+
+        p
+          font-size: 0.875rem
+          line-height: 1.375rem
+          margin-top: 0.5rem
+          color: $hexGrey
+          @include textOverflow(2)
+
+  &[class*="-hideCover"]
+    li .imgFrame
+      display: none
+    li .info
+      box-shadow: none
+
+  &[class*="-hideBrief"]
+    li .info p
+      display: none
+
+  &[class*="-smallCover"]
+    li
+      margin-bottom: $galleryMargin
+      .imgFrame
+        padding-bottom: 0
+        float: left
+        width: 108px
+        height: 108px
+        margin-right: 1rem
+        overflow: hidden
+      .info
+        border: none !important
+        box-shadow: none !important
+        p
+          display: -webkit-box !important
+
+  &[class*="-list"]
+
+    li
+      flex: 1 1 100% !important
+      margin-bottom: 0
+      @extend %removeMainBox
+      border-bottom: $mainBorder
+
+      &:first-child
+        border-top: $mainBorder
+
+      .imgFrame
+        display: none
+
+      .info
+        box-shadow: none
+        display: flex
+        padding: 0
+
+        h4, p
+          @include textOverflow(1)
+          margin-top: 0
+          margin-bottom: 0
+          line-height: 3rem
+
+        h4
+          margin-left: calc(2.5rem - 2px)
+          padding-right: 0.5rem
+          // border-right: $mainBorder
+          // flex: 1 0 33.33%
+          &::before
+            content: ''
+            position: absolute
+            transform: translate(0, -50%)
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            background-color: $rgbaPale
+            top: 50%
+            left: 1rem
+
+        p
+          padding-left: 0.5rem
+          // display: none
+          flex: 1 1 1px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
