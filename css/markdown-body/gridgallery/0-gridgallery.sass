@@ -21,7 +21,7 @@ $galleryMargin: 1rem
         flex: 0 1 100%
 
 .imgGallery,
-.cardGallery
+.articleList,
   @include reset(li)
   @include reset(h)
   @include reset(p)
@@ -43,7 +43,7 @@ $galleryMargin: 1rem
       position: relative
 
 &.big
-  .cardGallery,
+  .articleList,
   .imgGallery
     @include cardsColumn(3)
 
@@ -55,7 +55,7 @@ $galleryMargin: 1rem
   margin-bottom: -$galleryMargin
   @import "framedFigList"
 
-.cardGallery
+.articleList
   @extend %imgLikeMargin
   @import "articlelist"
 

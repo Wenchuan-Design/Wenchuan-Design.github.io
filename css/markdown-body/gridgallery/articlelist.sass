@@ -1,4 +1,4 @@
-&[class*="articleList"]
+&
 
   @include reset(a)
 
@@ -39,17 +39,19 @@
           color: $hexGrey
           @include textOverflow(2)
 
-  &[class*="-hideCover"]
-    li .imgFrame
-      display: none
-    li .info
-      box-shadow: none
+  &[class*="hide-"]
 
-  &[class*="-hideBrief"]
-    li .info p
-      display: none
+    &[class*="cover"]
+      li .imgFrame
+        display: none
+      li .info
+        box-shadow: none
 
-  &[class*="-smallCover"]
+    &[class*="brief"]
+      li .info p
+        display: none
+
+  &.smallCover
     li
       margin-bottom: $galleryMargin
       .imgFrame
@@ -65,7 +67,7 @@
         p
           display: -webkit-box !important
 
-  &[class*="-list"]
+  &.list
 
     li
       flex: 1 1 100% !important
@@ -91,15 +93,16 @@
           line-height: 3rem
 
         h4
-          margin-left: calc(2.5rem - 2px)
-          padding-right: 0.5rem
+          margin-left: calc(2.5rem - 2px) // 因为这里要算上那个点点的 2px 差啊！
+          margin-right: 1rem
           // border-right: $mainBorder
           // flex: 1 0 33.33%
+          // max-width: calc(75% - 2.5rem)
           &::before
             content: ''
             position: absolute
             transform: translate(0, -50%)
-            width: 6px
+            width: 6px // 就是这里，8px 的话就对称了，但我设计的是 6px，差了 2px
             height: 6px
             border-radius: 50%
             background-color: $rgbaPale
@@ -107,7 +110,7 @@
             left: 1rem
 
         p
-          padding-left: 0.5rem
+          // margin-left: 0.25rem
           // display: none
           flex: 1 1 1px
 

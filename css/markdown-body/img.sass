@@ -36,3 +36,26 @@ figure
 
   &.smaller
     max-width: $iPhonePlus
+
+  // designed for wikipedia
+  table
+    margin: 0
+    tr
+      @extend %mainBorder
+      padding: 1rem
+
+      th, td
+        padding: 0
+        border: none
+        margin-left: 1rem
+        padding: 0.5rem
+
+        &:not(:first-child)
+          padding-left: 0
+
+        img
+          margin: 0
+          padding: 0
+
+        &:hover
+          background-color: inherit

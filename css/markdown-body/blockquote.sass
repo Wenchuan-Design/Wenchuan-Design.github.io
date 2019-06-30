@@ -2,7 +2,7 @@ blockquote
   background-color: $hexBg2
   color: $hexGrey
   padding: 1rem 1rem
-  border-left: 4px solid $hexLightPale
+  border-left: 2px solid $hexLightPale
   @extend %pLikeMargin
 
   &>:first-child
@@ -11,5 +11,9 @@ blockquote
   &>:last-child
     margin-bottom: 0
 
-  > *
-    // opacity: 0.64
+  &.classic
+    background: none
+    color: inherit
+    border-left: 2px solid $hexDark
+    padding: 0 1rem
+    font-style: italic

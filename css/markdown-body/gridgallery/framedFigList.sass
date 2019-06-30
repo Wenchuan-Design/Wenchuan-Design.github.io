@@ -1,4 +1,4 @@
-&, &[class="wikiLike"]
+&
   @include cardsColumn(2)
   ul
     li
@@ -12,7 +12,7 @@
           display: block
 
         .imgFrame
-          @include reset(a)
+          // @include reset(a)
           @extend %bgHoverAndClick
 
 
@@ -45,19 +45,29 @@
               height: auto
               position: static
 
-  &[class*="-test"]
+&.list,
+&.classic,
+&.shogakukan
+  @media only screen and (min-width: $iPhonePlus + 1px)
     @include cardsColumn(1)
+    margin-bottom: 2rem
     ul
       li
+        margin-top: 0
+        margin-bottom: 0
+        border-bottom: $mainBorder
+        padding: $galleryMargin 0
 
         figure
           display: flex
           // display: table-row !important
           .imgFrame
-            flex: 1 1 calc(50% - 1rem)
+            flex: 1 1 25%
             display: table-cell
             margin-right: 1rem
-            padding-bottom: 50%
+            padding-bottom: 0
+            // overflow: auto
+            border: none
 
           figcaption
             display: table-cell
@@ -67,3 +77,13 @@
 
           img
             display: table-cell
+            padding: 0
+            height: auto
+            position: static
+
+        &:first-child
+          padding-top: 0
+
+        &:last-child
+          padding-bottom: 0
+          border: none
