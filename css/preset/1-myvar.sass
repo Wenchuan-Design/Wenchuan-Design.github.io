@@ -1,82 +1,82 @@
 %pLikeMargin
-  margin-top: 1rem
-  margin-bottom: 1rem
+    margin-top: 1rem
+    margin-bottom: 1rem
 
 %imgLikeMargin
-  margin-top: 2rem
-  margin-bottom: 2rem
+    margin-top: 2rem
+    margin-bottom: 2rem
 
 $mainBorder: 1px solid $rgbaLightPale
 
 %mainBorder
-  border: $mainBorder
+    border: $mainBorder
 
 %mainBorderRadius
-  border-radius: 4px
+    border-radius: 4px
 
 %mainShadow
-  box-shadow: 0 2px 8px $rgbaLightPale
+    box-shadow: 0 2px 8px $rgbaLightPale
 
 %mainBox
-  @extend %mainBorder
-  // @include mainBorder(all)
-  @extend %mainBorderRadius
-  @extend %mainShadow
+    @extend %mainBorder
+    // @include mainBorder(all)
+    @extend %mainBorderRadius
+    @extend %mainShadow
 
 %removeMainBox
-  border: none
-  border-radius: none
-  box-shadow: none
+    border: none
+    border-radius: none
+    box-shadow: none
 
 @mixin textOverflow($lines)
-  text-overflow: ellipsis
-  overflow: hidden
-  display: -webkit-box
-  -webkit-line-clamp: $lines
-  -webkit-box-orient: vertical
+    text-overflow: ellipsis
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: $lines
+    -webkit-box-orient: vertical
 
 // hover and click
 %bgHover
-  background-color: white
-  &:hover
-    background-color: $hexBg2
+    background-color: white
+    &:hover
+        background-color: $hexBg2
 
 %bgClick
-  background-color: white
-  &:active
-    background-color: $hexBg1
+    background-color: white
+    &:active
+        background-color: $hexBg1
 
 %bgHoverAndClick
-  cursor: pointer
-  @extend %bgHover
-  @extend %bgClick
+    cursor: pointer
+    @extend %bgHover
+    @extend %bgClick
 
 %bgHover-hexBg2
-  background-color: $hexBg2
-  &:hover
-    background-color: $hexBg1
+    background-color: $hexBg2
+    &:hover
+        background-color: $hexBg1
 
 %bgClick-hexBg2
-  background-color: $hexBg2
-  &:active
-    background-color: $hexLightPale
+    background-color: $hexBg2
+    &:active
+        background-color: $hexLightPale
 
 %bgHoverAndClick-hexBg2
-  cursor: pointer
-  @extend %bgHover-hexBg2
-  @extend %bgClick-hexBg2
+    cursor: pointer
+    @extend %bgHover-hexBg2
+    @extend %bgClick-hexBg2
 
 %bgHover-hexBg1
-  background-color: $hexBg1
-  &:hover
-    background-color: $hexLightPale
+    background-color: $hexBg1
+    &:hover
+        background-color: $hexLightPale
 
 %bgClick-hexBg1
-  background-color: $hexBg1
-  &:active
-    background-color: $hexPale
+    background-color: $hexBg1
+    &:active
+        background-color: $hexPale
 
 %bgHoverAndClick-hexBg1
-  cursor: pointer
-  @extend %bgHover-hexBg1
-  @extend %bgClick-hexBg1
+    cursor: pointer
+    @extend %bgHover-hexBg1
+    @extend %bgClick-hexBg1

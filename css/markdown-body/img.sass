@@ -1,61 +1,61 @@
 & >, details >, li >, blockquote >
-  img, .imgFrame, figure
-    // @extend %imgLikeMargin
+    img, .imgFrame, figure
+        // @extend %imgLikeMargin
 
 
 figure
-  // margin: 0 auto
-  display: table
-  // width: 1px
-  margin-left: auto
-  margin-right: auto
-  @extend %imgLikeMargin
+    // margin: 0 auto
+    display: table
+    // width: 1px
+    margin-left: auto
+    margin-right: auto
+    @extend %imgLikeMargin
 
-  figcaption,
-    // margin: auto
-    display: table-caption
-    caption-side: bottom
+    figcaption,
+        // margin: auto
+        display: table-caption
+        caption-side: bottom
 
 
-  figcaption, figcaption p
-    text-align: left
-    font-size: 0.875rem
-    line-height: 1.5em
-    // color: $hexGrey
-    margin-top: 0.5rem
-    margin-bottom: 0
+    figcaption, figcaption p
+        text-align: left
+        font-size: 0.875rem
+        line-height: 1.5em
+        // color: $hexGrey
+        margin-top: 0.5rem
+        margin-bottom: 0
 
-  figcaption > p:first-of-type
-    margin-top: 0
+    figcaption > p:first-of-type
+        margin-top: 0
 
-  figcaption
-    color: $hexGrey
+    figcaption
+        color: $hexGrey
 
-  &.small
-    max-width: 600px
+    &.small
+        max-width: 600px
 
-  &.smaller
-    max-width: $iPhonePlus
+    &.smaller
+        max-width: $iPhonePlus
 
-  // designed for wikipedia
-  table
-    margin: 0
-    tr
-      @extend %mainBorder
-      padding: 1rem
+    // designed for wikipedia
+    table
+        margin: 0
+        tr
+            @extend %mainBorder
+            padding: 1rem
 
-      th, td
-        padding: 0
-        border: none
-        margin-left: 1rem
-        padding: 0.5rem
+            th, td
+                padding: 0
+                border: none
+                margin-left: 1rem
+                padding: 0.5rem
 
-        &:not(:first-child)
-          padding-left: 0
+                &:not(:first-child)
+                    padding-left: 0
 
-        img
-          margin: 0
-          padding: 0
+                img
+                    margin: 0
+                    padding: 0
 
-        &:hover
-          background-color: inherit
+                &:hover
+                    background-color: inherit

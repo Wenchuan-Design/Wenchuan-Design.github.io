@@ -1,75 +1,75 @@
 ul, ol
-  padding-left: 2rem
+    padding-left: 2rem
 
 // ordered-list
 ol
-  list-style-type: decimal
+    list-style-type: decimal
 
 li ol
-  list-style-type: lower-roman
+    list-style-type: lower-roman
 
 li li ol
-  list-style-type: lower-alpha
+    list-style-type: lower-alpha
 
 // unordered-list
 ul
-  list-style-type: disc
+    list-style-type: disc
 
 li ul
-  list-style-type: circle
+    list-style-type: circle
 
 li li ul
-  list-style-type: square
+    list-style-type: square
 
 // to-do-list
 ul
-  .task-list-item
+    .task-list-item
 
-    list-style-type: none
+        list-style-type: none
 
-    input
-      // float: left
-      margin-left: -1.25rem
-      -webkit-transform: translate(0, -50%)
-      margin-top: 0.875rem
-      vertical-align: middle
+        input
+            // float: left
+            margin-left: -1.25rem
+            -webkit-transform: translate(0, -50%)
+            margin-top: 0.875rem
+            vertical-align: middle
 
 // table of contents
 .tableOfContents
-  ul, ol
-    @include reset(a)
-
-    a
-
-      &:hover
-        text-decoration: underline
-
-
-    li
-      font-weight: bold
-
     ul, ol
-      li
-        font-weight: normal
+        @include reset(a)
+
+        a
+
+            &:hover
+                text-decoration: underline
+
+
+        li
+            font-weight: bold
+
+        ul, ol
+            li
+                font-weight: normal
 
 // special
 // alphabet
 ol
-  &.abc
-    > li
-      list-style-type: lower-alpha
+    &.abc
+        > li
+            list-style-type: lower-alpha
 
-  &.ABC
-    > li
-      list-style-type: upper-alpha
+    &.ABC
+        > li
+            list-style-type: upper-alpha
 
-  &.Greek
-    > li
-      list-style-type: lower-greek
+    &.Greek
+        > li
+            list-style-type: lower-greek
 
-  &.georgian
-    > li
-      list-style-type: georgian
+    &.georgian
+        > li
+            list-style-type: georgian
 
 
 

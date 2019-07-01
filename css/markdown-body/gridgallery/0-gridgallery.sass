@@ -1,63 +1,63 @@
 $galleryMargin: 1rem
 
 %galleryMarginFix
-  margin-right: $galleryMargin
+    margin-right: $galleryMargin
 
 @mixin cardsColumn($input)
-  li
-    @if $input == 1
-      flex: 0 1 100%
+    li
+        @if $input == 1
+            flex: 0 1 100%
 
-    @if $input == 2
-      flex: 0 1 calc(50% - 1rem)
-      @media only screen and (max-width: $iPhonePlus)
-        flex: 0 1 100%
+        @if $input == 2
+            flex: 0 1 calc(50% - 1rem)
+            @media only screen and (max-width: $iPhonePlus)
+                flex: 0 1 100%
 
-    @if $input == 3
-      flex: 0 1 calc(33.333% - 1rem)
-      @media only screen and (max-width: $markdownBody)
-        flex: 0 1 calc(50% - 1rem)
-      @media only screen and (max-width: $iPhonePlus)
-        flex: 0 1 100%
+        @if $input == 3
+            flex: 0 1 calc(33.333% - 1rem)
+            @media only screen and (max-width: $markdownBody)
+                flex: 0 1 calc(50% - 1rem)
+            @media only screen and (max-width: $iPhonePlus)
+                flex: 0 1 100%
 
 .imgGallery,
 .articleList,
-  @include reset(li)
-  @include reset(h)
-  @include reset(p)
-  // margin-top: $galleryMargin * 2
-  @include cardsColumn(2)
+    @include reset(li)
+    @include reset(h)
+    @include reset(p)
+    // margin-top: $galleryMargin * 2
+    @include cardsColumn(2)
 
-  vertical-align: middle
+    vertical-align: middle
 
 
-  // begin container of the cards
-  ul
-    display: flex
-    flex-wrap: wrap
-    margin-right: -$galleryMargin
+    // begin container of the cards
+    ul
+        display: flex
+        flex-wrap: wrap
+        margin-right: -$galleryMargin
 
-    li
-      @extend %galleryMarginFix
-      margin-bottom: $galleryMargin
-      position: relative
+        li
+            @extend %galleryMarginFix
+            margin-bottom: $galleryMargin
+            position: relative
 
 &.big
-  .articleList,
-  .imgGallery
-    @include cardsColumn(3)
+    .articleList,
+    .imgGallery
+        @include cardsColumn(3)
 
 // ===================================
 // Begin Import
 // ===================================
 .imgGallery
-  @extend %imgLikeMargin
-  margin-bottom: -$galleryMargin
-  @import "framedFigList"
+    @extend %imgLikeMargin
+    margin-bottom: -$galleryMargin
+    @import "framedFigList"
 
 .articleList
-  @extend %imgLikeMargin
-  @import "articlelist"
+    @extend %imgLikeMargin
+    @import "articlelist"
 
 
 
@@ -69,4 +69,4 @@ $galleryMargin: 1rem
 
 
 
-  //
+//
