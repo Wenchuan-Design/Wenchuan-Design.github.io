@@ -807,43 +807,43 @@ body {
       box-shadow: none !important; }
       .md .articleList.smallCover li .info p, .markdown-body .articleList.smallCover li .info p {
         display: -webkit-box !important; }
-  .md .articleList.list li:last-child, .markdown-body .articleList.list li:last-child {
+  .md .articleList.list, .markdown-body .articleList.list {
     margin-bottom: 1rem; }
-  .md .articleList.list li, .markdown-body .articleList.list li {
-    flex: 1 1 100% !important;
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
-    .md .articleList.list li:first-child, .markdown-body .articleList.list li:first-child {
-      border-top: 1px solid rgba(0, 0, 0, 0.08); }
-    .md .articleList.list li .imgFrame, .markdown-body .articleList.list li .imgFrame {
-      display: none; }
-    .md .articleList.list li .info, .markdown-body .articleList.list li .info {
-      box-shadow: none;
-      display: flex;
-      padding: 0; }
-      .md .articleList.list li .info h4, .md .articleList.list li .info p, .markdown-body .articleList.list li .info h4, .markdown-body .articleList.list li .info p {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 3rem; }
-      .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
-        margin-left: calc(2.5rem - 2px);
-        margin-right: 1rem; }
-        .md .articleList.list li .info h4::before, .markdown-body .articleList.list li .info h4::before {
-          content: "";
-          position: absolute;
-          transform: translate(0, -50%);
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: rgba(0, 0, 0, 0.16);
-          top: 50%;
-          left: 1rem; }
-      .md .articleList.list li .info p, .markdown-body .articleList.list li .info p {
-        flex: 1 1 1px; }
+    .md .articleList.list li, .markdown-body .articleList.list li {
+      flex: 1 1 100% !important;
+      margin-bottom: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+      .md .articleList.list li:first-child, .markdown-body .articleList.list li:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.08); }
+      .md .articleList.list li .imgFrame, .markdown-body .articleList.list li .imgFrame {
+        display: none; }
+      .md .articleList.list li .info, .markdown-body .articleList.list li .info {
+        box-shadow: none;
+        display: flex;
+        padding: 0; }
+        .md .articleList.list li .info h4, .md .articleList.list li .info p, .markdown-body .articleList.list li .info h4, .markdown-body .articleList.list li .info p {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 3rem; }
+        .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
+          margin-left: calc(2.5rem - 2px);
+          margin-right: 1rem; }
+          .md .articleList.list li .info h4::before, .markdown-body .articleList.list li .info h4::before {
+            content: "";
+            position: absolute;
+            transform: translate(0, -50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.16);
+            top: 50%;
+            left: 1rem; }
+        .md .articleList.list li .info p, .markdown-body .articleList.list li .info p {
+          flex: 1 1 1px; }
   .md audio, .markdown-body audio {
     width: 100%; }
