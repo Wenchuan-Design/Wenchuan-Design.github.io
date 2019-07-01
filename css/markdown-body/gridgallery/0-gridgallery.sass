@@ -30,6 +30,9 @@ $galleryMargin: 1rem
 
     vertical-align: middle
 
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+
 
     // begin container of the cards
     ul
@@ -39,7 +42,8 @@ $galleryMargin: 1rem
 
         li
             @extend %galleryMarginFix
-            margin-bottom: $galleryMargin
+            margin-top: $galleryMargin / 2
+            margin-bottom: $galleryMargin / 2
             position: relative
 
 &.big
@@ -51,12 +55,13 @@ $galleryMargin: 1rem
 // Begin Import
 // ===================================
 .imgGallery
-    @extend %imgLikeMargin
-    margin-bottom: -$galleryMargin
+    // @extend %imgLikeMargin
+    // margin-bottom: -$galleryMargin
     @import "framedFigList"
 
 .articleList
-    @extend %imgLikeMargin
+    // @extend %imgLikeMargin
+    // margin-bottom: -$galleryMargin
     @import "articlelist"
 
 

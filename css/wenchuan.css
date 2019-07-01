@@ -68,7 +68,7 @@ table {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-.md figure, .markdown-body figure, .md .imgGallery, .markdown-body .imgGallery, .md .articleList, .markdown-body .articleList {
+.md figure, .markdown-body figure {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
@@ -570,7 +570,9 @@ body {
   .md .imgGallery,
   .md .articleList, .markdown-body .imgGallery,
   .markdown-body .articleList {
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
     .md .imgGallery ul, .md .imgGallery ol, .md .imgGallery .markdown-body ul, .md .imgGallery .markdown-body ol, .md .imgGallery .markdown-body.big ul, .md .imgGallery .markdown-body.big ol,
     .md .articleList ul,
     .md .articleList ol,
@@ -663,7 +665,8 @@ body {
       .md .imgGallery ul li,
       .md .articleList ul li, .markdown-body .imgGallery ul li,
       .markdown-body .articleList ul li {
-        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         position: relative; }
   .md.big .articleList li,
   .md.big .imgGallery li, .markdown-body.big .articleList li,
@@ -679,73 +682,69 @@ body {
       .md.big .imgGallery li, .markdown-body.big .articleList li,
       .markdown-body.big .imgGallery li {
         flex: 0 1 100%; } }
-  .md .imgGallery, .markdown-body .imgGallery {
-    margin-bottom: -1rem; }
-    .md .imgGallery li, .markdown-body .imgGallery li {
-      flex: 0 1 calc(50% - 1rem); }
-      @media only screen and (max-width: 414px) {
-        .md .imgGallery li, .markdown-body .imgGallery li {
-          flex: 0 1 100%; } }
-    .md .imgGallery ul li, .markdown-body .imgGallery ul li {
+  .md .imgGallery li, .markdown-body .imgGallery li {
+    flex: 0 1 calc(50% - 1rem); }
+    @media only screen and (max-width: 414px) {
+      .md .imgGallery li, .markdown-body .imgGallery li {
+        flex: 0 1 100%; } }
+  .md .imgGallery ul li figure, .markdown-body .imgGallery ul li figure {
+    margin: 0;
+    display: block; }
+    .md .imgGallery ul li figure figcaption, .markdown-body .imgGallery ul li figure figcaption {
+      display: block; }
+    .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
+      margin: 0;
+      position: relative;
+      padding-bottom: 100%;
+      overflow: hidden; }
+      .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        position: absolute;
+        object-fit: contain; }
+    @media only screen and (max-width: 414px) {
+      .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
+        padding-bottom: 0;
+        overflow: auto;
+        border: none; }
+        .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
+          padding: 0;
+          height: auto;
+          position: static; } }
+  @media only screen and (min-width: 415px) {
+    .md .imgGallery.list, .md .imgGallery.classic, .md .imgGallery.shogakukan, .markdown-body .imgGallery.list, .markdown-body .imgGallery.classic, .markdown-body .imgGallery.shogakukan {
       margin-bottom: 2rem; }
-      .md .imgGallery ul li figure, .markdown-body .imgGallery ul li figure {
-        margin: 0;
-        display: block; }
-        .md .imgGallery ul li figure figcaption, .markdown-body .imgGallery ul li figure figcaption {
-          display: block; }
-        .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
-          margin: 0;
-          position: relative;
-          padding-bottom: 100%;
-          overflow: hidden; }
-          .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
-            width: 100%;
-            padding: 1rem;
-            height: 100%;
-            position: absolute;
-            object-fit: contain; }
-        @media only screen and (max-width: 414px) {
-          .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
+      .md .imgGallery.list li, .md .imgGallery.classic li, .md .imgGallery.shogakukan li, .markdown-body .imgGallery.list li, .markdown-body .imgGallery.classic li, .markdown-body .imgGallery.shogakukan li {
+        flex: 0 1 100%; }
+      .md .imgGallery.list ul li, .md .imgGallery.classic ul li, .md .imgGallery.shogakukan ul li, .markdown-body .imgGallery.list ul li, .markdown-body .imgGallery.classic ul li, .markdown-body .imgGallery.shogakukan ul li {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 1rem 0; }
+        .md .imgGallery.list ul li figure, .md .imgGallery.classic ul li figure, .md .imgGallery.shogakukan ul li figure, .markdown-body .imgGallery.list ul li figure, .markdown-body .imgGallery.classic ul li figure, .markdown-body .imgGallery.shogakukan ul li figure {
+          display: flex; }
+          .md .imgGallery.list ul li figure .imgFrame, .md .imgGallery.classic ul li figure .imgFrame, .md .imgGallery.shogakukan ul li figure .imgFrame, .markdown-body .imgGallery.list ul li figure .imgFrame, .markdown-body .imgGallery.classic ul li figure .imgFrame, .markdown-body .imgGallery.shogakukan ul li figure .imgFrame {
+            flex: 1 1 25%;
+            display: table-cell;
+            margin-right: 1rem;
             padding-bottom: 0;
-            overflow: auto;
             border: none; }
-            .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
-              padding: 0;
-              height: auto;
-              position: static; } }
-    @media only screen and (min-width: 415px) {
-      .md .imgGallery.list, .md .imgGallery.classic, .md .imgGallery.shogakukan, .markdown-body .imgGallery.list, .markdown-body .imgGallery.classic, .markdown-body .imgGallery.shogakukan {
-        margin-bottom: 2rem; }
-        .md .imgGallery.list li, .md .imgGallery.classic li, .md .imgGallery.shogakukan li, .markdown-body .imgGallery.list li, .markdown-body .imgGallery.classic li, .markdown-body .imgGallery.shogakukan li {
-          flex: 0 1 100%; }
-        .md .imgGallery.list ul li, .md .imgGallery.classic ul li, .md .imgGallery.shogakukan ul li, .markdown-body .imgGallery.list ul li, .markdown-body .imgGallery.classic ul li, .markdown-body .imgGallery.shogakukan ul li {
-          margin-top: 0;
-          margin-bottom: 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-          padding: 1rem 0; }
-          .md .imgGallery.list ul li figure, .md .imgGallery.classic ul li figure, .md .imgGallery.shogakukan ul li figure, .markdown-body .imgGallery.list ul li figure, .markdown-body .imgGallery.classic ul li figure, .markdown-body .imgGallery.shogakukan ul li figure {
-            display: flex; }
-            .md .imgGallery.list ul li figure .imgFrame, .md .imgGallery.classic ul li figure .imgFrame, .md .imgGallery.shogakukan ul li figure .imgFrame, .markdown-body .imgGallery.list ul li figure .imgFrame, .markdown-body .imgGallery.classic ul li figure .imgFrame, .markdown-body .imgGallery.shogakukan ul li figure .imgFrame {
-              flex: 1 1 25%;
-              display: table-cell;
-              margin-right: 1rem;
-              padding-bottom: 0;
-              border: none; }
-            .md .imgGallery.list ul li figure figcaption, .md .imgGallery.classic ul li figure figcaption, .md .imgGallery.shogakukan ul li figure figcaption, .markdown-body .imgGallery.list ul li figure figcaption, .markdown-body .imgGallery.classic ul li figure figcaption, .markdown-body .imgGallery.shogakukan ul li figure figcaption {
-              display: table-cell;
-              margin: 0;
-              flex: 1 1 calc(50% - 1rem);
-              vertical-align: middle; }
-            .md .imgGallery.list ul li figure img, .md .imgGallery.classic ul li figure img, .md .imgGallery.shogakukan ul li figure img, .markdown-body .imgGallery.list ul li figure img, .markdown-body .imgGallery.classic ul li figure img, .markdown-body .imgGallery.shogakukan ul li figure img {
-              display: table-cell;
-              padding: 0;
-              height: auto;
-              position: static; }
-          .md .imgGallery.list ul li:first-child, .md .imgGallery.classic ul li:first-child, .md .imgGallery.shogakukan ul li:first-child, .markdown-body .imgGallery.list ul li:first-child, .markdown-body .imgGallery.classic ul li:first-child, .markdown-body .imgGallery.shogakukan ul li:first-child {
-            padding-top: 0; }
-          .md .imgGallery.list ul li:last-child, .md .imgGallery.classic ul li:last-child, .md .imgGallery.shogakukan ul li:last-child, .markdown-body .imgGallery.list ul li:last-child, .markdown-body .imgGallery.classic ul li:last-child, .markdown-body .imgGallery.shogakukan ul li:last-child {
-            padding-bottom: 0;
-            border: none; } }
+          .md .imgGallery.list ul li figure figcaption, .md .imgGallery.classic ul li figure figcaption, .md .imgGallery.shogakukan ul li figure figcaption, .markdown-body .imgGallery.list ul li figure figcaption, .markdown-body .imgGallery.classic ul li figure figcaption, .markdown-body .imgGallery.shogakukan ul li figure figcaption {
+            display: table-cell;
+            margin: 0;
+            flex: 1 1 calc(50% - 1rem);
+            vertical-align: middle; }
+          .md .imgGallery.list ul li figure img, .md .imgGallery.classic ul li figure img, .md .imgGallery.shogakukan ul li figure img, .markdown-body .imgGallery.list ul li figure img, .markdown-body .imgGallery.classic ul li figure img, .markdown-body .imgGallery.shogakukan ul li figure img {
+            display: table-cell;
+            padding: 0;
+            height: auto;
+            position: static; }
+        .md .imgGallery.list ul li:first-child, .md .imgGallery.classic ul li:first-child, .md .imgGallery.shogakukan ul li:first-child, .markdown-body .imgGallery.list ul li:first-child, .markdown-body .imgGallery.classic ul li:first-child, .markdown-body .imgGallery.shogakukan ul li:first-child {
+          padding-top: 0; }
+        .md .imgGallery.list ul li:last-child, .md .imgGallery.classic ul li:last-child, .md .imgGallery.shogakukan ul li:last-child, .markdown-body .imgGallery.list ul li:last-child, .markdown-body .imgGallery.classic ul li:last-child, .markdown-body .imgGallery.shogakukan ul li:last-child {
+          padding-bottom: 0;
+          border: none; } }
   .md .articleList a, .md .articleList .markdown-body a, .md .articleList .markdown-body.big a, .markdown-body .articleList a, .markdown-body .articleList .markdown-body a, .markdown-body .articleList .markdown-body.big a {
     color: inherit;
     text-decoration: none; }
