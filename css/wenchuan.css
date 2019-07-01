@@ -81,11 +81,6 @@ table {
 .md .articleList ul li, .markdown-body .articleList ul li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
-.md .articleList.list li, .markdown-body .articleList.list li {
-  border: none;
-  border-radius: 0;
-  box-shadow: none; }
-
 .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .md .articleList ul li, .markdown-body .articleList ul li {
   background-color: white; }
   .md .imgGallery ul li figure .imgFrame:hover, .markdown-body .imgGallery ul li figure .imgFrame:hover, .md .articleList ul li:hover, .markdown-body .articleList ul li:hover {
@@ -807,32 +802,5 @@ body {
       box-shadow: none !important; }
       .md .articleList.smallCover li .info p, .markdown-body .articleList.smallCover li .info p {
         display: -webkit-box !important; }
-  .md .articleList.list, .markdown-body .articleList.list {
-    margin-bottom: 1rem; }
-    .md .articleList.list li, .markdown-body .articleList.list li {
-      flex: 1 1 100% !important;
-      margin-bottom: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
-      .md .articleList.list li:first-child, .markdown-body .articleList.list li:first-child {
-        border-top: 1px solid rgba(0, 0, 0, 0.08); }
-      .md .articleList.list li .imgFrame, .markdown-body .articleList.list li .imgFrame {
-        display: none; }
-      .md .articleList.list li .info, .markdown-body .articleList.list li .info {
-        box-shadow: none;
-        padding: 0; }
-        .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;
-          margin-top: 0;
-          margin-bottom: 0;
-          line-height: 3rem; }
-        .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
-          margin-right: 1rem; }
-        .md .articleList.list li .info p, .markdown-body .articleList.list li .info p {
-          display: none;
-          flex: 1 1 1px; }
   .md audio, .markdown-body audio {
     width: 100%; }
