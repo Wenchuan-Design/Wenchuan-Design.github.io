@@ -83,7 +83,7 @@ table {
 
 .md .articleList.list li, .markdown-body .articleList.list li {
   border: none;
-  border-radius: none;
+  border-radius: 0;
   box-shadow: none; }
 
 .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame, .md .articleList ul li, .markdown-body .articleList ul li {
@@ -819,9 +819,8 @@ body {
         display: none; }
       .md .articleList.list li .info, .markdown-body .articleList.list li .info {
         box-shadow: none;
-        display: flex;
         padding: 0; }
-        .md .articleList.list li .info h4, .md .articleList.list li .info p, .markdown-body .articleList.list li .info h4, .markdown-body .articleList.list li .info p {
+        .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
           text-overflow: ellipsis;
           overflow: hidden;
           display: -webkit-box;
@@ -831,19 +830,9 @@ body {
           margin-bottom: 0;
           line-height: 3rem; }
         .md .articleList.list li .info h4, .markdown-body .articleList.list li .info h4 {
-          margin-left: calc(2.5rem - 2px);
           margin-right: 1rem; }
-          .md .articleList.list li .info h4::before, .markdown-body .articleList.list li .info h4::before {
-            content: "";
-            position: absolute;
-            transform: translate(0, -50%);
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.16);
-            top: 50%;
-            left: 1rem; }
         .md .articleList.list li .info p, .markdown-body .articleList.list li .info p {
+          display: none;
           flex: 1 1 1px; }
   .md audio, .markdown-body audio {
     width: 100%; }

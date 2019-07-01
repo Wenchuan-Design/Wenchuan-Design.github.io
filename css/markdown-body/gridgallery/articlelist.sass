@@ -85,35 +85,36 @@
 
             .info
                 box-shadow: none
-                display: flex
+                // display: flex
                 padding: 0
 
-                h4, p
+                // h4, p,
+                h4
                     @include textOverflow(1)
                     margin-top: 0
                     margin-bottom: 0
                     line-height: 3rem
 
                 h4
-                    margin-left: calc(2.5rem - 2px) // 因为这里要算上那个点点的 2px 差啊！
+                    // margin-left: calc(2.5rem - 2px) // 因为这里要算上那个点点的 2px 差啊！
                     margin-right: 1rem
                     // border-right: $mainBorder
                     // flex: 1 0 33.33%
                     // max-width: calc(75% - 2.5rem)
-                    &::before
-                        content: ''
-                        position: absolute
-                        transform: translate(0, -50%)
-                        width: 6px // 就是这里，8px 的话就对称了，但我设计的是 6px，差了 2px
-                        height: 6px
-                        border-radius: 50%
-                        background-color: $rgbaPale
-                        top: 50%
-                        left: 1rem
+                    // &::before
+                    //     content: ''
+                    //     position: absolute
+                    //     transform: translate(0, -50%)
+                    //     width: 6px // 就是这里，8px 的话就对称了，但我设计的是 6px，差了 2px
+                    //     height: 6px
+                    //     border-radius: 50%
+                    //     background-color: $rgbaPale
+                    //     top: 50%
+                    //     left: 1rem
 
                 p
                     // margin-left: 0.25rem
-                    // display: none
+                    display: none
                     flex: 1 1 1px
 
 
