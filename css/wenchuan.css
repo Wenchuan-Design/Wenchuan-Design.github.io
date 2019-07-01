@@ -571,8 +571,7 @@ body {
   .md .articleList, .markdown-body .imgGallery,
   .markdown-body .articleList {
     vertical-align: middle;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
+    margin-top: 2rem; }
     .md .imgGallery ul, .md .imgGallery ol, .md .imgGallery .markdown-body ul, .md .imgGallery .markdown-body ol, .md .imgGallery .markdown-body.big ul, .md .imgGallery .markdown-body.big ol,
     .md .articleList ul,
     .md .articleList ol,
@@ -665,8 +664,7 @@ body {
       .md .imgGallery ul li,
       .md .articleList ul li, .markdown-body .imgGallery ul li,
       .markdown-body .articleList ul li {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         position: relative; }
   .md.big .articleList li,
   .md.big .imgGallery li, .markdown-body.big .articleList li,
@@ -682,36 +680,40 @@ body {
       .md.big .imgGallery li, .markdown-body.big .articleList li,
       .markdown-body.big .imgGallery li {
         flex: 0 1 100%; } }
-  .md .imgGallery li, .markdown-body .imgGallery li {
-    flex: 0 1 calc(50% - 1rem); }
-    @media only screen and (max-width: 414px) {
-      .md .imgGallery li, .markdown-body .imgGallery li {
-        flex: 0 1 100%; } }
-  .md .imgGallery ul li figure, .markdown-body .imgGallery ul li figure {
-    margin: 0;
-    display: block; }
-    .md .imgGallery ul li figure figcaption, .markdown-body .imgGallery ul li figure figcaption {
-      display: block; }
-    .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
-      margin: 0;
-      position: relative;
-      padding-bottom: 100%;
-      overflow: hidden; }
-      .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
-        width: 100%;
-        padding: 1rem;
-        height: 100%;
-        position: absolute;
-        object-fit: contain; }
-    @media only screen and (max-width: 414px) {
-      .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
-        padding-bottom: 0;
-        overflow: auto;
-        border: none; }
-        .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
-          padding: 0;
-          height: auto;
-          position: static; } }
+  .md .imgGallery, .markdown-body .imgGallery {
+    margin-bottom: -1rem; }
+    .md .imgGallery li, .markdown-body .imgGallery li {
+      flex: 0 1 calc(50% - 1rem); }
+      @media only screen and (max-width: 414px) {
+        .md .imgGallery li, .markdown-body .imgGallery li {
+          flex: 0 1 100%; } }
+    .md .imgGallery ul li, .markdown-body .imgGallery ul li {
+      margin-bottom: 2rem; }
+      .md .imgGallery ul li figure, .markdown-body .imgGallery ul li figure {
+        margin: 0;
+        display: block; }
+        .md .imgGallery ul li figure figcaption, .markdown-body .imgGallery ul li figure figcaption {
+          display: block; }
+        .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
+          margin: 0;
+          position: relative;
+          padding-bottom: 100%;
+          overflow: hidden; }
+          .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
+            width: 100%;
+            padding: 1rem;
+            height: 100%;
+            position: absolute;
+            object-fit: contain; }
+        @media only screen and (max-width: 414px) {
+          .md .imgGallery ul li figure .imgFrame, .markdown-body .imgGallery ul li figure .imgFrame {
+            padding-bottom: 0;
+            overflow: auto;
+            border: none; }
+            .md .imgGallery ul li figure .imgFrame img, .markdown-body .imgGallery ul li figure .imgFrame img {
+              padding: 0;
+              height: auto;
+              position: static; } }
   @media only screen and (min-width: 415px) {
     .md .imgGallery.list, .md .imgGallery.classic, .md .imgGallery.shogakukan, .markdown-body .imgGallery.list, .markdown-body .imgGallery.classic, .markdown-body .imgGallery.shogakukan {
       margin-bottom: 2rem; }
@@ -805,6 +807,8 @@ body {
       box-shadow: none !important; }
       .md .articleList.smallCover li .info p, .markdown-body .articleList.smallCover li .info p {
         display: -webkit-box !important; }
+  .md .articleList.list li:last-child, .markdown-body .articleList.list li:last-child {
+    margin-bottom: 1rem; }
   .md .articleList.list li, .markdown-body .articleList.list li {
     flex: 1 1 100% !important;
     margin-bottom: 0;
