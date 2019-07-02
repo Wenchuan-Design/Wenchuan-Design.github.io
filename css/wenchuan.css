@@ -556,109 +556,36 @@ body {
     opacity: 0.64; }
   .md em, .markdown-body em {
     font-style: italic; }
-  .md .imgGallery ul li,
-  .md .articleList ul li, .markdown-body .imgGallery ul .md li,
-  .markdown-body .articleList ul .md li, .md .imgGallery ul .markdown-body li,
-  .md .articleList ul .markdown-body li, .markdown-body .imgGallery ul li,
-  .markdown-body .articleList ul li {
+  .md .grid ul li, .markdown-body .grid ul .md li, .md .grid ul .markdown-body li, .markdown-body .grid ul li {
     margin-right: 1rem; }
-  .md .imgGallery,
-  .md .articleList, .markdown-body .imgGallery,
-  .markdown-body .articleList {
+  .md .grid, .markdown-body .grid {
     vertical-align: middle;
-    margin-top: 2rem; }
-    .md .imgGallery ul, .md .imgGallery ol, .md .imgGallery .markdown-body ul, .md .imgGallery .markdown-body ol, .md .imgGallery .markdown-body.big ul, .md .imgGallery .markdown-body.big ol,
-    .md .articleList ul,
-    .md .articleList ol,
-    .md .articleList .markdown-body ul,
-    .md .articleList .markdown-body ol,
-    .md .articleList .markdown-body.big ul,
-    .md .articleList .markdown-body.big ol, .markdown-body .imgGallery ul, .markdown-body .imgGallery ol, .markdown-body .imgGallery .markdown-body ul, .markdown-body .imgGallery .markdown-body ol, .markdown-body .imgGallery .markdown-body.big ul, .markdown-body .imgGallery .markdown-body.big ol,
-    .markdown-body .articleList ul,
-    .markdown-body .articleList ol,
-    .markdown-body .articleList .markdown-body ul,
-    .markdown-body .articleList .markdown-body ol,
-    .markdown-body .articleList .markdown-body.big ul,
-    .markdown-body .articleList .markdown-body.big ol {
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+    .md .grid ul, .md .grid ol, .md .grid .markdown-body ul, .md .grid .markdown-body ol, .md .grid .markdown-body.big ul, .md .grid .markdown-body.big ol, .markdown-body .grid ul, .markdown-body .grid ol, .markdown-body .grid .markdown-body ul, .markdown-body .grid .markdown-body ol, .markdown-body .grid .markdown-body.big ul, .markdown-body .grid .markdown-body.big ol {
       margin: 0;
       padding: 0; }
-    .md .imgGallery li, .md .imgGallery .markdown-body li, .md .imgGallery .markdown-body.big li,
-    .md .articleList li,
-    .md .articleList .markdown-body li,
-    .md .articleList .markdown-body.big li, .markdown-body .imgGallery li, .markdown-body .imgGallery .markdown-body li, .markdown-body .imgGallery .markdown-body.big li,
-    .markdown-body .articleList li,
-    .markdown-body .articleList .markdown-body li,
-    .markdown-body .articleList .markdown-body.big li {
+    .md .grid li, .md .grid .markdown-body li, .md .grid .markdown-body.big li, .markdown-body .grid li, .markdown-body .grid .markdown-body li, .markdown-body .grid .markdown-body.big li {
       margin: 0;
       padding: 0;
       list-style-type: none; }
-    .md .imgGallery h1, .md .imgGallery h2, .md .imgGallery h3, .md .imgGallery h4, .md .imgGallery h5, .md .imgGallery h6, .md .imgGallery .markdown-body h1, .md .imgGallery .markdown-body h2, .md .imgGallery .markdown-body h3, .md .imgGallery .markdown-body h4, .md .imgGallery .markdown-body h5, .md .imgGallery .markdown-body h6, .md .imgGallery .markdown-body.big h1, .md .imgGallery .markdown-body.big h2, .md .imgGallery .markdown-body.big h3, .md .imgGallery .markdown-body.big h4, .md .imgGallery .markdown-body.big h5, .md .imgGallery .markdown-body.big h6,
-    .md .articleList h1,
-    .md .articleList h2,
-    .md .articleList h3,
-    .md .articleList h4,
-    .md .articleList h5,
-    .md .articleList h6,
-    .md .articleList .markdown-body h1,
-    .md .articleList .markdown-body h2,
-    .md .articleList .markdown-body h3,
-    .md .articleList .markdown-body h4,
-    .md .articleList .markdown-body h5,
-    .md .articleList .markdown-body h6,
-    .md .articleList .markdown-body.big h1,
-    .md .articleList .markdown-body.big h2,
-    .md .articleList .markdown-body.big h3,
-    .md .articleList .markdown-body.big h4,
-    .md .articleList .markdown-body.big h5,
-    .md .articleList .markdown-body.big h6, .markdown-body .imgGallery h1, .markdown-body .imgGallery h2, .markdown-body .imgGallery h3, .markdown-body .imgGallery h4, .markdown-body .imgGallery h5, .markdown-body .imgGallery h6, .markdown-body .imgGallery .markdown-body h1, .markdown-body .imgGallery .markdown-body h2, .markdown-body .imgGallery .markdown-body h3, .markdown-body .imgGallery .markdown-body h4, .markdown-body .imgGallery .markdown-body h5, .markdown-body .imgGallery .markdown-body h6, .markdown-body .imgGallery .markdown-body.big h1, .markdown-body .imgGallery .markdown-body.big h2, .markdown-body .imgGallery .markdown-body.big h3, .markdown-body .imgGallery .markdown-body.big h4, .markdown-body .imgGallery .markdown-body.big h5, .markdown-body .imgGallery .markdown-body.big h6,
-    .markdown-body .articleList h1,
-    .markdown-body .articleList h2,
-    .markdown-body .articleList h3,
-    .markdown-body .articleList h4,
-    .markdown-body .articleList h5,
-    .markdown-body .articleList h6,
-    .markdown-body .articleList .markdown-body h1,
-    .markdown-body .articleList .markdown-body h2,
-    .markdown-body .articleList .markdown-body h3,
-    .markdown-body .articleList .markdown-body h4,
-    .markdown-body .articleList .markdown-body h5,
-    .markdown-body .articleList .markdown-body h6,
-    .markdown-body .articleList .markdown-body.big h1,
-    .markdown-body .articleList .markdown-body.big h2,
-    .markdown-body .articleList .markdown-body.big h3,
-    .markdown-body .articleList .markdown-body.big h4,
-    .markdown-body .articleList .markdown-body.big h5,
-    .markdown-body .articleList .markdown-body.big h6 {
+    .md .grid h1, .md .grid h2, .md .grid h3, .md .grid h4, .md .grid h5, .md .grid h6, .md .grid .markdown-body h1, .md .grid .markdown-body h2, .md .grid .markdown-body h3, .md .grid .markdown-body h4, .md .grid .markdown-body h5, .md .grid .markdown-body h6, .md .grid .markdown-body.big h1, .md .grid .markdown-body.big h2, .md .grid .markdown-body.big h3, .md .grid .markdown-body.big h4, .md .grid .markdown-body.big h5, .md .grid .markdown-body.big h6, .markdown-body .grid h1, .markdown-body .grid h2, .markdown-body .grid h3, .markdown-body .grid h4, .markdown-body .grid h5, .markdown-body .grid h6, .markdown-body .grid .markdown-body h1, .markdown-body .grid .markdown-body h2, .markdown-body .grid .markdown-body h3, .markdown-body .grid .markdown-body h4, .markdown-body .grid .markdown-body h5, .markdown-body .grid .markdown-body h6, .markdown-body .grid .markdown-body.big h1, .markdown-body .grid .markdown-body.big h2, .markdown-body .grid .markdown-body.big h3, .markdown-body .grid .markdown-body.big h4, .markdown-body .grid .markdown-body.big h5, .markdown-body .grid .markdown-body.big h6 {
       margin: 0;
       padding: 0;
       font-size: 1rem; }
-    .md .imgGallery p, .md .imgGallery .markdown-body p, .md .imgGallery .markdown-body.big p,
-    .md .articleList p,
-    .md .articleList .markdown-body p,
-    .md .articleList .markdown-body.big p, .markdown-body .imgGallery p, .markdown-body .imgGallery .markdown-body p, .markdown-body .imgGallery .markdown-body.big p,
-    .markdown-body .articleList p,
-    .markdown-body .articleList .markdown-body p,
-    .markdown-body .articleList .markdown-body.big p {
+    .md .grid p, .md .grid .markdown-body p, .md .grid .markdown-body.big p, .markdown-body .grid p, .markdown-body .grid .markdown-body p, .markdown-body .grid .markdown-body.big p {
       margin: 0;
       padding: 0; }
-    .md .imgGallery li,
-    .md .articleList li, .markdown-body .imgGallery li,
-    .markdown-body .articleList li {
+    .md .grid li, .markdown-body .grid li {
       flex: 0 1 calc(50% - 1rem); }
       @media only screen and (max-width: 414px) {
-        .md .imgGallery li,
-        .md .articleList li, .markdown-body .imgGallery li,
-        .markdown-body .articleList li {
+        .md .grid li, .markdown-body .grid li {
           flex: 0 1 100%; } }
-    .md .imgGallery ul,
-    .md .articleList ul, .markdown-body .imgGallery ul,
-    .markdown-body .articleList ul {
+    .md .grid ul, .markdown-body .grid ul {
       display: flex;
       flex-wrap: wrap;
       margin-right: -1rem; }
-      .md .imgGallery ul li,
-      .md .articleList ul li, .markdown-body .imgGallery ul li,
-      .markdown-body .articleList ul li {
+      .md .grid ul li, .markdown-body .grid ul li {
         margin-bottom: 1rem;
         position: relative; }
   .md.big .articleList li,
@@ -677,11 +604,6 @@ body {
         flex: 0 1 100%; } }
   .md .imgGallery, .markdown-body .imgGallery {
     margin-bottom: -1rem; }
-    .md .imgGallery li, .markdown-body .imgGallery li {
-      flex: 0 1 calc(50% - 1rem); }
-      @media only screen and (max-width: 414px) {
-        .md .imgGallery li, .markdown-body .imgGallery li {
-          flex: 0 1 100%; } }
     .md .imgGallery ul li, .markdown-body .imgGallery ul li {
       margin-bottom: 2rem; }
       .md .imgGallery ul li figure, .markdown-body .imgGallery ul li figure {

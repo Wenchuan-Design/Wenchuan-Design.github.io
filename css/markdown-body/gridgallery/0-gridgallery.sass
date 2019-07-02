@@ -20,18 +20,18 @@ $galleryMargin: 1rem
             @media only screen and (max-width: $iPhonePlus)
                 flex: 0 1 100%
 
-.imgGallery,
-.articleList,
+// .imgGallery,
+// .articleList
+.grid
     @include reset(li)
     @include reset(h)
     @include reset(p)
-    // margin-top: $galleryMargin * 2
     @include cardsColumn(2)
 
     vertical-align: middle
 
     margin-top: 2rem
-    // margin-bottom: 1rem
+    margin-bottom: 1rem
 
 
     // begin container of the cards
