@@ -1,6 +1,6 @@
 .md, .markdown-body
     background-color: white
-    color: $hexDark
+    color: $rgbaDark
     letter-spacing: .2px
     line-height: 1.75
     max-width: $markdownBody
@@ -16,7 +16,7 @@
         margin-top: 0
 
     @import "1-basic"
-    @import "img"
+    @import "figure&img"
     @import "h"
     @import "blockquote"
     @import "table"
@@ -25,5 +25,8 @@
     @import "styleoutput"
     @import "code/0-code"
     @import "emphasis"
-    @import "gridgallery/0-gridgallery"
+    @import "gridGallery/0-gridGallery"
     @import "mediaplay/0-mediaplay"
+
+    &.big
+        max-width: 1200px

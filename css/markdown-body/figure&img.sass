@@ -1,6 +1,6 @@
 & >, details >, li >, blockquote >
     img, .imgFrame, figure
-        // @extend %imgLikeMargin
+        @extend %imgLikeMargin
 
 
 figure
@@ -9,7 +9,8 @@ figure
     // width: 1px
     margin-left: auto
     margin-right: auto
-    @extend %imgLikeMargin
+    margin-top: 2rem
+    margin-bottom: 2rem
 
     figcaption,
         // margin: auto
@@ -17,19 +18,28 @@ figure
         caption-side: bottom
 
 
-    figcaption, figcaption p
+    figcaption
         text-align: left
         font-size: 0.875rem
-        line-height: 1.5em
+        line-height: 1.5
         // color: $hexGrey
         margin-top: 0.5rem
-        margin-bottom: 0
+        // margin-bottom: 0
+
+        p
+            margin: 0.5rem 0
 
     figcaption > p:first-of-type
         margin-top: 0
 
+    figcaption > p:last-of-type
+        margin-bottom: 0
+
     figcaption
         color: $hexGrey
+
+    &.big
+        max-width: 800px
 
     &.small
         max-width: 600px

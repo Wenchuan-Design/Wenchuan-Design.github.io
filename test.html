@@ -10,284 +10,158 @@
     <link rel="stylesheet" href="./css/wenchuan.css">
 
     <script type="text/x-mathjax-config">
-      // begin added: The MathJax was too bold, so I add this, change default scale value 100 to 93;
-      MathJax.Hub.Config({
-          extensions: ["tex2jax.js"],
-          "HTML-CSS": { scale: 100}
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            "HTML-CSS": { scale: 100}
         });
       // end added
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            }
+        });
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   </head>
-  <body>
+  <body class="wenchuan">
 
     <!-- begin markdown-body -->
-    <div class="markdown-body">
-      <h1>文档中的样式</h1>
+    <div class="markdown-body big">
 
-      <h4>Card Gallery</h4>
+        <h1 id="title">Vincent Van Gogh</h1>
 
-      <p>Donec et elit eget nisl vulputate cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra.</p>
+        <h2>These flowers are mine!</h2>
 
-      <div class="cardGallery">
+        <p>Nulla imperdiet, <a href="#test1">purus</a> imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
 
-        <div class="titleBar">
-          <div class="title">
-            Gallery name
-          </div>
-          <ul class="iconList">
-            <li>Grid View</li>
-            <li>• • •</li>
-          </ul>
-        </div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg" alt=""> -->
 
-        <div class="articleCard">
-          <a class="link" href="#"></a>
-          <div class="imgFrame">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg/1280px-Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg">
-          </div>
-          <div class="info">
-            <div class="title">
-              Engraving
-            </div>
-            <div class="brief">
-              Some engraving by masters.
-            </div>
-          </div>
-        </div>
+        <h3 id="test1">test1</h3>
 
-        <div class="articleCard">
-          <a class="link" href="#"></a>
-          <div class="imgFrame">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg/1280px-Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg">
-          </div>
-          <div class="info">
-            <div class="title">
-              Engraving
-            </div>
-            <div class="brief">
-              Some engraving by masters.
-            </div>
-          </div>
-        </div>
+        <p>Nulla imperdiet, <a id="test2">purus</a> imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
 
-        <div class="articleCard">
-          <a class="link" href="#"></a>
-          <div class="imgFrame">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg/1280px-Goya_-_Desgracias_acaecidas_en_el_tendido_de_la_plaza_de_Madrid%2C_y_muerte_del_alcalde_de_Torrej%C3%B3n.jpg">
-          </div>
-          <div class="info">
-            <div class="title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor urna, imperdiet eu dolor sit amet, efficitur scelerisque tortor. Morbi gravida quis justo sit amet efficiturii.
-            </div>
-            <div class="brief">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor urna, imperdiet eu dolor sit amet, efficitur scelerisque tortor. Morbi gravida quis justo sit amet efficiturii. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor urna, imperdiet eu dolor sit amet, efficitur scelerisque tortor. Morbi gravida quis justo sit amet efficiturii.
-            </div>
-          </div>
-      </div>
+        <ul class="gridGallery figList">
+            <li>
+                <figure>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/440px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" alt="">
+                    </div>
+                    <figcaption>
+                        <p>Nulla <a>imperdiet</a>, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                    </figcaption>
+                </figure>
 
-      <div class="empty"></div>
-      <div class="empty"></div>
-      </div>
+            </li>
+            <li>
+                <figure>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg/480px-Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg" alt="">
+                    </div>
+                    <figcaption>
+                        <p>Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg/520px-Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg" alt="">
+                    </div>
+                    <figcaption>
+                        <p>Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti.</p>
+                    </figcaption>
+                </figure>
 
-      <p>Donec et elit eget nisl vulputate cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra.</p>
+            </li>
+            <li>
+                <figure>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Vincent_Willem_van_Gogh_016.jpg/440px-Vincent_Willem_van_Gogh_016.jpg" alt="">
+                    </div>
+                    <figcaption>
+                        <p>Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                    </figcaption>
+                </figure>
 
-      <h3>Paragraph</h3>
-
-      <p><a href="#test">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Sed tortor urna, imperdiet eu dolor sit amet, efficitur scelerisque tortor. Morbi gravida quis justo sit amet efficitur. Sed viverra, libero id maximus congue, sem augue feugiat eros, nec convallis lorem ante a ex.</p>
-
-      <p>Donec et elit eget nisl vulputate cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</p>
-
-      <h3>Headers</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-
-      <hr>
-
-      <p>Donec et elit eget nisl vulputate cursus. Pellentesque pellentesque hendrerit sapien in bibendum. Morbi mattis libero eget enim feugiat viverra. Nunc fringilla ornare elit. Praesent urna elit, faucibus et sapien in, tempor ullamcorper nisi. Ut fermentum vulputate lectus, vitae consequat eros dictum vel.</p>
-
-      <table class="fullWidth">
-        <tr>
-          <th>Name</th>
-          <th>Style</th>
-          <th>Font size</th>
-          <th>Margin top</th>
-          <th>Margin bottom</th>
-        </tr>
-        <tr>
-          <th>Heading 1</th>
-          <td> <h1>Heading 1</h1> </td>
-          <td> 2.25em </td>
-          <td rowspan="6"> 1.5rem </td>
-          <td rowspan="6"> 1rem </td>
-        </tr>
-        <tr>
-          <th>Heading 2</th>
-          <td> <h2>Heading 2</h2> </td>
-          <td> 1.75em </td>
-        </tr>
-        <tr>
-          <th>Heading 3</th>
-          <td> <h3>Heading 3</h3> </td>
-          <td> 1.5em </td>
-        </tr>
-        <tr>
-          <th>Heading 4</th>
-          <td> <h4>Heading 4</h4> </td>
-          <td> 1.25em </td>
-        </tr>
-        <tr>
-          <th>Heading 5</th>
-          <td> <h5>Heading 5</h5> </td>
-          <td> 1.125em </td>
-        </tr>
-        <tr>
-          <th>Heading 6</th>
-          <td> <h6>Heading 6</h6> </td>
-          <td> 1em </td>
-        </tr>
-      </table>
-
-      <span class="id" id="blockquotes"></span>
-
-      <h3 id="test">Blockquotes</h3>
-
-      <p>Lorem <a>ipsum</a> dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-
-      <blockquote cite="http://">
-        <ul>
-          <li>1</li>
+            </li>
+            <li>
+                <figure>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg/440px-Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg" alt="">
+                    </div>
+                    <figcaption>
+                        <p>Nulla imperdiet, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. </p>
+                    </figcaption>
+                </figure>
+            </li>
         </ul>
-        <p>Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-      </blockquote>
 
-      <span class="id" id="lists"></span>
+        <figure class="big">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg" alt="">
+            <figcaption>
+                <p>Nulla imperdiet, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+            </figcaption>
+        </figure>
+        <p>Nulla imperdiet, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
 
-      <h3>Table</h3>
+        <ul class="gridGallery cardList--smallCover">
 
-      <h4>Default table</h4>
-
-      <table>
-        <tr>
-          <th>Table head</th><th>Table head</th><th>Table head</th>
-        </tr>
-        <tr>
-          <td>Table data</td><td>Table data</td><td>Table data</td>
-        </tr>
-        <tr>
-          <td>Table data</td><td>Table data</td><td>Table data</td>
-        </tr>
-      </table>
-
-      <h4>Full width table</h4>
-
-      <table class="fullWidth">
-        <tr>
-          <th>Table head</th><th>Table head</th><th>Table head</th>
-        </tr>
-        <tr>
-          <td>Table data</td><td>Table data</td><td>Table data</td>
-        </tr>
-        <tr>
-          <td>Table data</td><td>Table data</td><td>Table data</td>
-        </tr>
-      </table>
-
-      <h3>Lists</h3>
-
-      <h4>Unordered list</h4>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-
-      <ul>
-        <li>data</li>
-        <li>data
-          <ul>
-            <li>data</li>
-            <li>data</li>
-            <li>data
-              <ul>
-                <li>data</li>
-                <li>data</li>
-                <li>data
-                  <ol>
-                    <li>data</li>
-                    <li>data</li>
-                    <li>data</li>
-                  </ol>
-                </li>
-              </ul>
+            <li>
+                <a>
+                    <div class="imgFrame">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/440px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h4>Self Portrait</h4>
+                        <p>Nulla <a>imperdiet</a>, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                    </div>
+                </a>
             </li>
-          </ul>
-        </li>
-        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum. </li>
-        <li>sss</li>
-      </ul>
 
-      <h4>Ordered lists</h4>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
-
-      <ul>
-        <li>data</li>
-      </ul>
-
-      <ol>
-        <li>data</li>
-        <li>data
-          <ol>
-            <li>data</li>
-            <li>data</li>
-          </ol>
-        </li>
-        <li>data
-          <ul>
-            <li>data</li>
-            <li>data</li>
-            <li>datalist
-              <ul>
-                <li>s</li>
-                <li>samp
-                  <ol>
-                    <li>s</li>
-                  </ol>
-                </li>
-              </ul>
+            <li>
+                <div class="imgFrame">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg/480px-Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4>Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendis</h4>
+                    <p>Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                </div>
             </li>
-          </ul>
-        </li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-        <li>data</li>
-      </ol>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi metus, vulputate tincidunt massa nec, cursus pulvinar enim. Suspendisse ac volutpat ipsum.</p>
+            <li>
+                <div class="imgFrame">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg/520px-Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4>Self Portrait</h4>
+                    <p>Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti.</p>
+                </div>
+            </li>
 
+            <li>
+                <div class="imgFrame">
+                    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Vincent_Willem_van_Gogh_016.jpg/440px-Vincent_Willem_van_Gogh_016.jpg" alt=""> -->
+                </div>
+                <div class="info">
+                    <h4>Self Portrait</h4>
+                    <p>Cras cursus malesuada enim lobortis condimentum. Quisque eget est eget arcu eleifend tincidunt quis sit amet dolor. Praesent elit erat, egestas id pulvinar et, ultricies eu nisi.</p>
+                </div>
+            </li>
 
-      $$
-      \int_a^b f(x) \mathrm dx
-      $$
+            <li>
+                <div class="imgFrame">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg/440px-Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4>Self Portrait</h4>
+                    <p>Nulla imperdiet, purus imperdiet porta gravida, ipsum nisi laoreet mauris, vitae ultrices metus sem quis sem. Quisque ultricies scelerisque lacus, quis feugiat lacus tincidunt quis. Aenean vel mi et nunc ultricies efficitur quis vel nulla. Suspendisse potenti. Cras cursus malesuada enim lobortis condimentum. </p>
+                </div>
+            </li>
+        </ul>
 
+        <h4>Self Portrait</h4>
     </div>
     <!-- end markdown-body -->
 

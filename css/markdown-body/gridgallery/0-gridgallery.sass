@@ -1,77 +1,36 @@
-$galleryMargin: 1rem
+@import "mixin"
 
-%galleryMarginFix
-    margin-right: $galleryMargin
+[class*="gridGallery"]
 
-@mixin cardsColumn($input)
+
+    margin: 0
+    padding: 0
+
+    margin: 2rem 0
+    padding: 0
+
+    display: grid
+    @include grid("default")
+
+    grid-column-gap: 1rem
+    grid-row-gap: 1rem
+    // 上面这个在 `.figList-` 中是 2rem，为了能隔开间距过窄的 `figcaption`
+
+    @include grid("default")
+
     li
-        @if $input == 1
-            flex: 0 1 100%
+        margin: 0
+        padding: 0
+        list-style-type: none
 
-        @if $input == 2
-            flex: 0 1 calc(50% - 1rem)
-            @media only screen and (max-width: $iPhonePlus)
-                flex: 0 1 100%
+    // ============
+    // Begin import
+    // ============
+    @import "figList"
+    @import "cardList"
+    // ============
+    // end import
+    // ============
 
-        @if $input == 3
-            flex: 0 1 calc(33.333% - 1rem)
-            @media only screen and (max-width: $markdownBody)
-                flex: 0 1 calc(50% - 1rem)
-            @media only screen and (max-width: $iPhonePlus)
-                flex: 0 1 100%
-
-// .imgGallery,
-// .articleList
-.grid
-    @include reset(li)
-    @include reset(h)
-    @include reset(p)
-    @include cardsColumn(2)
-
-    vertical-align: middle
-
-    margin-top: 2rem
-    margin-bottom: 1rem
-
-
-    // begin container of the cards
-    ul
-        display: flex
-        flex-wrap: wrap
-        margin-right: -$galleryMargin
-
-        li
-            @extend %galleryMarginFix
-            // margin-top: $galleryMargin / 2
-            margin-bottom: $galleryMargin
-            position: relative
-
-&.big
-    .articleList,
-    .imgGallery
-        @include cardsColumn(3)
-
-// ===================================
-// Begin Import
-// ===================================
-.imgGallery
-    // @extend %imgLikeMargin
-    // margin-bottom: -$galleryMargin
-    @import "framedFigList"
-
-.articleList
-    // @extend %imgLikeMargin
-    // margin-bottom: -$galleryMargin
-    @import "articlelist"
-
-
-
-
-
-
-
-
-
-
-
-//
+&.big [class*="gridGallery"]
+    @include grid("small")

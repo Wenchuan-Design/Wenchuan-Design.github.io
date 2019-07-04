@@ -1,0 +1,66 @@
+&[class*="cardList"]
+    @include reset("a")
+    li
+        @extend %mainBox
+        @extend %bgHoverAndClick
+
+        .imgFrame
+            overflow: hidden
+            position: relative
+            margin: 0
+            padding-bottom: 56.25%
+
+            img
+                width: 100%
+                height: 100%
+                position: absolute
+                object-fit: cover
+
+        .info
+            position: relative
+            box-shadow: 0 -1px 0 $rgbaBg1
+            margin: 0
+            padding: 1rem
+
+            h4
+                font-size: 1rem
+                font-weight: bold
+                line-height: 1.5
+                @include textOverflow(1)
+                margin: 0
+
+            p
+                font-size: 0.875rem
+                line-height: 1.5
+                margin: 0
+                margin-top: 0.5rem
+                color: $rgbaGrey
+                @include textOverflow(2)
+
+    &[class*="--hide-"]
+
+        &[class*="-cover"]
+            li .imgFrame
+                display: none
+            li .info
+                box-shadow: none
+
+        &[class*="brief"]
+            li .info p
+                display: none
+
+    &[class*="--smallCover"]
+        li
+            .imgFrame
+                padding-bottom: 0
+                float: left
+                width: 106px
+                height: 106px
+                margin-right: 1rem
+
+            .info
+                border: none !important
+                box-shadow: none !important
+
+                p
+                    display: -webkit-box !important
