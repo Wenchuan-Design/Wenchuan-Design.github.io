@@ -1,12 +1,19 @@
 &[class*="cardList"]
-    @include reset("a")
+    // @include reset("a")
     li
         @extend %mainBox
-        @extend %bgHoverAndClick
+        // @extend %bgHoverAndClick
+
+        a.link
+            position: absolute
+            width: 100%
+            height: 100%
+            // background-color: red
+            z-index: 1
+            @extend %bgHoverAndClick
 
         .imgFrame
             overflow: hidden
-            position: relative
             margin: 0
             padding-bottom: 56.25%
 
@@ -17,7 +24,6 @@
                 object-fit: cover
 
         .info
-            position: relative
             box-shadow: 0 -1px 0 $rgbaBg1
             margin: 0
             padding: 1rem
@@ -51,16 +57,47 @@
 
     &[class*="--smallCover"]
         li
+            display: flex
             .imgFrame
                 padding-bottom: 0
                 float: left
-                width: 106px
-                height: 106px
-                margin-right: 1rem
+                // width: 106px
+                // height: 106px
+                flex: 0 1 106px
 
             .info
                 border: none !important
                 box-shadow: none !important
+                flex: 1 1 106px
 
                 p
                     display: -webkit-box !important
+
+        &[class*="-roundCover"]
+            li
+                .imgFrame
+                    img
+                        padding: 1rem
+                        border-radius: 50%
+
+                .info
+                    margin-left: -1rem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
