@@ -1,10 +1,20 @@
 // @import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700|Open+Sans:400,600|Roboto+Mono&display=swap&subset=chinese-simplified')
 
+.wenchuan
 
-@import "colors/0-colors"
-@import "font/0-font"
+    @import "colors/0-colors"
+    @import "font/0-font"
+    @import "preset/0-preset"
+    @import "component/0-component"
+    @import "markdown-body/0-markdown-body"
 
-@import "preset/0-preset"
+    @include font("main")
+    font-size: 1rem
+    scroll-behavior: smooth
 
-@import "component/0-component"
-@import "markdown-body/0-markdown-body"
+    *
+        box-sizing: border-box
+
+    img
+        vertical-align: middle
+        max-width: 100%

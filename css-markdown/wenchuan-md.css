@@ -102,22 +102,6 @@ body [class*="gridGallery"] li .link {
     display: inline-block;
     width: 100%; }
 
-* {
-  box-sizing: border-box; }
-
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Source Sans", sans-serif;
-  scroll-behavior: smooth; }
-
-body {
-  overflow-x: hidden; }
-
-img {
-  vertical-align: middle;
-  max-width: 100%; }
-
 body {
   background-color: white;
   color: rgba(0, 0, 0, 0.8);
@@ -393,6 +377,7 @@ body {
   body code[class*="language-"],
   body pre[class*="language-"] {
     color: #333333;
+    -webkit-font-smoothing: antialiased;
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     text-align: left;
@@ -562,7 +547,7 @@ body {
         height: 100%;
         z-index: 11; }
     body [class*="gridGallery"][class*="figList"] {
-      grid-row-gap: 2rem; }
+      grid-row-gap: 2rem !important; }
       body [class*="gridGallery"][class*="figList"] li figcaption {
         display: block; }
       body [class*="gridGallery"][class*="figList"] li figure {
@@ -681,3 +666,9 @@ body {
         margin-right: 0rem; } }
   body audio {
     width: 100%; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Source Sans", sans-serif;
+  scroll-behavior: smooth; }
