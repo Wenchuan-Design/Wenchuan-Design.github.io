@@ -8,11 +8,6 @@
     padding: 0
 
     display: grid
-    @include grid("default")
-
-    grid-column-gap: 1rem
-    grid-row-gap: 1rem
-    // 上面这个在 `.figList-` 中是 2rem，为了能隔开间距过窄的 `figcaption`
 
     @include grid("default")
 
@@ -29,14 +24,14 @@
             @extend %bgHoverAndClick
             z-index: 11
 
-    // ============
+    // ====================
     // Begin import
-    // ============
+    // ====================
     @import "figList"
     @import "cardList"
-    // ============
+    // ********************
     // end import
-    // ============
+    // ********************
 
 &.big [class*="gridGallery"]
     @import "mixin"
