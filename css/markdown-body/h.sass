@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6
     margin-top: 1.5em
     margin-bottom: 1em
     font-weight: bold
+    position: static
 
     &::before
         content: ""
@@ -11,6 +12,7 @@ h1, h2, h3, h4, h5, h6
         margin-top: -100px // y = -(navHight + marginStartOfThePage)
         height: 100px // y = navHight + marginStartOfThePage
         visibility: hidden
+        // z-index: 0
 
 h1
     font-size: 2rem

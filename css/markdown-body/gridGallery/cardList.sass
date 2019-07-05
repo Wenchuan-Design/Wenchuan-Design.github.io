@@ -1,21 +1,13 @@
 &[class*="cardList"]
-    // @include reset("a")
+    @include reset("a") // 没什么用，但是可以防止链接混入 brief
     li
         @extend %mainBox
-        // @extend %bgHoverAndClick
-
-        a.link
-            position: absolute
-            width: 100%
-            height: 100%
-            // background-color: red
-            z-index: 1
-            @extend %bgHoverAndClick
 
         .imgFrame
             overflow: hidden
             margin: 0
             padding-bottom: 56.25%
+            position: relative
 
             img
                 width: 100%
@@ -24,6 +16,7 @@
                 object-fit: cover
 
         .info
+            position: relative
             box-shadow: 0 -1px 0 $rgbaBg1
             margin: 0
             padding: 1rem
@@ -51,7 +44,7 @@
             li .info
                 box-shadow: none
 
-        &[class*="brief"]
+        &[class*="-brief"]
             li .info p
                 display: none
 
@@ -59,19 +52,18 @@
         li
             display: flex
             .imgFrame
-                padding-bottom: 0
-                float: left
-                // width: 106px
-                // height: 106px
-                flex: 0 1 106px
+                padding-bottom: 0 // change
+                float: left // change
+                height: 106px  // change
+                flex: 0 1 106px // change
+                // position: relative // not change
 
             .info
-                border: none !important
-                box-shadow: none !important
                 flex: 1 1 106px
+                box-shadow: -1px 0 0 $rgbaBg1
 
                 p
-                    display: -webkit-box !important
+                    display: -webkit-box
 
         &[class*="-roundCover"]
             li
@@ -81,6 +73,7 @@
                         border-radius: 50%
 
                 .info
+                    box-shadow: none
                     margin-left: -1rem
 
 

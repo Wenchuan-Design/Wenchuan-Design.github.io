@@ -3,7 +3,9 @@ blockquote
     color: $hexGrey
     padding: 1rem 1rem
     border-left: 2px solid $hexLightPale
+    font-size: 87.5%
     @extend %pLikeMargin
+
 
     &>:first-child
         margin-top: 0
@@ -17,3 +19,9 @@ blockquote
         border-left: 2px solid $hexDark
         padding: 0 1rem
         font-style: italic
+
+    &.framed
+        background: none
+        color: inherit
+        @extend %mainBorder
+        @extend %mainBorderRadius

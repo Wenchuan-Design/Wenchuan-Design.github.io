@@ -1,0 +1,37 @@
+$navBarHeight: 64px
+
+nav.navBar
+    position: relative
+    z-index: 100
+    box-shadow: 0 1px 0 $rgbaLightPale
+    height: $navBarHeight
+    // line-height: $navBarHeight
+    position: fixed
+    width: 100%
+    background-color: white
+    top: 0
+    left: 0
+    right: 0
+
+
+    .brand
+        position: relative
+
+        -webkit-transform: translate(0, -50%)
+        top: 50%
+        margin-left: 20px
+        float: left
+
+        .logo
+            width: 2rem
+            height: 2rem
+            background-color: $blue
+            position: absolute
+            -webkit-transform: translate(0, -50%)
+            top: 50%
+            // left: 20px
+
+        .title
+            margin-left: calc(2rem + 1rem)
+            font-weight: bold
+            font-size: 1.25rem

@@ -1,3 +1,3 @@
-window.addEventListener("hashchange", function () {
-  window.scrollTo(window.scrollX, window.scrollY - 40);
-});
+// window.addEventListener("hashchange", function () {
+//   window.scrollTo(window.scrollX, window.scrollY - 40);
+// });
