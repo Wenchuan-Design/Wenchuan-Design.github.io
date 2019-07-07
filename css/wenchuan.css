@@ -136,7 +136,7 @@ nav.navBar {
   z-index: 100;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
   height: 48px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   background-color: white;
   top: 0;
