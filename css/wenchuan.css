@@ -80,7 +80,8 @@ table {
   src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
 html {
   font-size: 16px;
-  font-family: "Noto Serif SC", serif; }
+  -webkit-font-smoothing: antialiased;
+  font-family: "Noto Sans SC", sans-serif; }
 
 code,
 code[class*="language-"],
@@ -614,7 +615,7 @@ nav.navBar {
     .markdown-body mark.pink, .md mark.pink {
       background-color: #FDE0FA; }
   .markdown-body u, .md u {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     padding-bottom: 2px; }
     .markdown-body u.dashed, .md u.dashed {
       border-bottom-style: dashed; }
