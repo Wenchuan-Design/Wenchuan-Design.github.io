@@ -80,7 +80,6 @@ table {
   src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
 html {
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
   font-family: "Noto Serif SC", serif; }
 
 code,
@@ -93,7 +92,7 @@ pre[class*="language-"] {
 *[class*="font-"][class*="-serif"] {
   font-family: "Noto Serif SC", serif; }
 
-body p, body hr, body .reference, body blockquote, body table, body ul, body ol, body details, body pre[class*="language-"] {
+body p, body hr, body .reference, body blockquote, body table, body details, body pre[class*="language-"] {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
@@ -244,7 +243,7 @@ body {
   body h2 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.125rem;
     border-bottom: 1px solid #d6d6d6; }
   body h3 {
     font-size: 1.25rem; }

@@ -80,7 +80,6 @@ table {
   src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
 html {
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
   font-family: "Noto Serif SC", serif; }
 
 code,
@@ -93,7 +92,7 @@ pre[class*="language-"] {
 *[class*="font-"][class*="-serif"] {
   font-family: "Noto Serif SC", serif; }
 
-.markdown-body p, .md p, .markdown-body hr, .md hr, .markdown-body .reference, .md .reference, .markdown-body blockquote, .md blockquote, .markdown-body table, .md table, .markdown-body ul, .markdown-body ol, .md ul, .md ol, .markdown-body details, .md details, .markdown-body pre[class*="language-"], .md pre[class*="language-"] {
+.markdown-body p, .md p, .markdown-body hr, .md hr, .markdown-body .reference, .md .reference, .markdown-body blockquote, .md blockquote, .markdown-body table, .md table, .markdown-body details, .md details, .markdown-body pre[class*="language-"], .md pre[class*="language-"] {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
@@ -272,7 +271,7 @@ nav.navBar {
   .markdown-body h2, .md h2 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.125rem;
     border-bottom: 1px solid #d6d6d6; }
   .markdown-body h3, .md h3 {
     font-size: 1.25rem; }
