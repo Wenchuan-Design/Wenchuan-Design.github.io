@@ -271,7 +271,8 @@ nav.navBar {
     font-size: 2rem; }
   .markdown-body h2, .md h2 {
     font-size: 1.5rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #d6d6d6; }
   .markdown-body h3, .md h3 {
     font-size: 1.25rem; }
