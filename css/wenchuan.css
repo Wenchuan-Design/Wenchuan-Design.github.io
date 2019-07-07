@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -48,18 +47,6 @@ table {
 *::selection {
   background-color: #D6E5FB; }
 
-@font-face {
-  font-family: "Noto Sans SC";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot");
-  src: local("Noto Sans SC Regular"), local("NotoSansSC-Regular"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff2") format("woff2"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff") format("woff"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.ttf") format("truetype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.svg#NotoSansSC") format("svg"); }
-@font-face {
-  font-family: "Noto Sans SC";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot");
-  src: local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff2") format("woff2"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff") format("woff"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.ttf") format("truetype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.svg#NotoSansSC") format("svg"); }
 @font-face {
   font-family: "Noto Serif SC";
   font-style: normal;
@@ -154,7 +141,8 @@ nav.navBar {
   background-color: white;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  overflow-y: auto; }
   nav.navBar .brand {
     position: relative;
     -webkit-transform: translate(0, -50%);
