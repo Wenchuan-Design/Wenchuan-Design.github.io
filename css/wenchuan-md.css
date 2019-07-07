@@ -80,8 +80,7 @@ table {
   src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
 html {
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Noto Sans SC", sans-serif; }
+  font-family: "Noto Serif SC", serif; }
 
 code,
 code[class*="language-"],
