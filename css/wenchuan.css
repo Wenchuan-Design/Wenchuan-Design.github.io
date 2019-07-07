@@ -141,25 +141,7 @@ nav.navBar {
   background-color: white;
   top: 0;
   left: 0;
-  right: 0;
-  overflow-y: auto; }
-  nav.navBar .brand {
-    position: relative;
-    -webkit-transform: translate(0, -50%);
-    top: 50%;
-    margin-left: 20px;
-    float: left; }
-    nav.navBar .brand .logo {
-      width: 2rem;
-      height: 2rem;
-      background-color: rgba(0, 0, 0, 0.04);
-      position: absolute;
-      -webkit-transform: translate(0, -50%);
-      top: 50%; }
-    nav.navBar .brand .title {
-      margin-left: calc(2rem + 1rem);
-      font-size: 0.875rem;
-      font-weight: bold; }
+  right: 0; }
 
 .markdown-body, .md {
   background-color: white;
@@ -671,6 +653,7 @@ nav.navBar {
           margin: 0;
           padding-bottom: 100%;
           overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.02);
           position: relative; }
           .markdown-body [class*="gridGallery"][class*="figList"] li figure .imgFrame img, .md [class*="gridGallery"][class*="figList"] li figure .imgFrame img {
             width: 100%;

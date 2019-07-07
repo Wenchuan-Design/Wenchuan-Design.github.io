@@ -601,6 +601,7 @@ body {
           margin: 0;
           padding-bottom: 100%;
           overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.02);
           position: relative; }
           body [class*="gridGallery"][class*="figList"] li figure .imgFrame img {
             width: 100%;
