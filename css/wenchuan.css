@@ -136,7 +136,7 @@ nav.navBar {
   z-index: 100;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
   height: 48px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: white;
   top: 0;
@@ -158,6 +158,7 @@ nav.navBar {
       top: 50%; }
     nav.navBar .brand .title {
       margin-left: calc(2rem + 1rem);
+      font-size: 0.875rem;
       font-weight: bold; }
 
 .markdown-body, .md {
