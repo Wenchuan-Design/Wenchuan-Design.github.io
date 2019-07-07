@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -256,7 +256,7 @@ nav.navBar {
           .markdown-body figure table tr th:hover, .markdown-body figure table tr td:hover, .md figure table tr th:hover, .md figure table tr td:hover {
             background-color: inherit; }
   .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
-    line-height: 2;
+    line-height: 1.75;
     margin-top: 2em;
     margin-bottom: 1em;
     font-weight: bold;
@@ -271,7 +271,7 @@ nav.navBar {
     font-size: 2rem; }
   .markdown-body h2, .md h2 {
     font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid #d6d6d6; }
   .markdown-body h3, .md h3 {
     font-size: 1.25rem; }
@@ -286,14 +286,14 @@ nav.navBar {
     margin-bottom: 3rem; }
     .markdown-body .title h1, .md .title h1 {
       margin-top: 0;
-      margin-bottom: 1rem; }
+      margin-bottom: 0; }
     .markdown-body .title h3, .md .title h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
       font-weight: normal; }
     .markdown-body .title p, .md .title p {
       font-size: 0.875rem;
-      margin-top: 1.5rem;
+      margin-top: 0.75rem;
       margin-bottom: 0; }
   .markdown-body blockquote, .md blockquote {
     background-color: #fafafa;
