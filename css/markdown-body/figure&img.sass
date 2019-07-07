@@ -21,7 +21,7 @@ figure
     figcaption
         text-align: left
         font-size: 0.875rem
-        line-height: 1.5
+        @include basicLineHight(-0.25)
         // color: $hexGrey
         margin-top: 0.5rem
         // margin-bottom: 0
@@ -40,12 +40,15 @@ figure
 
     &.big
         max-width: 800px
+        min-width: 1px
 
     &.small
         max-width: 600px
+        min-width: 1px
 
     &.smaller
         max-width: $iPhonePlus
+        min-width: 1px
 
     // designed for wikipedia
     table

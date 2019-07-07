@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5, h6
-    line-height: 1.25
+    @include basicLineHight(0)
     // margin-top: 2.5rem
-    margin-top: 1.5em
+    margin-top: 2em
     margin-bottom: 1em
     font-weight: bold
     position: static
@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5, h6
     &::before
         content: ""
         display: block
-        margin-top: -100px // y = -(navHight + marginStartOfThePage)
-        height: 100px // y = navHight + marginStartOfThePage
+        margin-top: calc(-2em - 44px)
+        height: calc(2em + 44px)
         visibility: hidden
         // z-index: 0
 
@@ -36,3 +36,21 @@ h5
 h6
     font-size: 1rem
     opacity: 0.48
+
+.title
+    margin-bottom: 3rem
+    // @include reset(a)
+
+    h1
+        margin-top: 0
+        margin-bottom: 1rem
+
+    h3
+        margin-top: 1rem
+        margin-bottom: 1rem
+        font-weight: normal
+
+    p
+        font-size: 0.875rem
+        margin-top: 1.5rem
+        margin-bottom: 0

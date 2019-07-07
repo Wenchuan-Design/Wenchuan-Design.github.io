@@ -1,8 +1,8 @@
 &
     background-color: white
     color: $rgbaDark
-    letter-spacing: .2px
-    line-height: 1.75
+    // letter-spacing: .2px
+    @include basicLineHight(0)
     max-width: $markdownBody
     min-width: 200px
     margin: 0 auto
@@ -41,7 +41,7 @@
 
     sup, sub
         font-size: smaller
-        line-height: 1
+        line-height: 1 // fix
 
     sup
         vertical-align: super
@@ -62,7 +62,7 @@
     @import "gridGallery/0-gridGallery"
     @import "mediaplay/0-mediaplay"
 
-    
+
 
     // *
         z-index: 10

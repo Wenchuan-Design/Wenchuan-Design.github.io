@@ -2,13 +2,6 @@
 // font
 // ====================
 
-@mixin mainFont
-    font-size: 16px
-    -webkit-font-smoothing: antialiased
-    font-family: 'Source Sans', sans-serif
-
-@mixin secondaryFont
-    font-family: 'Roboto Mono', monospace
 
 @mixin font($input)
     -webkit-font-smoothing: antialiased
@@ -17,6 +10,13 @@
 
     @if $input == "secondary"
         font-family: 'Roboto Mono', monospace
+
+// ====================
+// line-height
+// ====================
+
+@mixin basicLineHight($input)
+    line-height: 2 + $input
 
 // ====================
 // Margin

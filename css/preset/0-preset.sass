@@ -1,5 +1,24 @@
 @import "z-reset"
+@import "1-colors"
+
+@import "1-fonts"
 @import "1-myReset"
 @import "1-myVar"
 @import "mathjax"
 @import "screen"
+
+*
+    box-sizing: border-box
+    // scroll-margin-block-start: 100px
+    // position: relative
+
+html
+    scroll-behavior: smooth
+
+body
+    overflow-x: hidden
+    // @include font("main")
+
+img
+    vertical-align: middle
+    max-width: 100%

@@ -1,25 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Mono&display=swap");
-::selection {
-  background-color: #D6E5FB; }
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.eot");
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.woff2") format("woff2"), url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.woff") format("woff"), url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.ttf") format("truetype"), url("./font/open-sans-v16-latin/open-sans-v16-latin-regular.svg#OpenSans") format("svg"); }
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./font/open-sans-v16-latin/open-sans-v16-latin-600.eot");
-  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("./font/open-sans-v16-latin/open-sans-v16-latin-600.eot?#iefix") format("embedded-opentype"), url("./font/open-sans-v16-latin/open-sans-v16-latin-600.woff2") format("woff2"), url("./font/open-sans-v16-latin/open-sans-v16-latin-600.woff") format("woff"), url("./font/open-sans-v16-latin/open-sans-v16-latin-600.ttf") format("truetype"), url("./font/open-sans-v16-latin/open-sans-v16-latin-600.svg#OpenSans") format("svg"); }
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.eot");
-  src: local("Roboto Mono"), local("RobotoMono-Regular"), url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.woff2") format("woff2"), url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.woff") format("woff"), url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.ttf") format("truetype"), url("./font/roboto-mono-v6-latin/roboto-mono-v6-latin-regular.svg#RobotoMono") format("svg"); }
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,7 +45,55 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body p, body hr, body .reference, body blockquote, body table, body details, body pre[class*="language-"] {
+*::selection {
+  background-color: #D6E5FB; }
+
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot");
+  src: local("Noto Sans SC Regular"), local("NotoSansSC-Regular"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff2") format("woff2"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff") format("woff"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.ttf") format("truetype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.svg#NotoSansSC") format("svg"); }
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot");
+  src: local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff2") format("woff2"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff") format("woff"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.ttf") format("truetype"), url("./preset/fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.svg#NotoSansSC") format("svg"); }
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot");
+  src: local("Noto Serif SC"), local("NotoSerifSC-Regular"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff2") format("woff2"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff") format("woff"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.ttf") format("truetype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.svg#NotoSerifSC") format("svg"); }
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot");
+  src: local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff2") format("woff2"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff") format("woff"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.ttf") format("truetype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.svg#NotoSerifSC") format("svg"); }
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot");
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Noto Serif SC", serif; }
+
+code,
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Source Code Pro", monospace; }
+
+*[class*="font-"][class*="-sans"] {
+  font-family: "Noto Sans SC", sans-serif; }
+*[class*="font-"][class*="-serif"] {
+  font-family: "Noto Serif SC", serif; }
+
+body p, body hr, body .reference, body blockquote, body table, body ul, body ol, body details, body pre[class*="language-"] {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
@@ -102,11 +131,23 @@ body [class*="gridGallery"] li .link {
     display: inline-block;
     width: 100%; }
 
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%; }
+
 body {
   background-color: white;
   color: rgba(0, 0, 0, 0.8);
-  letter-spacing: 0.2px;
-  line-height: 1.75;
+  line-height: 2;
   max-width: 800px;
   min-width: 200px;
   margin: 0 auto;
@@ -151,7 +192,7 @@ body {
     body figure figcaption {
       text-align: left;
       font-size: 0.875rem;
-      line-height: 1.5;
+      line-height: 1.75;
       margin-top: 0.5rem; }
       body figure figcaption p {
         margin: 0.5rem 0; }
@@ -162,11 +203,14 @@ body {
     body figure figcaption {
       color: #858585; }
     body figure.big {
-      max-width: 800px; }
+      max-width: 800px;
+      min-width: 1px; }
     body figure.small {
-      max-width: 600px; }
+      max-width: 600px;
+      min-width: 1px; }
     body figure.smaller {
-      max-width: 414px; }
+      max-width: 414px;
+      min-width: 1px; }
     body figure table {
       margin: 0; }
       body figure table tr {
@@ -184,16 +228,16 @@ body {
           body figure table tr th:hover, body figure table tr td:hover {
             background-color: inherit; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
-    line-height: 1.25;
-    margin-top: 1.5em;
+    line-height: 2;
+    margin-top: 2em;
     margin-bottom: 1em;
     font-weight: bold;
     position: static; }
     body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before {
       content: "";
       display: block;
-      margin-top: -100px;
-      height: 100px;
+      margin-top: calc(-2em - 44px);
+      height: calc(2em + 44px);
       visibility: hidden; }
   body h1 {
     font-size: 2rem; }
@@ -210,6 +254,19 @@ body {
   body h6 {
     font-size: 1rem;
     opacity: 0.48; }
+  body .title {
+    margin-bottom: 3rem; }
+    body .title h1 {
+      margin-top: 0;
+      margin-bottom: 1rem; }
+    body .title h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: normal; }
+    body .title p {
+      font-size: 0.875rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0; }
   body blockquote {
     background-color: #fafafa;
     color: #858585;
@@ -239,7 +296,7 @@ body {
       font-weight: bold;
       background-color: #fafafa; }
     body table th, body table td {
-      line-height: 1.5;
+      line-height: 2;
       padding: 0.5rem 1rem;
       border: 1px solid #ebebeb; }
     body table th:hover {
@@ -377,8 +434,6 @@ body {
   body code[class*="language-"],
   body pre[class*="language-"] {
     color: #333333;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     text-align: left;
     white-space: pre;
@@ -605,7 +660,7 @@ body {
       body [class*="gridGallery"][class*="cardList"] li .info h4 {
         font-size: 1rem;
         font-weight: bold;
-        line-height: 1.5;
+        line-height: 1.75;
         text-overflow: ellipsis;
         overflow: hidden;
         display: -webkit-box;
@@ -614,7 +669,7 @@ body {
         margin: 0; }
       body [class*="gridGallery"][class*="cardList"] li .info p {
         font-size: 0.875rem;
-        line-height: 1.5;
+        line-height: 1.75;
         margin: 0;
         margin-top: 0.5rem;
         color: rgba(0, 0, 0, 0.48);
@@ -639,8 +694,11 @@ body {
       body [class*="gridGallery"][class*="cardList"][class*="--smallCover"] li .info {
         flex: 1 1 106px;
         box-shadow: -1px 0 0 rgba(0, 0, 0, 0.04); }
+        body [class*="gridGallery"][class*="cardList"][class*="--smallCover"] li .info h4 {
+          line-height: 1.5; }
         body [class*="gridGallery"][class*="cardList"][class*="--smallCover"] li .info p {
-          display: -webkit-box; }
+          display: -webkit-box;
+          line-height: 1.5; }
     body [class*="gridGallery"][class*="cardList"][class*="--smallCover"][class*="-rounded"] li .imgFrame img {
       padding: 1rem;
       border-radius: 50%; }
@@ -666,9 +724,3 @@ body {
         margin-right: 0rem; } }
   body audio {
     width: 100%; }
-
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Source Sans", sans-serif;
-  scroll-behavior: smooth; }
