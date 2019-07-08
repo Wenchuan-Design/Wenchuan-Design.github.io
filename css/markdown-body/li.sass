@@ -35,23 +35,6 @@ ul
             margin-top: 0.875rem
             vertical-align: middle
 
-// table of contents
-.tableOfContents
-    ul, ol
-        @include reset(a)
-
-        a
-
-            &:hover
-                text-decoration: underline
-
-
-        li
-            font-weight: bold
-
-        ul, ol
-            li
-                font-weight: normal
 
 // special
 // alphabet
@@ -73,7 +56,25 @@ ol
             list-style-type: georgian
 
 
+// table of contents
+.tableOfContents
+    margin-left: -2rem
+    ul, ol
+        @include reset(a)
+        list-style-type: none
 
+        a
+
+            &:hover
+                text-decoration: underline
+
+
+        li
+            font-weight: bold
+
+        ul, ol
+            li
+                font-weight: normal
 
 
 

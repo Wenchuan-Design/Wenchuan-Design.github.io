@@ -51,20 +51,27 @@ table {
   font-family: "Noto Serif SC";
   font-style: normal;
   font-weight: 400;
-  src: url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot");
-  src: local("Noto Serif SC"), local("NotoSerifSC-Regular"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff2") format("woff2"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff") format("woff"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.ttf") format("truetype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.svg#NotoSerifSC") format("svg"); }
+  src: url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot");
+  src: local("Noto Serif SC"), local("NotoSerifSC-Regular"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff2") format("woff2"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.woff") format("woff"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.ttf") format("truetype"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-regular.svg#NotoSerifSC") format("svg"); }
 @font-face {
   font-family: "Noto Serif SC";
   font-style: normal;
   font-weight: 700;
-  src: url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot");
-  src: local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff2") format("woff2"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff") format("woff"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.ttf") format("truetype"), url("./preset/fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.svg#NotoSerifSC") format("svg"); }
+  src: url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot");
+  src: local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff2") format("woff2"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.woff") format("woff"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.ttf") format("truetype"), url("../fonts/noto-serif-sc-v5-latin/noto-serif-sc-v5-latin-700.svg#NotoSerifSC") format("svg"); }
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot");
-  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("./preset/fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
+  src: url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot");
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff2") format("woff2"), url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.woff") format("woff"), url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.ttf") format("truetype"), url("../fonts/source-code-pro-v9-latin/source-code-pro-v9-latin-regular.svg#SourceCodePro") format("svg"); }
+/* barriecito-regular - latin */
+@font-face {
+  font-family: "Barriecito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.eot");
+  src: local("Barriecito Regular"), local("Barriecito-Regular"), url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.woff2") format("woff2"), url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.woff") format("woff"), url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.ttf") format("truetype"), url("../fonts/barriecito-v1-latin/barriecito-v1-latin-regular.svg#Barriecito") format("svg"); }
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -79,6 +86,8 @@ pre[class*="language-"] {
   font-family: "Noto Sans SC", sans-serif; }
 *[class*="font-"][class*="-serif"] {
   font-family: "Noto Serif SC", serif; }
+*[class*="font-"][class*="-test"] {
+  font-family: "Barriecito", cursive; }
 
 body p, body hr, body .reference, body blockquote, body table, body details, body pre[class*="language-"] {
   margin-top: 1rem;
@@ -149,7 +158,7 @@ body {
   body p {
     margin-bottom: 1rem; }
   body p a, body li a, body table a, body blockquote a {
-    color: #307FEC;
+    color: #F43A3A;
     cursor: pointer; }
     body p a:hover, body li a:hover, body table a:hover, body blockquote a:hover {
       text-decoration: underline; }
@@ -312,18 +321,6 @@ body {
       -webkit-transform: translate(0, -50%);
       margin-top: 0.875rem;
       vertical-align: middle; }
-  body .tableOfContents ul a, body .tableOfContents ul .markdown-body a, body .tableOfContents ul .markdown-body.big a, body .tableOfContents ol a, body .tableOfContents ol .markdown-body a, body .tableOfContents ol .markdown-body.big a {
-    color: inherit;
-    text-decoration: none; }
-    body .tableOfContents ul a:hover, body .tableOfContents ul .markdown-body a:hover, body .tableOfContents ul .markdown-body.big a:hover, body .tableOfContents ol a:hover, body .tableOfContents ol .markdown-body a:hover, body .tableOfContents ol .markdown-body.big a:hover {
-      color: inherit;
-      text-decoration: none; }
-  body .tableOfContents ul a:hover, body .tableOfContents ol a:hover {
-    text-decoration: underline; }
-  body .tableOfContents ul li, body .tableOfContents ol li {
-    font-weight: bold; }
-  body .tableOfContents ul ul li, body .tableOfContents ul ol li, body .tableOfContents ol ul li, body .tableOfContents ol ol li {
-    font-weight: normal; }
   body ol.abc > li {
     list-style-type: lower-alpha; }
   body ol.ABC > li {
@@ -332,6 +329,22 @@ body {
     list-style-type: lower-greek; }
   body ol.georgian > li {
     list-style-type: georgian; }
+  body .tableOfContents {
+    margin-left: -2rem; }
+    body .tableOfContents ul, body .tableOfContents ol {
+      list-style-type: none; }
+      body .tableOfContents ul a, body .tableOfContents ul .markdown-body a, body .tableOfContents ul .markdown-body.big a, body .tableOfContents ol a, body .tableOfContents ol .markdown-body a, body .tableOfContents ol .markdown-body.big a {
+        color: inherit;
+        text-decoration: none; }
+        body .tableOfContents ul a:hover, body .tableOfContents ul .markdown-body a:hover, body .tableOfContents ul .markdown-body.big a:hover, body .tableOfContents ol a:hover, body .tableOfContents ol .markdown-body a:hover, body .tableOfContents ol .markdown-body.big a:hover {
+          color: inherit;
+          text-decoration: none; }
+      body .tableOfContents ul a:hover, body .tableOfContents ol a:hover {
+        text-decoration: underline; }
+      body .tableOfContents ul li, body .tableOfContents ol li {
+        font-weight: bold; }
+      body .tableOfContents ul ul li, body .tableOfContents ul ol li, body .tableOfContents ol ul li, body .tableOfContents ol ol li {
+        font-weight: normal; }
   body details {
     margin-left: 1rem; }
     body details summary {
