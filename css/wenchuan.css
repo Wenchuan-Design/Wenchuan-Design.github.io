@@ -144,13 +144,24 @@ nav.navBar {
   position: relative;
   z-index: 100;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
-  height: 48px;
+  height: 56px;
   position: fixed;
   width: 100%;
   background-color: white;
   top: 0;
   left: 0;
   right: 0; }
+  nav.navBar .logo {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background-color: #858585;
+    margin-top: 12px;
+    margin-left: 20px; }
+  nav.navBar .title {
+    float: left;
+    line-height: 56px;
+    margin-left: 1rem; }
 
 .markdown-body, .md {
   background-color: white;
@@ -161,7 +172,7 @@ nav.navBar {
   margin: 0 auto;
   padding: 0 20px;
   font-size: 1rem;
-  margin-top: 128px;
+  margin-top: 160px;
   margin-bottom: 100px;
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }

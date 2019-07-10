@@ -1,6 +1,7 @@
-$navBarHeight: 48px
-
 nav.navBar
+
+    $navBarHeight: 56px
+
     position: relative
     z-index: 100
     box-shadow: 0 1px 0 $rgbaLightPale
@@ -12,3 +13,20 @@ nav.navBar
     top: 0
     left: 0
     right: 0
+
+    .logo
+
+        $logoSize: 32px
+
+        float: left
+        width: $logoSize
+        height: $logoSize
+        background-color: $hexGrey
+        margin-top: ($navBarHeight - $logoSize) / 2
+        margin-left: 20px
+        // border-radius: 50%
+
+    .title
+        float: left
+        line-height: $navBarHeight
+        margin-left: 1rem

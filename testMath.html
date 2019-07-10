@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="./css/wenchuan.css">
 
     <script type="text/x-mathjax-config">
-      // begin added: The MathJax was too bold, so I add this, change default scale value 100 to 93;
-      MathJax.Hub.Config({
-          extensions: ["tex2jax.js"],
-          "HTML-CSS": { scale: 100}
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            "HTML-CSS": {
+                // scale: 100
+                availableFonts : ["Latin-Modern"],
+                preferredFont : "Latin-Modern",
+                webFont : "Latin-Modern",
+                imageFont : null
+            }
         });
-      // end added
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            }
+        });
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
@@ -29,422 +33,125 @@
   <body>
     <!-- begin markdown-body -->
     <div class="markdown-body">
-      <h2 id="toc_0">§§ 1-3. Sets and Operations on Sets. Quantifiers</h2>
+        <h1 id="toc_0">Sets and Operations on Sets. Quantifiers</h1>
 
-      <p>A <em>set</em> is a collection of objects of any specified kind. Sets are usually denoted by capitals. The objects belonging to a set are called its <em>elements</em> or <em>members</em>. We write \(x\in A​\) if \(x​\) is a member of \(A​\), and \(x \notin A​\) if it is not.</p>
+        <h2 id="toc_1">Sets</h2>
 
-      <p>\(A=\{ a,b,c,... \}​\) means that \(A​\) consists of the elements \(a, b, c, ...​\). In particular, \(A = \{a,b\}​\) consists of \(a​\) and \(b​\); \(A=\{p\}​\) consists of \(p​\) alone. The <em>empty</em> or <em>void</em> set, \(\emptyset​\), has <em>no</em> elements. Equality (\(=​\)) means a logical identity.</p>
+        <p>A <em>set</em> is a collection of objects of any specified kind. Sets are usually denoted by capitals. The objects belonging to a set are called its <em>elements</em> or <em>members</em>. We write \(x\in A\) if \(x\) is a member of \(A\), and \(x \notin A\) if it is not.</p>
 
-      <p>If all members of \(A\) are also in \(B\), we call \(A\) a <em>subset</em> of \(B\) (and \(B\) a <em>superset</em> of \(A\)), and write \(A \subseteq B\) or \(B \supseteq A\). It is an axiom that <em>the sets \(A\) and \(B\) are equal \((A=B)\) if they have the same members</em>, i.e.,</p>
+        <p>\(A=\{ a, b, c, ... \}\) means that \(A\) consists of the elements \(a, b, c, ...\) . In particular, \(A=\{a,b\}\) consists of \(a\) and \(b\); \(A = \{p\}\) consists of \(p\) alone. The <em>empty</em> or <em>void</em> set, \(\emptyset\), has <em>no</em> elements. Equality (\(=\)) means <em>logical identity</em>.</p>
 
-      <p>\[<br/>
-      A\subseteq B \;\; and \;\; B \subseteq A.<br/>
-      \]</p>
+        <p>If all members of \(A\) are also in \(B\), we call \(A\) a <em>subset</em> of \(B\) (and \(B\) a <em>superset</em> of \(A\)), and write \(A \subseteq B\) or \(B \supseteq A\). It is an axiom that <em>the sets \(A\) and \(B\) are equal</em> (\(A=B\)) <em>if they have the same members</em>, i.e.,</p>
 
-      <p>If, however, \(A \subseteq B​\) but \(B \nsubseteq A​\) (i.e., \(B​\) has some elements <em>not</em> in \(A​\)), we call \(A​\) a <em>proper</em> subset of \(B​\) and write \(A \subset B​\) or \(B \supset A​\). &quot;\(\subseteq​\)&quot; is called the <em>inclusion relation</em>.</p>
+        <p>\[
+        A \subseteq B \land B \supseteq A.
+        \]</p>
 
-      <p>Set equality is not affected by the <em>order</em> in which elements appear. Thus \(\{a,b\} = \{b,a\}\). Not so for <em>ordered pairs \((a,b)\)</em>.<sup>1</sup> For such pairs,</p>
+        <p>If, however, \(A \subseteq B\) but \(B \not \subseteq A\) (i.e., \(B\) has some elements <em>not</em> in \(A\)), we call \(A\) a <em>proper</em> subset of \(B\) and write \(A \subset B\) or \(B \supset A\). &quot;\(\subseteq\)&quot; is callded <em>inclusion relation</em>.</p>
 
-      <p>\[<br/>
-      (a,b)=(x,y) \quad \text{ iff }^2 \quad a=x \text{ and } b=y,<br/>
-      \]</p>
+        <h2 id="toc_2">Ordered Pairs</h2>
 
-      <p>but not if \(a=y​\) and \(b=x​\). Similarly, for <em>ordered n-tuples</em>,</p>
+        <p>Set equality is not affected by the <em>order</em> in which elements appear. Thus \(\{a,b\} = \{b,a\}\). Not so for <em>ordered pairs</em> \((a, b)\).<sup>*</sup> For such pairs,</p>
 
-      <p>\[<br/>
-      (a_1,a_2,...,a_n) = (x_1,x_2,...,x_n) \quad \text{ iff } \quad a_k = x_k,\;\; k = 1, 2, ... , n.<br/>
-      \]</p>
+        <p>\[
+        (a,b) = (x,y) \iff a=x \land b=y,
+        \]</p>
 
-      <blockquote>
-      <p><sup>1</sup> See Problem 6 for a definition.</p>
+        <p>but not if \(a=y\) and \(b=x\). Similarly, for <em>ordered n-tuples</em>.</p>
 
-      <p><sup>2</sup> Short of <em>if and only if</em>; also written \(\iff\).</p>
-      </blockquote>
+        <p>\[
+        (a_1, a_2, ..., a_n)=(x_1, x_2, ..., x_n)
+        \iff
+        a_k = x_k, k=1,2,...,n.
+        \]</p>
 
-      <p>We write \(\{ x \; | \; P(x) \}\) for &quot;the set of all \(x\) satisfying the condition \(P(x)\).&quot; Similarly, \(\{ (x,y) \; | \; P(x,y) \}\) is the set of all <em>ordered pairs</em> for which \(P(x,)\) holds; \(\{ x\in A \; | \; P(x) \}\) is the set of those <em>\(x\) in \(A\)</em> for which \(P(x)​\) is true.</p>
+        <blockquote>
+        <p>* See Problem 6 for a definition.
+        <!-- 这里少了一个注解 --></p>
+        </blockquote>
 
-      <p>For any sets \(A​\) and \(B​\), we define their <em>union</em> \(A \cup B​\), <em>intersection</em> \(A \cap B​\), <em>difference</em> \(A-B​\), and <em>Cartesian product</em> (or <em>cross product</em>) \(A \times B​\), as follows:</p>
+        <h2 id="toc_3">Conditions of Sets</h2>
 
-      <p>\(A \cup B\) is the set of all members of \(A\) and \(B\) taken together:</p>
+        <p>We write \(\{ x \;|\; P(x) \}\) for &quot;The set of all \(x\) satisfying the condition \(P(x)\).&quot; Similarly, \(\{(x,y) \;|\; P(x)\}\) is the set of all <em>ordered pairs</em> for which \(P(x,y)\) holds; \(\{x\in A \;|\; P(x)\}\) is the set of those \(x\) <em>in</em> \(A\) for which \(P(x)\) is true.</p>
 
-      <p>\[<br/>
-      \{<br/>
-      x \; | \; x \in A \text{ or } x\in B<br/>
-      \}.^3<br/>
-      \]</p>
+        <h2 id="toc_4">Operations on Sets</h2>
 
-      <blockquote>
-      <p><sup>3</sup> The word &quot;or&quot; is used in the <em>inclusive</em> sense: &quot;\(P\) or \(Q\)&quot; means &quot;\(P\) or \(Q\) or <em>both</em>&quot;.</p>
-      </blockquote>
+        <p>For any sets \(A\) and \(B\), we define their <em>union</em> \(A \cup B\), <em>intersection</em> \(A \cap B\), <em>difference</em> \(A-B\), and <em>Cartesian Product</em> (or <em>cross product</em>) \(A \times B\), as follows:</p>
 
-      <p>\(A \cap B​\) is the set of all <em>common</em> elements of \(A​\) and \(B​\):</p>
+        <ul>
+        <li>\(A \cup B\) is the set of all members of \(A\) and \(B\) taken <em>together</em>:</li>
+        </ul>
 
-      <p>\[<br/>
-      \{<br/>
-      x \in A \; | \; x \in B<br/>
-      \}.<br/>
-      \]</p>
+        <p>\[
+        \{x \;|\; x\in A \lor x \in B\}.
+        \]</p>
 
-      <p>\(A-B​\) consists of those \(x \in A​\) that are <em>not</em> in \(B​\):</p>
+        <!-- 省略注释 -->
 
-      <p>\[<br/>
-      \{<br/>
-      x\in A \;|\; x \notin B<br/>
-      \}.<br/>
-      \]</p>
+        <ul>
+        <li>\(A\cap B\) is the set of all <em>common</em> elements of \(A\) and \(B\):</li>
+        </ul>
 
-      <p>\(A \times B​\) is the set of all <em>ordered pairs \((x,y)​\)</em>, with \(x \in A​\) and \(x \in B​\):</p>
+        <p>\[
+        \{ x\in A \;|\; x\in B \}.
+        \]</p>
 
-      <p>\[<br/>
-      \{<br/>
-      (x,y) \;|\; x\in A, y\in B<br/>
-      \}.<br/>
-      \]</p>
+        <ul>
+        <li>\(A-B\) consists of those \(x\in A\) that are <em>not</em> in \(B\):</li>
+        </ul>
 
-      <p>Similarly, \(A_1 \times A_2 \times ... \times A_n​\) is the set of all <em>ordered n-tuples \((x_1, ... , x_n)​\)</em> such that \(x_k \in A_k​\), \(k = 1,2,...,n​\). We write \(A^n​\) for \(A \times A \times ... \times A​\) (\(n​\) factors).</p>
+        <p>\[
+        \{ x\in A \;|\; x \notin B \}.
+        \]</p>
+        <blockquote class="framed">
 
-      <p>\(A​\) and \(B​\) are said to be <em>disjoint</em> iff \(A \cap B = \emptyset​\) (no common elements). Otherwise, we say that <em>\(A​\) meets \(B​\)</em> (\(A \cap B \ne \emptyset​\)). Usually all sets involved are subsets of a &quot;<em>master set</em>&quot; \(S​\), called the <em>space</em>. Then we write \(-X​\) for \(S-X​\), and call \(-X​\) the <em>complement</em> of \(X​\) (in \(S​\)). Various other notations are likewise in use.</p>
+        <p><strong>Notes</strong>:</p>
 
-      <p><strong>Examples.</strong></p>
+        <ol>
+        <li>Unlike the case in arithmetic, \( A - B = \emptyset \) does not implies \(B - A = \emptyset\). For if \(A \subset B\), \(A-B = \emptyset\), but \(B=A \ne \emptyset\);</li>
+        <li>So, \(A-B=B-A\) iff \(A=B\), and \(A-B=B-A=\emptyset\);</li>
+        <li>If \(A\) and \(B\) are disjoint, i.e. \(A \cap B = \emptyset\), \(A-B=A\) and \(B-A=B\).</li>
+        </ol>
+        </blockquote>
 
-      <p>Let \(A = \{1,2,3\}\), \(B=\{ 2,4 \}\). Then</p>
+        <ul>
+        <li>\(A \times B\) is the set of all <em>ordered pairs</em> \((x,y)\), with \(x \in A\) and \(y \in B\):</li>
+        </ul>
 
-      <p>\[<br/>
-      A\cup B = \{ 1,2,3,4 \},\quad A\cap B = \{2\}, \quad A-B = \{1,3\}, \\<br/>
-      A \times B = \{<br/>
-      (1,2), (1,4), (2,2), (2,4), (3,2), (3,4)<br/>
-      \}.<br/>
-      \]</p>
+        <p>\[
+        \{ (x,y) \;|\; x \in A, y \in B \}.
+        \]</p>
 
-      <p>If \(N\) is the set of all <em>naturals</em> (positive integers), we could also write</p>
+        <p>Similarly, \(A_1 \times A_2 \times ... \times A_n\) is the set of all <em>ordered n-tuples</em> \((x_1, ..., x_n)\) such that \(x_k \in A_k\), \(k=1,2,...,n\). We write \(A^n\) for \(A\times A\times ... \times A\) (\(n\) factors).</p>
 
-      <p>\[<br/>
-      A = \{ x\in N \;|\; x &lt; 4\}.<br/>
-      \]</p>
+        <p>\(A\) and \(B\) are said to be <em>disjoint</em> iff \(A\cap B=\emptyset\) (no common elements). Otherwise, we write \(-X\) for \(S-X\), and call \(-X\) the <em>complement</em> of \(X\) (in \(S\)). Various other notations are likewise in use.</p>
 
-      <p><strong>Theorem 1.</strong></p>
+        <h4 id="toc_5">Examples.</h4>
 
-      <p>(a) \(A\cup A = A\); \(A \cap A=A\);</p>
+        <p>Let \(A=\{ 1,2,3 \}\), \(B=\{2,4\}\). Then</p>
 
-      <p>(b) \(A\cup B = B \cup A\), \(A \cap B = B \cap A\);</p>
+        <p>\[
+        \begin{aligned}
+        A \cup B &amp;= \{1,2,3,4\},\\
+        A \cap B &amp;= \{2\},\\
+        A-B &amp;=\{1,3\},\\
+        A\times B &amp;= \{ (1,2),(1,4),(2,2),(2,4),(3,2),(3,4) \}.
+        \end{aligned}
+        \]</p>
 
-      <p>(c) \((A\cup B)\cup C = A \cup (B \cup C)\); \((A \cap B)\cap C = A\cap (B \cap C)\);</p>
+        <p>If \(N\) is the set of all <em>naturals</em> (positive integures), we could also write</p>
 
-      <p>(d) \((A \cup B)\cap C = (A \cap C)\cup (B\cap C)\);</p>
+        <p>\[
+        A=\{x\in N \;|\; x&lt;4 \}
+        \]</p>
 
-      <p>(e) \((A\cap B)\cup C = (A \cup C)\cap (B \cup C)\).</p>
+        <ul>
+        <li>\(A\times B = \{ (1,2),(1,4),(2,2),(2,4),(3,2),(3,4) \} \{ (1,2),(1,4),(2,2),(2,4),(3,2),(3,4) \}\).</li>
+        </ul>
 
-      <p>The proof of (d) is sketched in Problem 1. The rest is left to the reader.</p>
-
-      <p>Because of (c), we may omit brackets in \(A\cup B\cup C\) and \(A\cap B\cap C\); similarly for four or more sets. More generally, we may consider whole <em>families</em> of sets, i.e., collections of may (possibly infinitely many) sets. If \(\cal{M}\) is such a family, we define its <em>union</em>, \(\bigcup \cal M\), to be the set of all elements \(x\), each belonging to <em>at least one</em> set of the family. The intersection of \(\cal M\), denoted \(\bigcap \cal M\), consists of those \(x\) that belong to all sets of the family <em>simultaneously</em>. In stead, we also write</p>
-
-      <p>\[<br/>
-      \bigcup \{ X \;|\; X \in {\cal M}\} \text{ and } \bigcap \{ X \; | \; X \in {\cal M} \}, \text{ respectively}.<br/>
-      \]</p>
-
-      <p>Often we can <em>number</em> the sets of a given family:</p>
-
-      <p>\[<br/>
-      A_1, A_2, ..., A_n,....<br/>
-      \]</p>
-
-      <p>More generally, we may denote all sets of a family \(\cal M\) by some letter (say, \(X\)) with indices \(i\) attached to it (the indices may, but <em>need not</em>, be numbers). The family \(\cal M\) then is denoted by \(\{X_i\}\) or \(\{ X_i \;|\; i \in I \}\), where \(i\) is a variable index ranging over a suitable set \(I\) of indices (&quot;index notation&quot;). In this case, the union and intersection of \(\cal M\) are denoted by such symbols as</p>
-
-      <p>\[<br/>
-      \bigcup \{ X_i \;|\; i\in I \} = \bigcup_i X_i = \bigcup X_i = \bigcup_{i\in I}X_i; \\<br/>
-      \bigcap \{ X_i \;|\; i \in I \} = \bigcap_i X_i = \bigcap X_i = \bigcap_{i\in I}X_i.<br/>
-      \]</p>
-
-      <p>If the indices are <em>integers</em>, we may write</p>
-
-      <p>\[<br/>
-      {<br/>
-      \bigcup_{n=1}^{m} X_n , \bigcup_{n=1}^{\infty} X_n, \bigcap_{n=k}^{m}X_n,<br/>
-      } \;\; \text{etc.}<br/>
-      \]</p>
-
-      <p><strong>Theorem 2</strong> (De Morgan&#39;s duality laws). <em>For any sets \(S\) and \(A_i (i\in I)\), the following are true</em>:</p>
-
-      <p>\[<br/>
-      \text{(i)}\;<br/>
-      S-\bigcup_i A_i = \bigcap_i (S-A_i)<br/>
-      ;\quad<br/>
-      \text{(ii)}\;<br/>
-      S-\bigcap_i A_i = \bigcup_i (S-A_i)<br/>
-      \]</p>
-
-      <p>(If \(S\) is the entire space, we may write \(-A_i\) for \(S-A_i\), \(-\bigcup A_i\) for \(S - \bigcup A_i\), etc.)</p>
-
-      <p>Before proving these laws, we introduce some useful notation.</p>
-
-      <p><strong>Logical Quantifiers.</strong> From logic we borrow the following abbreviations.</p>
-
-      <p>&quot;\((\forall x \in A)\;...\)&quot; means &quot;For each member \(x\) of \(A\), it is true that ....&quot;</p>
-
-      <p>&quot;\((\exists x \in A)\;...\)&quot; means &quot;There is at least one \(x\) in \(A\) such that ....&quot;</p>
-
-      <p>&quot;\((\exists ! x \in A)\;...\)&quot; means &quot;There is a <em>unique \(x\) in \(A\) such that ....</em>&quot;</p>
-
-      <p>The symbols &quot;\((\forall x \in A)\)&quot; and &quot;\((\exists x \in A)\)&quot; are called the <em>universal</em> and <em>existential quantifiers</em>, respectively. If confusion is ruled out, we simply write &quot;\((\forall x),\)&quot; adn &quot;\((\exists x),\)&quot; and &quot;\((\exists ! x)\)&quot; instead. For example, if we agree that \(m\), \(n\) denote naturals, then</p>
-
-      <p>\[<br/>
-      ``(\forall n)\;(\exists m)\quad m&gt;n&quot;<br/>
-      \]</p>
-
-      <p>means &quot;For each natural \(n\), there is a natural \(m\) such that \(m&gt;n\).&quot; We give some more examples.</p>
-
-      <p>Let \({\cal M} = \{A_i \;|\; i \in I \}\) be an indexed set family. By definition, \(x \in \bigcup A_i\) meeans that \(x\) is in <em>at least one</em> of the sets \(A_i, i \in I\). In other words, <em>there is at least one index \(i\in I\) such that \(x\in A_i\)</em>; in symbols,</p>
-
-      <p>\[<br/>
-      (\exists i \in I) \quad x \in A.<br/>
-      \]</p>
-
-      <p>Thus we note that</p>
-
-      <p>\[<br/>
-      x\in \bigcup_{i\in I}A_i \quad \text{iff} \quad [(\exists i \in I)\; x\in A_i].<br/>
-      \]</p>
-
-      <p>Similarly,</p>
-
-      <p>\[<br/>
-      x\in \bigcap_i A_i \quad \text{iff} \quad [(\forall i \in I) \; x \in A_i ].<br/>
-      \]</p>
-
-      <p>Also note that \(x \notin \bigcup A_i​\) iff \(x​\) is in <em>none</em> of the \(A_i​\), i.e.,</p>
-
-      <p>\[<br/>
-      (\forall i) \quad x \notin A_i.<br/>
-      \]</p>
-
-      <p>Similarly, \(x \notin \bigcap A_i\) iff \(x\) fails to be in <em>some</em> \(A_i\), i.e.,</p>
-
-      <p>\[<br/>
-      (\exists i)\quad x \notin A_i . \quad \text{(Why?)}<br/>
-      \]</p>
-
-      <p>We now use these remarks to prove Theorem 2\(\rm (i)​\). We have to show that \(S-\bigcup A_i​\) has the same elements as \(\bigcap(S-A_i)​\), i.e., that \(x \in S - \bigcup A_i​\) iff \(x \in \bigcap(S-A_i)​\). But, by our definitions, we have</p>
-
-      <p>\[<br/>
-      \begin{aligned}<br/>
-      x \in S - \bigcup A_i<br/>
-      &amp; \iff [x\in S,\; x \notin \bigcup A_i] \\<br/>
-      &amp; \iff (\forall i)\;[x \in S, \;x \notin A_i] \\<br/>
-      &amp; \iff (\forall i)\; x \in S - A_i \\<br/>
-      &amp; \iff x \in \bigcap(S - A_i),<br/>
-      \end{aligned}<br/>
-      \]</p>
-
-      <p>as required.</p>
-
-      <p>One proves part \(\rm (ii)\) of Theorem 2 quite similarly. (Exercise!)</p>
-
-      <p>We shall now dwell on quantifiers more closely. Sometimes a formula \(P(x)\) holds not for all \(x\in A\), but only for those with an additional property \(Q(x)\). This will be written as</p>
-
-      <p>\[<br/>
-      (\forall x \in A \; | \; Q(x)) \quad P(x),<br/>
-      \]</p>
-
-      <p>where the vertical stroke stands for &quot;such that.&quot; For example, if \(N\) is again the naturals, then the formula</p>
-
-      <p>\[<br/>
-      (\forall x \in N \;|\; x&gt; 3) \quad x \ge 4 \tag 1<br/>
-      \]</p>
-
-      <p>means &quot;for each \(x \in N\)&quot; <em>such that</em> \(x &gt; 3\), it is true that \(x \ge 4.\) In other words, for natural, \(x &gt; 3 \implies x \ge 4\) (the arrow stands for &quot;implies&quot;). Thus \((1)\) can also be written as</p>
-
-      <p>\[<br/>
-      (\forall x \in N) \quad x&gt;3 \implies x \ge 4.<br/>
-      \]</p>
-
-      <p>In mathematics, we often have to form the <em>negation</em> of a formula that starts with one or several quantifiers. It is noteworthy, then, that <em>each universal quantifier is replaced by an existential one (and vice versa)</em>, followed by the negative of the subsequent part of the formula. For example, in calculus, a real number \(p\) is called the limit of a sequence \(x_1, x_2, ..., x_n, ...\) iff the following is true:</p>
-
-      <p>For every real \(\varepsilon &gt; 0\), there is a natural \(k\) (depending on \(\varepsilon\)) such that, for all natural \(n&gt;k\), we have \(|x_n - p|&lt;\varepsilon\).</p>
-
-      <p>If we agree that lower case latter (possibly with subscripts) denote real numbers, and that \(n\), \(k\) denote naturals \((n,k\in N)\), this sentence can be written as</p>
-
-      <p>\[<br/>
-      (\forall \varepsilon &gt; 0)\; (\exists k)\;(\forall n &gt; k)\quad |x_n - p|&lt;\varepsilon. \tag 2<br/>
-      \]</p>
-
-      <p>Here the expressions &quot;\((\forall \varepsilon &gt; 0)\)&quot; and &quot;\((\forall n &gt; k)\)&quot; stand for &quot;\((\forall \varepsilon \;|\; \varepsilon &gt; 0)\)&quot; and &quot;\((\forall n \;|\; n&gt;k)\)&quot;, respectively (such self-explanatory abbreviations will also be used in other similar cases).</p>
-
-      <p>Now, since \((2)\) states that &quot;for all \(\varepsilon &gt; 0\)&quot; something (i.e., the rest of \((2)\)) is true, the negation of \((2)\) starts with &quot;<em>there is an \(\varepsilon &gt; 0\)</em>&quot; (for which the rest of the formula fails). Thus we start with &quot;\((\exists \varepsilon &gt; 0)\)&quot;, and form the negation of what follows, and form the negation of what follows, i.e., of</p>
-
-      <p>\[<br/>
-      (\exists k)\;(\forall n &gt; k) \quad |x_n - p|&lt; \varepsilon.<br/>
-      \]</p>
-
-      <p>This negation, in turn, starts with &quot;\((\forall k)\)&quot;, etc. Step by step, we finally arrive at</p>
-
-      <p>\[<br/>
-      (\exists \varepsilon &gt; 0)\;(\forall k)\;(\exists n &gt; k)\quad |x_n - p| \ge \varepsilon.<br/>
-      \]</p>
-
-      <p>Note that here <em>the choice of \(n&gt;k\) may depend on k</em>. To stress it, we often write \(n_k\) for \(n\). Thus the negation of \((2)\) finally emerges as</p>
-
-      <p>\[<br/>
-      (\exists \varepsilon &gt; 0)\;(\forall k)\;(\exists n_k &gt; k)\quad |x_n - p| \ge \varepsilon. \tag 3<br/>
-      \]</p>
-
-      <p>The <em>order</em> in which the quantifiers follow each other is <em>essential</em>. For example, the formula</p>
-
-      <p>\[<br/>
-      (\forall n \in N)\;(\exists m \in N)\quad m&gt;n<br/>
-      \]</p>
-
-      <p>(&quot;each \(n \in N\) is exceeded by some \(m \in N\)&quot;) is true, but</p>
-
-      <p>\[<br/>
-      (\exists m \in N)\;(\forall n \in N)\quad m&gt;n<br/>
-      \]</p>
-
-      <p>is false. However, two <em>consecutive</em> universal quantifiers (or two <em>consecutive</em> existential ones) may be interchanged. We briefly write</p>
-
-      <p>\[<br/>
-      `` (\forall x, y \in A) &quot; \text{ for } ``(\forall x \in A) \; (\forall y \in A),&quot;<br/>
-      \]</p>
-
-      <p>and</p>
-
-      <p>\[<br/>
-      ``(\exists x, y \in A)&quot; \text{ for } ``(\exists x \in A)\; (\exists y \in A),&quot;\text{ etc.}<br/>
-      \]</p>
-
-      <p>We conclude with an important remark. The <em>universal</em> quantifier in a formula</p>
-
-      <p>\[<br/>
-      (\forall x \in A) \quad P(x)<br/>
-      \]</p>
-
-      <p><em>does not</em> imply the existence of an \(x\) for which \(P(x)\) is true. It is only meant to imply that <em>there is no \(x\) in \(A\) for which \(P(x)\) fails</em>.</p>
-
-      <p>The latter is true even if \(A = \emptyset\); we then say that &quot;(\(\forall x \in A)\; P(x)\)&quot; is <em>vacuously true</em>. For example, the formula \(\emptyset \subseteq B\), i.e.,</p>
-
-      <p>\[<br/>
-      (\forall x \in \emptyset)\quad x\in B,<br/>
-      \]</p>
-
-      <p><em>is always true (vacuously)</em>.</p>
-
-      <h3 id="toc_1">Problems in Set Theory</h3>
-
-      <ol>
-      <li><p>Prove Theorem 1 (show that \(x\) is in the left-hand set iff it is in the right-hand set). For example, for (d),<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      x\in (A \cup B) \cap C<br/>
-      &amp;\iff [x\in (A\cup B)\text{ and }x\in C]\\<br/>
-      &amp;\iff [(x\in A \text{ or } x\in B), \text{ and }x\in C] \\<br/>
-      &amp;\iff [(x\in A,x\in C) \text{ or } (x\in B, x\in C)].<br/>
-      \end{aligned}<br/>
-      \]</p></li>
-      <li><p>Prove that</p>
-      <p>(i) \(-(-A)=A\)</p>
-      <p>(ii) \(A \subseteq B \text{ iff } -B \subseteq -A\)</p>
-      <blockquote>
-      <p><a href="mweblib://15528765946247">Note: Problem 2.</a></p>
-      </blockquote></li>
-      <li><p>Prove that</p>
-      <p>\[<br/>
-      A - B = A \cap (-B) = (-B) - (-A) = -[(-A) \cup B].<br/>
-      \]</p>
-      <p>Also, give three expressions for \(A \cap B\) and \(A\cup B\), in terms of complements.</p>
-      <blockquote>
-      <p><a href="mweblib://15528772587156">Note: Problem 3.</a></p>
-      </blockquote></li>
-      <li><p>Prove the second duality law (Theorem 2(ii)).</p>
-      <blockquote>
-      <p><a href="mweblib://15528789204604">Note: Problem 4.</a></p>
-      </blockquote></li>
-      <li><p>Describe goemetrically the following sets on the real line:<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(i) }&amp; \{x \;|\; x&lt;0\}; &amp;\text{(ii) }&amp; \{x\;|\; |x|&lt;1\}; \\<br/>
-      \text{(iii) }&amp; \{x \;|\; |x-a|&lt;\varepsilon\}; &amp;\text{(iv) }&amp; \{x\;|\; a&lt;x\le b\};\\<br/>
-      \text{(v) }&amp; \{x\;|\;|x|&lt; 0\}.<br/>
-      \end{aligned}<br/>
-      \]</p>
-      <blockquote>
-      <p><a href="mweblib://15528862520330">Note: Problem 5.</a></p>
-      </blockquote></li>
-      <li><p>Let \((a,b)\) denote the set<br/>
-      \[<br/>
-      \{\{a\},\{a,b\}\}<br/>
-      \]<br/>
-      (Kuratowski&#39;s definition of an ordered pair).</p>
-      <p>(i) Which of the following statements are true?<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(a) }&amp; a\in (a,b); &amp;\text{(b) }&amp; \{a\}\in (a,b); \\<br/>
-      \text{(c) }&amp; (a,a) = \{a\}; &amp;\text{(d) }&amp; b \in (a,b); \\<br/>
-      \text{(e) }&amp; \{b\} \in (a,b); &amp;\text{(f) }&amp; \{a,b\} \in (a,b).<br/>
-      \end{aligned}<br/>
-      \]</p>
-      <p>(ii) Prove that \((a,b)=(u,v)\) <em>iff</em> \(a=u\) <em>and</em> \(b=v\).</p>
-      <p>​   [Hint: Consider seperately the two cases \(a=b\) and \(a\ne b\), nothing that \(\{a,a\}=\{a\}\). Also note that \(\{a\} \ne a\).]<br/>
-      ​   </p>
-      <blockquote>
-      <p><a href="mweblib://15528904850197">Note: Problem 6</a></p>
-      </blockquote></li>
-      <li><p>Describe geometrical the following sets in the \(xy\)-plane.<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(i)}\;\; &amp; \{(x,y) \;|\; x&lt;y\}; \\<br/>
-      \text{(ii)}\;\; &amp; \{(x,y)\;|\; x^2 + y^2 &lt; 1\}; \\<br/>
-      \text{(iii)}\;\; &amp; \{(x,y)\;|\; \text{max}(|x|,|y|)&lt;1\}; \\<br/>
-      \text{(iv)}\;\; &amp; \{(x,y) \;|\; y&gt; x^2\}; \\<br/>
-      \text{(v)}\;\;&amp; \{(x,y)\;|\; |x|+|y|&lt;4\}; \\<br/>
-      \text{(vi)}\;\;&amp; \{(x,y)\;|\;(x-2)^2 + (y+5)^2\le 9\}; \\<br/>
-      \text{(vii)}\;\;&amp; \{(x,y)\;|\; x = 0\}; \\<br/>
-      \text{(viii)}\;\;&amp; \{(x,y) \;|\; x^2 - 2xy + y^2 &lt; 0 \}; \\<br/>
-      \text{(ix)}\;\;&amp; \{(x,y) \;|\; x^2 - 2xy + y^2 = 0\}.<br/>
-      \end{aligned}<br/>
-      \]</p>
-      <blockquote>
-      <p><a href="mweblib://15528923705933">Note: Problem 7</a></p>
-      </blockquote></li>
-      <li><p>Prove that<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(i)}\;\;&amp; (A\cup B)\times C = (A\times C)\cup (B\times C); \\<br/>
-      \text{(ii)}\;\;&amp; (A\cap B)\times (C\cap D) = (A\times C)\cap (B\times D); \\<br/>
-      \text{(iii)}\;\;&amp; (X\times Y)-(X&#39;\times Y&#39;) = [(X \cap X&#39;) \times (Y-Y&#39;)]\cup [(X - X&#39;)\times Y].<br/>
-      \end{aligned}<br/>
-      \]<br/>
-      [Hint: In each case, whow that an <em>ordered pair \((x,y)\)</em> is in the left-hand set iff it is in the right-hand set, treating \((x,y)\) as <em>one</em> elememt of the Cartesian product.]</p>
-      <blockquote>
-      <p><a href="mweblib://15529046031142">Note: Problem 8</a></p>
-      </blockquote></li>
-      <li><p>Prove the <em>distributive laws</em><br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(i)}\;\;&amp; A \cap \bigcup X_i = \bigcup (A \cap X_i); \\<br/>
-      \text{(ii)}\;\;&amp; A\cup \bigcap X_i = \bigcap (A \cup X_i); \\<br/>
-      \text{(iii)}\;\;&amp; \left(\bigcap X_i\right)-A = \bigcap (X_i - A); \\<br/>
-      \text{(iv)}\;\;&amp; \left(\bigcup X_i\right)- A = \bigcup(x_i - A); \\<br/>
-      \text{(v)}\;\;&amp; \bigcap X_i \cup \bigcap Y_j = \bigcap_{i,j}(X_i \cup Y_j);^4 \\<br/>
-      \text{(vi)}\;\;&amp; \bigcup X_i \cap \bigcup Y_j = \bigcup_{i,j}(X_i \cap Y_j).<br/>
-      \end{aligned}<br/>
-      \]</p>
-      <blockquote>
-      <p><a href="mweblib://15529764639741">Note: Problem 9</a></p>
-      </blockquote></li>
-      <li><p>Prove that<br/>
-      \[<br/>
-      \begin{aligned}<br/>
-      \text{(i)}\;\;&amp; \left(\bigcup A_i \right)\times B = \bigcup (A_i\times B); \\<br/>
-      \text{(ii)}\;\;&amp; \left( \bigcap A_i \right)\times B = \bigcap(A_i \times B); \\<br/>
-      \text{(iii)}\;\;&amp; \left( \bigcap_i A_i \right) \times \left(\bigcap_j B_j\right) = \bigcap_{i,j}(A_i \times B_j); \\<br/>
-      \text{(iv)}\;\;&amp; \left(\bigcup_i A_i\right)\times \left( \bigcup_j B_j \right) = \bigcup_{i,j} (A_i \times B_j).<br/>
-      \end{aligned}<br/>
-      \]</p>
-      <blockquote>
-      <p><a href="mweblib://15530440619799">Note: Problem 10</a></p>
-      </blockquote></li>
-      </ol>
 
     </div>
+
     <!-- end markdown-body -->
 
 

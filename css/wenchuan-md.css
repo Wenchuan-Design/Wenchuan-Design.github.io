@@ -149,7 +149,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   font-size: 1rem;
-  margin-top: 128px;
+  margin-top: 160px;
   margin-bottom: 100px;
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }
