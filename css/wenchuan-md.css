@@ -122,6 +122,7 @@ body [class*="gridGallery"] li .link {
   display: flex;
   padding: 0.5rem;
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
   .MathJax_Display .MathJax {
     display: inline-block;
