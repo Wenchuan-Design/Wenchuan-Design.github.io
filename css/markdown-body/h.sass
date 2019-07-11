@@ -1,3 +1,14 @@
+%jumpToId
+    content: ""
+    display: block
+    margin-top: calc(-1em - 56px) // 一倍间距 + 浏览器高度 // 负数
+    height: calc(1em + 56px) // 一倍间距 + 浏览器高度
+    visibility: hidden
+
+.id
+    &::before
+        @extend %jumpToId
+
 h1, h2, h3, h4, h5, h6
     @include basicLineHight(-0.25)
     // margin-top: 2.5rem
@@ -7,11 +18,7 @@ h1, h2, h3, h4, h5, h6
     position: static
 
     &::before
-        content: ""
-        display: block
-        margin-top: calc(-2em - 44px)
-        height: calc(2em + 44px)
-        visibility: hidden
+        @extend %jumpToId
         // z-index: 0
 
 h1
@@ -40,7 +47,6 @@ h6
 
 .title
     margin-bottom: 3rem
-    // @include reset(a)
 
     h1
         margin-top: 0

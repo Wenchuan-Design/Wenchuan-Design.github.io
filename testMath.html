@@ -34,9 +34,14 @@
   <body>
     <!-- begin markdown-body -->
     <div class="markdown-body">
-        <h1 id="toc_0">Sets and Operations on Sets. Quantifiers</h1>
+        <div class="title">
 
-        <h2 id="toc_1">Sets</h2>
+        <h1 id="toc_0">1-3 Sets and Operations on Sets. Quantifiers</h1>
+
+        <p>Book: <strong><a href="#n">Mathematical Analysis</a></strong><br>
+        Chapter: <strong><a href="#n">Chapter 1: Set theory</a></strong><br>
+        Author: <strong><a href="#n">Elias Zakon</a></strong><br></p>
+        </div>
 
         <p>A <em>set</em> is a collection of objects of any specified kind. Sets are usually denoted by capitals. The objects belonging to a set are called its <em>elements</em> or <em>members</em>. We write \(x\in A\) if \(x\) is a member of \(A\), and \(x \notin A\) if it is not.</p>
 
@@ -49,8 +54,6 @@
         \]</p>
 
         <p>If, however, \(A \subseteq B\) but \(B \not \subseteq A\) (i.e., \(B\) has some elements <em>not</em> in \(A\)), we call \(A\) a <em>proper</em> subset of \(B\) and write \(A \subset B\) or \(B \supset A\). &quot;\(\subseteq\)&quot; is callded <em>inclusion relation</em>.</p>
-
-        <h2 id="toc_2">Ordered Pairs</h2>
 
         <p>Set equality is not affected by the <em>order</em> in which elements appear. Thus \(\{a,b\} = \{b,a\}\). Not so for <em>ordered pairs</em> \((a, b)\).<sup>*</sup> For such pairs,</p>
 
@@ -71,11 +74,7 @@
         <!-- 这里少了一个注解 --></p>
         </blockquote>
 
-        <h2 id="toc_3">Conditions of Sets</h2>
-
         <p>We write \(\{ x \;|\; P(x) \}\) for &quot;The set of all \(x\) satisfying the condition \(P(x)\).&quot; Similarly, \(\{(x,y) \;|\; P(x)\}\) is the set of all <em>ordered pairs</em> for which \(P(x,y)\) holds; \(\{x\in A \;|\; P(x)\}\) is the set of those \(x\) <em>in</em> \(A\) for which \(P(x)\) is true.</p>
-
-        <h2 id="toc_4">Operations on Sets</h2>
 
         <p>For any sets \(A\) and \(B\), we define their <em>union</em> \(A \cup B\), <em>intersection</em> \(A \cap B\), <em>difference</em> \(A-B\), and <em>Cartesian Product</em> (or <em>cross product</em>) \(A \times B\), as follows:</p>
 
@@ -104,14 +103,14 @@
         <p>\[
         \{ x\in A \;|\; x \notin B \}.
         \]</p>
-        <blockquote class="framed">
 
+        <blockquote>
         <p><strong>Notes</strong>:</p>
 
         <ol>
         <li>Unlike the case in arithmetic, \( A - B = \emptyset \) does not implies \(B - A = \emptyset\). For if \(A \subset B\), \(A-B = \emptyset\), but \(B=A \ne \emptyset\);</li>
         <li>So, \(A-B=B-A\) iff \(A=B\), and \(A-B=B-A=\emptyset\);</li>
-        <li>If \(A\) and \(B\) are disjoint, i.e. \(A \cap B = \emptyset\), \(A-B=A\) and \(B-A=B\).</li>
+        <li>If \(A\) and \(B\) are disjoint, i.e., \(A \cap B = \emptyset\), \(A-B=A\) and \(B-A=B\).</li>
         </ol>
         </blockquote>
 
@@ -127,7 +126,7 @@
 
         <p>\(A\) and \(B\) are said to be <em>disjoint</em> iff \(A\cap B=\emptyset\) (no common elements). Otherwise, we write \(-X\) for \(S-X\), and call \(-X\) the <em>complement</em> of \(X\) (in \(S\)). Various other notations are likewise in use.</p>
 
-        <h4 id="toc_5">Examples.</h4>
+        <h4 id="toc_1">Examples.</h4>
 
         <p>Let \(A=\{ 1,2,3 \}\), \(B=\{2,4\}\). Then</p>
 
@@ -146,13 +145,35 @@
         A=\{x\in N \;|\; x&lt;4 \}
         \]</p>
 
-        <ul>
-        <li>\(A\times B = \{ (1,2),(1,4),(2,2),(2,4),(3,2),(3,4) \} \{ (1,2),(1,4),(2,2),(2,4),(3,2),(3,4) \}\).</li>
-        </ul>
+        <h4 id="toc_2">Theorem 1.</h4>
 
+        <p>\[
+        \begin{aligned}
+        &amp;\text{(a) } A \cup A = A,\; A \cap A = A; \\
+        &amp;\text{(b) } A \cup A = B \cup A,\; A \cap B = B \cap B; \\
+        &amp;\text{(c) } (A \cup B)\cup C = A \cup (B \cup C), (A \cap B) \cap C = A \cap (B \cap C); \\
+        &amp;\text{(d) } (A \cup B)\cap C = (A \cap C) \cup (B\cap C); \\
+        &amp;\text{(e) } (A \cap B)\cap C = (A \cup C) \cap (B\cup C).\\
+        \end{aligned}
+        \]</p>
+
+        <p>The proof of (d) is sketched in Problem 1. The rest is left to the reader.</p>
+
+        <p>Because of (c), we may omit brackets in \(A \cup B \cup C\) and \(A \cap B \cap C\); similarly for four or more sets. More generally, we may consider whole <em>families</em> of sets, i.e., collections of many (possibly infinitely many) sets. If \(\cal M\) is such a family, we define its union, \(\bigcup \cal M\), to be the set of all elements \(x\), each belonging to <em>at least one</em> set of the family. The intersection of \(\cal M\), denoted \(\bigcap \cal M\), consists of those \(x\) that belong to all sets of the family <em>simultaneously</em>. Instead, we also write</p>
+
+        <p>\[
+        \bigcup \{ X \;|\; X \in \cal M \}
+        \]</p>
+
+        <p>and</p>
+
+        <p>\[
+        \bigcap \{ X \;|\; X \in \cal M \},
+        \]</p>
+
+        <p>respectively.</p>
 
     </div>
-
     <!-- end markdown-body -->
 
 

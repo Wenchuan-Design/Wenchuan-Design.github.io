@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -48,6 +49,18 @@ table {
   background-color: #D6E5FB; }
 
 @font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot");
+  src: local("Noto Sans SC Regular"), local("NotoSansSC-Regular"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff2") format("woff2"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff") format("woff"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.ttf") format("truetype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.svg#NotoSansSC") format("svg"); }
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot");
+  src: local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff2") format("woff2"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff") format("woff"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.ttf") format("truetype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.svg#NotoSansSC") format("svg"); }
+@font-face {
   font-family: "Noto Serif SC";
   font-style: normal;
   font-weight: 400;
@@ -75,7 +88,7 @@ table {
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  font-family: "Noto Serif SC", serif; }
+  font-family: "Noto Sans SC", sans-serif; }
 
 code,
 code[class*="language-"],
@@ -89,11 +102,11 @@ pre[class*="language-"] {
 *[class*="font-"][class*="-test"] {
   font-family: "Barriecito", cursive; }
 
-.markdown-body p, .md p, .markdown-body hr, .md hr, .markdown-body .reference, .md .reference, .markdown-body blockquote, .md blockquote, .markdown-body table, .md table, .markdown-body details, .md details, .markdown-body pre[class*="language-"], .md pre[class*="language-"] {
+.markdown-body p, .md p, .markdown-body hr, .md hr, .markdown-body .reference, .md .reference, .markdown-body details, .md details, .markdown-body pre[class*="language-"], .md pre[class*="language-"] {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-.markdown-body > img, .markdown-body > .imgFrame, .markdown-body > figure, .markdown-body details > img, .markdown-body details > .imgFrame, .markdown-body details > figure, .markdown-body li > img, .markdown-body li > .imgFrame, .markdown-body li > figure, .markdown-body blockquote > img, .markdown-body blockquote > .imgFrame, .markdown-body blockquote > figure, .md > img, .md > .imgFrame, .md > figure, .md details > img, .md details > .imgFrame, .md details > figure, .md li > img, .md li > .imgFrame, .md li > figure, .md blockquote > img, .md blockquote > .imgFrame, .md blockquote > figure {
+.markdown-body > img, .markdown-body > .imgFrame, .markdown-body > figure, .markdown-body details > img, .markdown-body details > .imgFrame, .markdown-body details > figure, .markdown-body li > img, .markdown-body li > .imgFrame, .markdown-body li > figure, .markdown-body blockquote > img, .markdown-body blockquote > .imgFrame, .markdown-body blockquote > figure, .md > img, .md > .imgFrame, .md > figure, .md details > img, .md details > .imgFrame, .md details > figure, .md li > img, .md li > .imgFrame, .md li > figure, .md blockquote > img, .md blockquote > .imgFrame, .md blockquote > figure, .markdown-body blockquote, .md blockquote, .markdown-body table, .md table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
@@ -173,8 +186,9 @@ nav.navBar {
   margin: 0 auto;
   padding: 0 20px;
   font-size: 1rem;
-  margin-top: 160px;
-  margin-bottom: 100px;
+  margin-top: calc(56px + 5rem);
+  margin-bottom: 5rem;
+  overflow-x: hidden;
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }
   .markdown-body > :first-child, .md > :first-child {
@@ -247,18 +261,18 @@ nav.navBar {
             padding: 0; }
           .markdown-body figure table tr th:hover, .markdown-body figure table tr td:hover, .md figure table tr th:hover, .md figure table tr td:hover {
             background-color: inherit; }
+  .markdown-body .id::before, .markdown-body h1::before, .markdown-body h2::before, .markdown-body h3::before, .markdown-body h4::before, .markdown-body h5::before, .markdown-body h6::before, .md .id::before, .md h1::before, .md h2::before, .md h3::before, .md h4::before, .md h5::before, .md h6::before {
+    content: "";
+    display: block;
+    margin-top: calc(-1em - 56px);
+    height: calc(1em + 56px);
+    visibility: hidden; }
   .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
     line-height: 1.75;
     margin-top: 2em;
     margin-bottom: 1em;
     font-weight: bold;
     position: static; }
-    .markdown-body h1::before, .markdown-body h2::before, .markdown-body h3::before, .markdown-body h4::before, .markdown-body h5::before, .markdown-body h6::before, .md h1::before, .md h2::before, .md h3::before, .md h4::before, .md h5::before, .md h6::before {
-      content: "";
-      display: block;
-      margin-top: calc(-2em - 44px);
-      height: calc(2em + 44px);
-      visibility: hidden; }
   .markdown-body h1, .md h1 {
     font-size: 2rem; }
   .markdown-body h2, .md h2 {

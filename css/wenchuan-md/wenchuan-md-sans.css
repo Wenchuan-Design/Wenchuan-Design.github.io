@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+html {
+  font-family: "Noto Sans SC", sans-serif !important; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,6 +52,18 @@ table {
   background-color: #D6E5FB; }
 
 @font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot");
+  src: local("Noto Sans SC Regular"), local("NotoSansSC-Regular"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff2") format("woff2"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.woff") format("woff"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.ttf") format("truetype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-regular.svg#NotoSansSC") format("svg"); }
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot");
+  src: local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff2") format("woff2"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.woff") format("woff"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.ttf") format("truetype"), url("../fonts/noto-sans-sc-v8-latin/noto-sans-sc-v8-latin-700.svg#NotoSansSC") format("svg"); }
+@font-face {
   font-family: "Noto Serif SC";
   font-style: normal;
   font-weight: 400;
@@ -75,7 +91,7 @@ table {
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  font-family: "Noto Serif SC", serif; }
+  font-family: "Noto Sans SC", sans-serif; }
 
 code,
 code[class*="language-"],
@@ -89,11 +105,11 @@ pre[class*="language-"] {
 *[class*="font-"][class*="-test"] {
   font-family: "Barriecito", cursive; }
 
-body p, body hr, body .reference, body blockquote, body table, body details, body pre[class*="language-"] {
+body p, body hr, body .reference, body details, body pre[class*="language-"] {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-body > img, body > .imgFrame, body > figure, body details > img, body details > .imgFrame, body details > figure, body li > img, body li > .imgFrame, body li > figure, body blockquote > img, body blockquote > .imgFrame, body blockquote > figure {
+body > img, body > .imgFrame, body > figure, body details > img, body details > .imgFrame, body details > figure, body li > img, body li > .imgFrame, body li > figure, body blockquote > img, body blockquote > .imgFrame, body blockquote > figure, body blockquote, body table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
@@ -150,8 +166,9 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   font-size: 1rem;
-  margin-top: 160px;
-  margin-bottom: 100px;
+  margin-top: calc(56px + 5rem);
+  margin-bottom: 5rem;
+  overflow-x: hidden;
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }
   body > :first-child {
@@ -224,18 +241,18 @@ body {
             padding: 0; }
           body figure table tr th:hover, body figure table tr td:hover {
             background-color: inherit; }
+  body .id::before, body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before {
+    content: "";
+    display: block;
+    margin-top: calc(-1em - 56px);
+    height: calc(1em + 56px);
+    visibility: hidden; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     line-height: 1.75;
     margin-top: 2em;
     margin-bottom: 1em;
     font-weight: bold;
     position: static; }
-    body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before {
-      content: "";
-      display: block;
-      margin-top: calc(-2em - 44px);
-      height: calc(2em + 44px);
-      visibility: hidden; }
   body h1 {
     font-size: 2rem; }
   body h2 {

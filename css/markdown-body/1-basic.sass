@@ -1,16 +1,15 @@
 &
     background-color: white
     color: $rgbaDark
-    // letter-spacing: .2px
     @include basicLineHight(0)
     max-width: $markdownBody
     min-width: 200px
     margin: 0 auto
     padding: 0 20px
     font-size: 1rem
-    margin-top: 160px
-    margin-bottom: 100px
-    // overflow-x: hidden
+    margin-top: calc(56px + 5rem) // 导航栏高度 + 想要的间距
+    margin-bottom: 5rem
+    overflow-x: hidden // 让 Markdown 编辑器也 OK
 
     >:first-child
         margin-top: 0
@@ -23,9 +22,7 @@
     p, li, table, blockquote
         a
             color: $red
-            // color: inherit
             cursor: pointer
-            // text-decoration: underline
 
             &:hover
                 text-decoration: underline
