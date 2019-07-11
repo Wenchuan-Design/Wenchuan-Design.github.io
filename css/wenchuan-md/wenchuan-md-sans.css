@@ -593,7 +593,8 @@ body {
     text-decoration: line-through;
     opacity: 0.64; }
   body em {
-    font-style: italic; }
+    font-style: italic;
+    padding-right: 2px; }
   body [class*="gridGallery"] {
     margin: 0;
     padding: 0;

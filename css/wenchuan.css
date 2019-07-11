@@ -653,7 +653,8 @@ nav.navBar {
     text-decoration: line-through;
     opacity: 0.64; }
   .markdown-body em, .md em {
-    font-style: italic; }
+    font-style: italic;
+    padding-right: 2px; }
   .markdown-body [class*="gridGallery"], .md [class*="gridGallery"] {
     margin: 0;
     padding: 0;
