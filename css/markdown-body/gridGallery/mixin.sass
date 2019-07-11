@@ -1,0 +1,37 @@
+@mixin col($input)
+
+    $gap: 1rem
+
+    grid-column-gap: $gap
+    grid-row-gap: $gap
+
+    @if $input == 1
+        grid-template-columns: 100%
+        margin-right: $gap * 0
+
+    @if $input == 2
+        grid-template-columns: 50% 50%
+        margin-right: $gap * 1
+
+    @if $input == 3
+        grid-template-columns: 33.3333% 33.3333% 33.3333%
+        margin-right: $gap * 2
+
+
+@mixin grid($input)
+    @if $input == "default"
+
+        @include col(2)
+
+        @media only screen and (max-width: $iPhonePlus)
+            @include col(1)
+
+
+    @if $input == "small"
+
+        @include col(3)
+
+        @media only screen and (max-width: $markdownBody)
+            @include col(2)
+        @media only screen and (max-width: $iPhonePlus)
+            @include col(1)

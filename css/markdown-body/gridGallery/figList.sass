@@ -1,0 +1,58 @@
+&[class*="figList"]
+    grid-row-gap: 2rem !important
+    li
+        figcaption
+            display: block
+
+        figure
+            display: block
+            margin: 0
+
+            .imgFrame
+                position: relative
+                // @extend %bgHoverAndClick
+
+                margin: 0
+                padding-bottom: 100%
+                overflow: hidden
+                @extend %mainBorder
+                background-color: $rgbaBg2
+                position: relative
+
+                img
+
+                    width: 100%
+
+                    padding: 1rem
+                    height: 100%
+                    position: absolute
+                    object-fit: contain
+
+
+    &[class*="-square"]
+        figure
+            .imgFrame
+                padding-bottom: 100%
+                img
+                    object-fit: cover
+
+    &[class*="-16to9"]
+        figure
+            .imgFrame
+                padding-bottom: 56.25%
+                img
+                    object-fit: cover
+
+    &[class*="-4to3"]
+        figure
+            .imgFrame
+                padding-bottom: 75%
+                img
+                    object-fit: cover
+
+    &[class*="--borderless"]
+        figure
+            .imgFrame
+                border: none
+                img
+                    padding: 0
