@@ -34,6 +34,7 @@
   <body>
     <!-- begin markdown-body -->
     <div class="markdown-body">
+        <!-- 1-3 Sets and Operations on Sets. Quantifiers -->
         <div class="title">
 
         <h1 id="toc_0">1-3 Sets and Operations on Sets. Quantifiers</h1>
@@ -103,9 +104,9 @@
         <p>\[
         \{ x\in A \;|\; x \notin B \}.
         \]</p>
+        <blockquote class="framed">
 
-        <blockquote>
-        <p><strong>Notes</strong>:</p>
+        <h5 id="toc_1">Wenchuan Note:</h5>
 
         <ol>
         <li>Unlike the case in arithmetic, \( A - B = \emptyset \) does not implies \(B - A = \emptyset\). For if \(A \subset B\), \(A-B = \emptyset\), but \(B=A \ne \emptyset\);</li>
@@ -126,7 +127,7 @@
 
         <p>\(A\) and \(B\) are said to be <em>disjoint</em> iff \(A\cap B=\emptyset\) (no common elements). Otherwise, we write \(-X\) for \(S-X\), and call \(-X\) the <em>complement</em> of \(X\) (in \(S\)). Various other notations are likewise in use.</p>
 
-        <h4 id="toc_1">Examples.</h4>
+        <h4 id="toc_2">Examples.</h4>
 
         <p>Let \(A=\{ 1,2,3 \}\), \(B=\{2,4\}\). Then</p>
 
@@ -145,7 +146,7 @@
         A=\{x\in N \;|\; x&lt;4 \}
         \]</p>
 
-        <h4 id="toc_2">Theorem 1.</h4>
+        <h4 id="toc_3">Theorem 1.</h4>
 
         <p>\[
         \begin{aligned}
@@ -172,6 +173,181 @@
         \]</p>
 
         <p>respectively.</p>
+
+        <p>Often we can <em>number</em> the sets of a given family:</p>
+
+        <p>\[
+        A_1, A_2, ..., A_n, ....
+        \]</p>
+
+        <p>More generally, we may denote all sets of a family \(\cal M\) by some letter (say, \(X\)) with indices \(i\) attached to it (the indices may, but <em>need not</em>, be numbers). The family \(\cal M\) then is denoted by \(\left\{ X_i \right\}\) or \(\left\{ X_i \;|\; i \in I \right\}\), where \(i\) is a variable index ranging over a suitable set \(I\) of indices (&quot;index notation&quot;). In this case, the union and intersection of \(\cal M\) are denoted by such symbols as</p>
+
+        <p>\[
+        \begin{aligned}
+        \bigcup \left\{ X_i \;|\; i \in I \right\} = \bigcup_i X_i = \bigcup X_i = \bigcup_{i \in I}X_i; \\
+        \bigcap \left\{ X_i \;|\; i \in I \right\} = \bigcap_i X_i = \bigcap X_i = \bigcap_{i \in I} X_i .
+        \end{aligned}
+        \]</p>
+
+        <p>If the indices are <em>integers</em>, we may write</p>
+
+        <p>\[
+        \bigcup_{n=1}^m X_n, \bigcup_{n=1}^\infty X_n, \bigcup_{n=k}^m X_n,
+        \]</p>
+
+        <p>etc.</p>
+
+        <h4 id="toc_4">Theorem 2 (De Morgan&#39;s duality laws).</h4>
+
+        <p><em>For any sets \(S\) and \(A_i(i\in I)\), the following are true</em>:</p>
+
+        <p>\[
+        \begin{aligned}
+        \text{(i) } &amp; S - \bigcup_i A_i = \bigcap_i (S - A_i); \\
+        \text{(ii) } &amp; S - \bigcap_i A_i = \bigcup_i (S - A_i).
+        \end{aligned}
+        \]</p>
+
+        <p>(If \(S\) is the entire space, we may write \(-A_i\) for \(S-A_i\), \(-\bigcup A_i\) for \(S - \bigcup A_i\), etc.)</p>
+
+        <p>Before proving these laws, we introduce some useful notation.</p>
+
+        <h4 id="toc_5">Logical Quantifiers.</h4>
+
+        <p>From logic we borrow the following abbreviations.</p>
+
+        <p>&quot;\((\forall x \in A)...\)&quot; means &quot;For each member \(x\) of \(A\), it is ture that...&quot;</p>
+
+        <p>&quot;\((\exists x \in A)...\)&quot; means &quot;There is at least one \(x\) in \(A\) such that...&quot;</p>
+
+        <p>&quot;\((\exists ! x \in A)...\)&quot; means &quot;There is a <em>unique</em> \(x\) in \(A\) such that...&quot;</p>
+
+        <p>The symbols &quot;\((\forall x \in A)\)&quot; and &quot;\((\exists x \in A)\)&quot; are called the <em>universal</em> and <em>existential quantifiers</em>, respectively. If confusion is ruled out, we simply write &quot;\((\forall x)\)&quot;, &quot;\((\exists x)\)&quot;, and &quot;\((\exists ! x)\)&quot; instead. For example, if we agree that \(m\), \(n\) denote <em>naturals</em>, then</p>
+
+        <p>\[
+        (\forall n)(\exists m) \quad m &gt; n
+        \]</p>
+
+        <p>means &quot;For each natural \(n\), there is a natural \(m\) such that \(m&gt;n\).&quot; We give some more examples.</p>
+
+        <p>Let \({\cal M} = \left\{ A_i \;|\; i \in I \right\}\) be an indexed set family. By definition, \(x\in \bigcup A_i\) means that \(x\) is in <em>at least one</em> of the sets \(A_i\), \(i\in I\). In other words, <em>there is at least index \(i \in I\) such that \(x \in A_i\)</em>; in symbols,</p>
+
+        <p>\[
+        (\exists i \in I) \quad x \in A_i.
+        \]</p>
+
+        <p>Thus we note that</p>
+
+        <p>\[
+        x \in \bigcup_{i \in I} A_i \iff \left[ (\exists i \in I) \; x \in A_i \right].
+        \]</p>
+
+        <p>Similarly,</p>
+
+        <p>\[
+        x \in \bigcap_i A_i \iff \left[ (\forall i \in I) \; x \in A_i \right].
+        \]</p>
+
+        <p>Also note that \(x \notin \bigcup A_i\) iff \(x\) is in <em>none</em> of the \(A_i\), i.e.,</p>
+
+        <p>\[
+        (\forall i)\quad x \notin A_i .
+        \]</p>
+
+        <p>Similarly, \(x \notin \bigcap A_i\) iff \(x\) fails to be in <em>some</em> \(A_i\), i.e.,</p>
+
+        <p>\[
+        (\exists i)\quad x \notin A_i.
+        \]</p>
+
+        <p>(Why?)</p>
+        <blockquote class="framed">
+
+        <h5 id="toc_6">Wenchuan Note:</h5>
+
+        <p>\[
+        \begin{aligned}
+        x \notin \bigcap A_i &amp;\iff x \in - \bigcap A_i \\
+        &amp;\iff (\forall i) \; x \in -A_i \\
+        &amp;\iff (\exists i) \; x \notin A_i
+        \end{aligned}
+        \]</p>
+
+        <p>Similar to line 2 and line 3, this is also true:</p>
+
+        <p>\[
+        (\forall i) \; x \in A_i \iff (\exists i) \; x \notin -A_i.
+        \]</p>
+
+        <p>\((\forall i)\; x\in A_i\) means \(x\) can <em>only</em> appear in \(\bigcap A_i\). Now the space &quot;where \(x\) never exists&quot; (for there is a &quot;\(\forall\)&quot;), i.e., \(-\bigcap A_i\), is obviously the union of all \(-A_i\), i.e. \(\bigcup (-A_i)\).</p>
+
+        <p>This is also prooved:</p>
+
+        <p>\[
+        \begin{aligned}
+        (\forall i) \; x \in A_i &amp;\iff x \in \bigcap A_i \\
+        &amp;\iff x \notin - \bigcap A_i \\
+        &amp;\iff x \notin \bigcup (-A_i) \\
+        &amp;\iff (\exists i) \; x \notin -A_i
+        \end{aligned}
+        \]</p>
+
+        <p>Similarly</p>
+
+        <p>\[
+        \begin{aligned}
+        (\forall i) \; x \in -A_i &amp;\iff x \in \bigcap (-A_i) \\
+        &amp;\iff x \notin -\bigcap (-A_i)\\
+        &amp;\iff x \notin \bigcup (-(-A_i)) \\
+        &amp;\iff x \notin \bigcup A_i \\
+        &amp;\iff (\exists i) \; x \notin A_i
+        \end{aligned}
+        \]</p>
+        </blockquote>
+
+        <p>We now use these remarks to prove Theorem 2(i). We have to show that \(S-\bigcup A_i\) has the same elements as \(\bigcap(S-A_i)\), i.e., that \(x\in S-\bigcup A_i\) iff \(x\in \bigcap (S-A_i)\). But, by our definitions, we have</p>
+
+        <p>\[
+        \begin{aligned}
+        x \in S - \bigcup A_i
+        &amp;\iff \left[ x\in S , x \notin \bigcup A_i \right] \\
+        &amp;\iff (\forall i) \left[ x \in S, x \notin A_i \right] \\
+        &amp;\iff (\forall i) \; x \in S - A_i \\
+        &amp;\iff x \in \bigcap \left( S-A_i \right)
+        \end{aligned}
+        \]</p>
+
+        <h1 id="toc_7"></h1>
+
+        <h1 id="toc_8"></h1>
+
+        <h1 id="toc_9"></h1>
+
+        <h1 id="toc_10"></h1>
+
+        <h1 id="toc_11"></h1>
+
+        <h1 id="toc_12"></h1>
+
+        <h1 id="toc_13"></h1>
+
+        <h1 id="toc_14"></h1>
+
+        <h1 id="toc_15"></h1>
+
+        <h1 id="toc_16"></h1>
+
+        <h1 id="toc_17"></h1>
+
+        <h1 id="toc_18"></h1>
+
+        <h1 id="toc_19"></h1>
+
+        <h1 id="toc_20"></h1>
+
+        <h1 id="toc_21"></h1>
+
+        <h1 id="toc_22"></h1>
 
     </div>
     <!-- end markdown-body -->
