@@ -36,7 +36,7 @@
       <nav class="navBar">
           <a href="#">
               <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/440px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg">
-              <div class="title">Mathematical Analysis / CHapter I</div>
+              <div class="title">Mathematical Analysis / Chapter I</div>
           </a>
       </nav>
 
@@ -117,8 +117,8 @@
         <h5 id="toc_1">Wenchuan Note:</h5>
 
         <ol>
-        <li>Unlike the case in arithmetic, \( A - B = \emptyset \) does not implies \(B - A = \emptyset\). For if \(A \subset B\), \(A-B = \emptyset\), but \(B=A \ne \emptyset\);</li>
-        <li>So, \(A-B=B-A\) iff \(A=B\), and \(A-B=B-A=\emptyset\);</li>
+        <li>Unlike the case in arithmetic, \( A - B = \emptyset \) does not implie \(B - A = \emptyset\). For if \(A \subset B\), \(A-B = \emptyset\), but \(B=A \ne \emptyset\);</li>
+        <li>So, \(A-B=B-A\) iff \(A=B\), and it is no doubt that \(A-B=B-A=\emptyset\);</li>
         <li>If \(A\) and \(B\) are disjoint, i.e., \(A \cap B = \emptyset\), \(A-B=A\) and \(B-A=B\).</li>
         </ol>
         </blockquote>
@@ -325,7 +325,24 @@
         \end{aligned}
         \]</p>
 
-        <h1 id="toc_7"></h1>
+        <p>as required.</p>
+        <blockquote class="framed">
+
+        <h5 id="toc_7">Wenchuan note:</h5>
+
+        <p>\[
+        \begin{aligned}
+        x \in S - \bigcup A_i
+        &amp;\iff \left[ x\in S , x \notin \bigcup A_i \right] \\
+        &amp;\iff \left[ x \in S, x \in - \bigcup A_i \right]  \\
+        &amp;\iff \left[ x \in S, x \in \bigcap (-A_i) \right] \\
+        &amp;\iff (\forall i) \left[ x \in S, x \in -A_i \right]  \\
+        &amp;\iff (\forall i) \left[ x \in S, x \notin A_i \right] \\
+        &amp;\iff (\forall i) \; x \in S - A_i \\
+        &amp;\iff x \in \bigcap \left( S-A_i \right)
+        \end{aligned}
+        \]</p>
+        </blockquote>
 
         <h1 id="toc_8"></h1>
 
@@ -356,6 +373,8 @@
         <h1 id="toc_21"></h1>
 
         <h1 id="toc_22"></h1>
+
+        <h1 id="toc_23"></h1>
 
     </div>
     <!-- end markdown-body -->
