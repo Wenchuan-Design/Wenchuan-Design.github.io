@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap&subset=chinese-simplified");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -81,7 +83,7 @@ table {
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Noto Sans", "Noto Sans SC", sans-serif;
   letter-spacing: 0.15px; }
 
 code,
@@ -90,11 +92,9 @@ pre[class*="language-"] {
   font-family: "Source Code Pro", monospace; }
 
 *[class*="font-"][class*="-sans"] {
-  font-family: "Noto Sans SC", sans-serif; }
+  font-family: "Noto Sans", "Noto Sans SC", sans-serif; }
 *[class*="font-"][class*="-serif"] {
-  font-family: "Noto Serif SC", serif; }
-*[class*="font-"][class*="-test"] {
-  font-family: "Barriecito", cursive; }
+  font-family: "Noto Serif", "Noto Serif SC", serif; }
 
 .markdown-body p, .md p, .markdown-body hr, .md hr, .markdown-body .reference, .md .reference, .markdown-body details, .md details, .markdown-body pre[class*="language-"], .md pre[class*="language-"] {
   margin-top: 1rem;
@@ -647,8 +647,7 @@ nav.navBar {
     text-decoration: line-through;
     opacity: 0.64; }
   .markdown-body em, .md em {
-    font-style: italic;
-    padding-right: 2px; }
+    font-style: italic; }
   .markdown-body [class*="gridGallery"], .md [class*="gridGallery"] {
     margin: 0;
     padding: 0;
