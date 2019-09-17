@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="./css/wenchuan.css">
+
+    <script src="./js/codeStyle.js"></script>
+    <script src="./js/master.js"></script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            "HTML-CSS": {
+                // scale: 100
+                availableFonts : ["Latin-Modern"],
+                preferredFont : "Latin-Modern",
+                webFont : "Latin-Modern",
+                imageFont : null
+            }
+        });
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="markdown-body">
+
+<h1 id="toc_0">Markdown Body</h1>
+
+<blockquote>
+<p>When it is &quot;written&quot; in Lorem Ipsum, it means I am lazy.</p>
+
+<p>-- Wenchuan</p>
+</blockquote>
+
+<h2 id="toc_1">Block Elements</h2>
+
+<h3 id="toc_2">Paragraphs</h3>
+
+<pre><code class="language-markup">&lt;p&gt;Curabitur at lacus sit amet nunc commodo tincidunt ac sit amet augue. Nunc aliquet nisl at egestas placerat. Praesent tortor quam, dictum non arcu mattis, facilisis egestas ante. Quisque ultrices mattis vulputate.&lt;/p&gt;
+&lt;p&gt;Aliquam erat volutpat. Vestibulum enim massa, ornare a luctus tristique, gravida eu mi. Mauris id turpis sed velit vestibulum vestibulum non nec quam. Nam quis tristique augue.&lt;/p&gt;
+</code></pre>
+
+<div class="styleOutput">
+  <p>Curabitur at lacus sit amet nunc commodo tincidunt ac sit amet augue. Nunc aliquet nisl at egestas placerat. Praesent tortor quam, dictum non arcu mattis, facilisis egestas ante. Quisque ultrices mattis vulputate.</p>
+  <p>Aliquam erat volutpat. Vestibulum enim massa, ornare a luctus tristique, gravida eu mi. Mauris id turpis sed velit vestibulum vestibulum non nec quam. Nam quis tristique augue.</p>
+</div>
+
+<p>&quot;&quot;</p>
+
+<h3 id="toc_3">Headings</h3>
+
+<pre><code class="language-markup">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+
+<div class="styleOutput">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</div>
+
+<h3 id="toc_4">Blockquotes</h3>
+
+<pre><code class="language-markup">&lt;blockquote&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu nunc vel tincidunt. Fusce in posuere risus, quis ornare felis.
+&lt;/blockquote&gt;
+</code></pre>
+
+<div class="styleOutput">
+<blockquote>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu nunc vel tincidunt. Fusce in posuere risus, quis ornare felis.
+</blockquote>
+</div>
+
+<h3 id="toc_5">Lists</h3>
+
+<h4 id="toc_6">Unordered Lists</h4>
+
+<pre><code class="language-markup">&lt;ul&gt;
+  &lt;li&gt;Johann Sebastian Bach
+    &lt;ul&gt;
+      &lt;li&gt;BWV 582
+        &lt;ul&gt;
+          &lt;li&gt;Passacaglia&lt;/li&gt;
+          &lt;li&gt;Fugue&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;BWV 914&lt;/li&gt;
+      &lt;li&gt;BWV 911&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;George Frideric Handel&lt;/li&gt;
+  &lt;li&gt;Antonio Vivaldi&lt;/li&gt;
+&lt;ul&gt;
+</code></pre>
+
+<div class="styleOutput">
+<ul>
+  <li>Johann Sebastian Bach
+    <ul>
+      <li>BWV 582
+        <ul>
+          <li>Passacaglia</li>
+          <li>Fugue</li>
+        </ul>
+      </li>
+      <li>BWV 914</li>
+      <li>BWV 911</li>
+    </ul>
+  </li>
+  <li>George Frideric Handel</li>
+  <li>Antonio Vivaldi</li>
+<ul>
+</div>
+
+<h4 id="toc_7">Ordered List</h4>
+
+<pre><code class="language-markup">&lt;ol&gt;
+  &lt;li&gt;Set Theory
+    &lt;ol&gt;
+      &lt;li&gt;Sets and Operations on Sets. Quantifiers
+        &lt;ol&gt;
+          &lt;li&gt;Problems in Set Theory&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Relations. Mappings&lt;/li&gt;
+      &lt;li&gt;Some Theorems on Countable Sets&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Real Numbers. Fields&lt;/li&gt;
+  &lt;li&gt;Vector Spaces. Metric Spaces&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<div class="styleOutput">
+<ol>
+  <li>Set Theory
+    <ol>
+      <li>Sets and Operations on Sets. Quantifiers
+        <ol>
+          <li>Problems in Set Theory</li>
+        </ol>
+      </li>
+      <li>Relations. Mappings</li>
+      <li>Some Theorems on Countable Sets</li>
+    </ol>
+  </li>
+  <li>Real Numbers. Fields</li>
+  <li>Vector Spaces. Metric Spaces</li>
+</ol>
+</div>
+
+<h4 id="toc_8">To do list</h4>
+
+<pre><code class="language-markup">&lt;ul&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;input disabled=&quot;disabled&quot; type=&quot;checkbox&quot; checked /&gt; Be born
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;input disabled=&quot;disabled&quot; type=&quot;checkbox&quot; checked /&gt; Grow up
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;input disabled=&quot;disabled&quot; type=&quot;checkbox&quot; /&gt; Die
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<div class="styleOutput">
+<ul>
+  <li class="task-list-item">
+    <input disabled="disabled" type="checkbox" checked /> Be born
+  </li>
+  <li class="task-list-item">
+    <input disabled="disabled" type="checkbox" checked /> Grow up
+  </li>
+  <li class="task-list-item">
+    <input disabled="disabled" type="checkbox" /> Die
+  </li>
+</ul>
+</div>
+
+<h3 id="toc_9">Code block</h3>
+
+<h4 id="toc_10">Default</h4>
+
+<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-sass&quot;&gt;details
+  @extend %pLikeMargin
+  margin-left: 1rem
+
+  summary
+    margin-left: -1rem
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<div class="styleOutput">
+
+<pre><code class="language-sass">details
+  @extend %pLikeMargin
+  margin-left: 1rem
+
+  summary
+    margin-left: -1rem
+</code></pre>
+</div>
+
+<h4 id="toc_11">Enable Line Numbers</h4>
+
+<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-sass line-numbers&quot;&gt;details
+  @extend %pLikeMargin
+  margin-left: 1rem
+
+  summary
+    margin-left: -1rem
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<div class="styleOutput">
+
+<pre><code class="language-sass line-numbers">details
+  @extend %pLikeMargin
+  margin-left: 1rem
+
+  summary
+    margin-left: -1rem
+</code></pre>
+</div>
+
+<h3 id="toc_12">Horizontal Rules</h3>
+
+<pre><code class="language-markup">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fusce elementum eu nunc vel tincidunt. Fusce in posuere risus, quis ornare felis. &lt;/p&gt;
+</code></pre>
+<div class="styleOutput">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<hr>
+<p>Fusce elementum eu nunc vel tincidunt. Fusce in posuere risus, quis ornare felis. </p>
+</div>
+
+<h2 id="toc_13">Span Elements</h2>
+
+<h3 id="toc_14">Emphasis</h3>
+
+<h4 id="toc_15">Common Ephasis</h4>
+
+<pre><code class="language-markup">&lt;p&gt;Normal: Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bold: Lorem ipsum dolor sit amet.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Italic: Lorem ipsum dolor sit amet.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strong: Lorem ipsum dolor sit amet.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Stroke: Lorem ipsum dolor sit amet.&lt;/del&gt;&lt;/p&gt;
+</code></pre>
+
+<div class="styleOutput">
+<p>Normal: Lorem ipsum dolor sit amet.</p>
+<p><b>Bold: Lorem ipsum dolor sit amet.</b></p>
+<p><em>Italic: Lorem ipsum dolor sit amet.</em></p>
+<p><strong>Strong: Lorem ipsum dolor sit amet.</strong></p>
+<p><del>Stroke: Lorem ipsum dolor sit amet.</del></p>
+</div>
+
+<h4 id="toc_16">Marks</h4>
+
+<pre><code class="language-markup">&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Default Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;red&quot;&gt;Red Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;orange&quot;&gt;Orange Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;yellow&quot;&gt;Yellow Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;green&quot;&gt;Green Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;cyan&quot;&gt;Cyan Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;blue&quot;&gt;Blue Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;purple&quot;&gt;Purple Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark class=&quot;pink&quot;&gt;Pink Mark: Lorem ipsum dolor sit amet.&lt;/mark&gt;&lt;/p&gt;
+</code></pre>
+
+<div class="styleOutput">
+<p>Lorem ipsum dolor sit amet.</p>
+<p><mark>Default Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="red">Red Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="orange">Orange Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="yellow">Yellow Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="green">Green Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="cyan">Cyan Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="blue">Blue Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="purple">Purple Mark: Lorem ipsum dolor sit amet.</mark></p>
+<p><mark class="pink">Pink Mark: Lorem ipsum dolor sit amet.</mark></p>
+</div>
+
+<h4 id="toc_17">Underlines</h4>
+
+<pre><code class="language-markup">&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Default underline: Lorem ipsum dolor sit amet.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;dashed&quot;&gt;Dashed underline: Lorem ipsum dolor sit amet.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;red&quot;&gt;Red underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;red dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;orange&quot;&gt;Orange underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;orange dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;yellow&quot;&gt;Yellow underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;yellow dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;green&quot;&gt;Green underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;green dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;cyan&quot;&gt;Cyan underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;cyan dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;blue&quot;&gt;Blue underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;blue dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;purple&quot;&gt;Purple underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;purple dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u class=&quot;pink&quot;&gt;Pink underline: Lorem ipsum dolor sit amet, &lt;/u&gt;&lt;u class=&quot;pink dashed&quot;&gt;consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+</code></pre>
+
+<div class="styleOutput">
+<p>Lorem ipsum dolor sit amet.</p>
+<p><u>Default underline: Lorem ipsum dolor sit amet.</u></p>
+<p><u class="dashed">Dashed underline: Lorem ipsum dolor sit amet.</u></p>
+<p><u class="red">Red underline: Lorem ipsum dolor sit amet, </u><u class="red dashed">consectetur adipiscing elit.</u></p>
+<p><u class="orange">Orange underline: Lorem ipsum dolor sit amet, </u><u class="orange dashed">consectetur adipiscing elit.</u></p>
+<p><u class="yellow">Yellow underline: Lorem ipsum dolor sit amet, </u><u class="yellow dashed">consectetur adipiscing elit.</u></p>
+<p><u class="green">Green underline: Lorem ipsum dolor sit amet, </u><u class="green dashed">consectetur adipiscing elit.</u></p>
+<p><u class="cyan">Cyan underline: Lorem ipsum dolor sit amet, </u><u class="cyan dashed">consectetur adipiscing elit.</u></p>
+<p><u class="blue">Blue underline: Lorem ipsum dolor sit amet, </u><u class="blue dashed">consectetur adipiscing elit.</u></p>
+<p><u class="purple">Purple underline: Lorem ipsum dolor sit amet, </u><u class="purple dashed">consectetur adipiscing elit.</u></p>
+<p><u class="pink">Pink underline: Lorem ipsum dolor sit amet, </u><u class="pink dashed">consectetur adipiscing elit.</u></p>
+</div>
+
+</div>
+
+</body>
+</html>
