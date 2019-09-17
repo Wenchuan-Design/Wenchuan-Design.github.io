@@ -1,0 +1,68 @@
+// 这里要加上 figure，因为在 MWeb 中，可以设置在 img 上增加 `<figure>` 父类
+img, figure
+    margin: 0 auto
+
+&>
+    figure,
+    img,
+    p > img
+
+        margin-top: 1.5rem
+        margin-bottom: 1.5rem
+
+        &._12
+            padding-left: 12px
+            padding-right: 12px
+
+&>
+    figure img,
+    p > figure img,
+    p > img
+        @media only screen and (max-width: $mdMaxWidth + ($mdHorizontalMargin * 2))
+            max-width: 10000px
+            width: calc(100% + 48px)
+            margin-left: -24px
+
+
+hr[class*="grid"]
+    &+ ul
+        margin: 1.5rem 0
+        padding: 0
+        display: grid
+        list-style: none
+
+        grid-column-gap: 2px
+        grid-row-gap: 2px
+
+        @media only screen and (max-width: $mdMaxWidth - ($mdHorizontalMargin * 2))
+            max-width: 10000px
+            width: calc(100% + 48px)
+            margin-left: -24px
+
+        li
+            position: relative
+            padding-top: 100%
+            img, p
+                margin: 0
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+
+                object-fit: cover
+
+    &[class*="-4"]
+        &+ ul
+            grid-template-columns: 50% 50%
+            padding-right: 2px
+
+    &[class*="-9"]
+        &+ ul
+            grid-template-columns: 33.3333% 33.3333% 33.3333%
+            padding-right: 4px
+
+            @media only screen and (max-width: $mdMaxWidth - ($mdHorizontalMargin * 2))
+                max-width: 10000px
+                width: calc(100% + 48px)
+                margin-left: -24px
