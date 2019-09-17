@@ -1,0 +1,97 @@
+blockquote
+    background: none
+    border: none
+    padding: 0
+    color: inherit
+    position: relative
+    margin: 1.5rem 0
+    padding-left: 1rem
+    // border-left: 1px solid $rgbaDark
+    box-shadow: inset 2px 0 0 $rgbaDark
+    &>
+        *
+            font-size: 87.5% !important
+            *
+                font-size: 100%
+    *
+        text-align: left
+
+blockquote
+    &> blockquote
+        *
+            text-align: center
+            hyphens: none
+
+        background: none
+        border: none
+        color: $rgbaDarkGrey
+        font-size: 100% !important
+        margin-bottom: 4rem
+        background-color: white
+        box-shadow: none
+        padding-left: 0
+        margin-left: -1rem
+
+        &::after
+            content: ""
+            position: absolute
+            width: 3rem
+            height: 1px
+            background-color: $rgbaPale
+            transform: translate(-50%, 0)
+            left: 50%
+            bottom: -1.5em
+
+
+
+.quote
+    &+ blockquote,
+        margin-top: 2rem
+        margin-bottom: 2rem
+        background: none
+        padding: 0 1.5em
+        border: none
+        position: relative
+        box-shadow: none
+
+        // color: $rgbaDarkGrey
+        font-weight: 500
+        line-height: 2
+
+        &>
+            *
+                font-size: 100%
+                *
+                    font-size: 100%
+        *
+            background: none
+            text-align: left
+
+
+        &::before
+            background: none
+            content: "“"
+            position: absolute
+            left: 0
+            top: -0.25em
+
+            font-size: 3.5em
+            line-height: 1
+            color: $rgbaLightPale
+
+        &::after
+            content: "”"
+            // display: inline-block
+            position: absolute
+
+            font-size: 2.5em
+            color: $rgbaLightPale
+            bottom: -2rem
+            // right: 0.5rem
+            right: 0.5em
+
+        &>
+            *
+                font-size: 100% !important
+                *
+                    font-size: 100%

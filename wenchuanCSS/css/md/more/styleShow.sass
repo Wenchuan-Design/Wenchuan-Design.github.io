@@ -1,0 +1,28 @@
+.styleShow
+    border: 1px solid $rgbaPale
+    border-radius: 4px
+    margin: 2rem 0
+    position: relative
+
+    &::before
+        position: absolute
+        content: "Max Width"
+        color: $rgbaPale
+        transform: translate(-50%, -50%)
+        top: 0
+        left: 50%
+        font-size: 0.75rem
+        background-color: white
+        padding: 0 8px
+
+    &::after
+        position: absolute
+        content: ""
+        width: calc(100% - 50px)
+        height: 100%
+        // background-color: $rgbaLightPale
+        border: 1px dashed $rgbaPale
+        border-top: none
+        border-bottom: none
+        top: 0
+        left: 1.5rem
