@@ -4,26 +4,44 @@ h1, h2, h3, h4, h5, h6
     margin-bottom: 1rem
     font-weight: 500
     text-align: left
-    hyphens: none
 
 h1
-    font-size: 1.5rem
+    font-size: 1.75rem
 
 h2
-    font-size: 1.25rem
+    font-size: 1.5rem
 
 h3
+    font-size: 1.25rem
+
+h4
     font-size: 1.125rem
 
-h4, h5, h6
+    h5, h6
     font-size: 1rem
 
 @media only screen and (max-width: $iPhonePlus)
     h1
-        font-size: 1.25rem
+        font-size: 1.5rem
 
     h2
+        font-size: 1.25rem
+
+    h3
         font-size: 1.125rem
 
-    h3, h4, h5, h6
+    h4
         font-size: 1rem
+
+h1, h2, h3, h4, h5, h6, .id
+    &::before
+        content: ""
+        display: block
+
+        // 一倍间距 + 浏览器高度 // 负数
+        margin-top: calc(-1em - 56px)
+
+        // 一倍间距 + 浏览器高度
+        height: calc(1em + 56px)
+
+        visibility: hidden

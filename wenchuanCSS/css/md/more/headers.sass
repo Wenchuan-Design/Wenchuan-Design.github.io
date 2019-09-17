@@ -1,0 +1,58 @@
+div.title
+    position: relative
+    max-width: $mdMaxWidth
+    margin: 0 auto
+    margin-top: 1.5rem
+    margin-bottom: 2rem
+
+    h1.title
+        font-size: 2.25rem
+        font-weight: 500
+        line-height: 1.5
+        margin-top: 1.5rem
+        margin-bottom: 0.5rem
+        hyphens: none !important
+
+        @media only screen and (max-width: $iPhonePlus)
+            font-size: 2rem
+
+    h3.subtitle
+        margin-top: 0
+        margin-bottom: 0
+        color: $rgbaGrey
+
+    div.caption
+        display: flex
+        margin-top: 1rem
+
+        img.portrait
+            width: 3rem
+            height: 3rem
+            border-radius: 50%
+            object-fit: cover
+            float: left
+
+            box-shadow: 0 2px 4px $rgbaLightPale, 0 0 1px $rgbaPale
+
+            // margin-top: 4px
+
+
+        .info
+            margin-left: 0.75rem
+            float: left
+            flex: 1 1 50%
+            color: $rgbaGrey
+
+            .author, .time
+
+                font-weight: normal
+                font-size: 0.875rem
+                line-height: 1.5rem
+                margin: 0
+
+            .author
+                color: $rgbaDark
+
+                a
+                    color: inherit
+                    text-decoration: none

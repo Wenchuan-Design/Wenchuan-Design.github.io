@@ -19,10 +19,37 @@ img, figure
     p > figure img,
     p > img
         @media only screen and (max-width: $mdMaxWidth + ($mdHorizontalMargin * 2))
-            max-width: calc(100% + 48px)
-            width: calc(auto + 48px)
-            margin-left: -24px
+            max-width: calc(100% + 40px)
+            width: calc(100% + 40px)
+            margin-left: -20px
 
+
+figure
+    figcaption
+        *
+        text-align: center
+        hyphens: none
+
+        background: none
+        border: none
+        color: $rgbaDarkGrey
+        font-size: 0.875rem
+        margin-top: 1.5rem
+        margin-bottom: 3rem
+        background-color: white
+        box-shadow: none
+        padding-left: 0
+        position: relative
+
+        &::after
+            content: ""
+            position: absolute
+            width: 3rem
+            height: 1px
+            background-color: $rgbaPale
+            transform: translate(-50%, 0)
+            left: 50%
+            bottom: -1.5rem
 
 
 hr[class*="grid"]

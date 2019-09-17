@@ -94,20 +94,15 @@ body, .md {
   body, .md {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 24px; }
-    @media only screen and (max-width: 768px) {
+    padding: 0 20px; }
+    @media only screen and (max-width: 760px) {
       body, .md {
         max-width: 100%; } }
     body *::selection, .md *::selection {
-      background-color: rgba(51, 195, 194, 0.16); }
-  body *, .md * {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; }
-  body p a, body li a, body table a, body blockquote a, .md p a, .md li a, .md table a, .md blockquote a {
-    color: #33C3C2;
+      background-color: rgba(244, 58, 58, 0.16); }
+  body a, .md a {
+    color: inherit;
+    text-decoration: underline;
     cursor: pointer; }
   body sup, body sub, .md sup, .md sub {
     font-size: smaller;
@@ -117,29 +112,28 @@ body, .md {
   body sub, .md sub {
     vertical-align: sub; }
   body strong, body b, .md strong, .md b {
-    font-weight: 500; }
+    font-weight: bold; }
   body del, .md del {
     text-decoration: line-through;
     color: #858585; }
   body em, .md em {
-    font-weight: 500;
-    font-style: normal; }
+    font-style: italic; }
   body mark, .md mark {
-    background-color: rgba(51, 195, 194, 0.24);
+    background-color: rgba(244, 58, 58, 0.24);
     padding-top: 0.125em;
     padding-bottom: 0.125em;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out; }
     body mark:hover, .md mark:hover {
-      background-color: rgba(51, 195, 194, 0.4); }
+      background-color: rgba(244, 58, 58, 0.4); }
   body u, .md u {
-    background-color: rgba(51, 195, 194, 0.24);
+    background-color: rgba(244, 58, 58, 0.24);
     padding-top: 0.125em;
     padding-bottom: 0.125em;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out; }
     body u:hover, .md u:hover {
-      background-color: rgba(51, 195, 194, 0.4); }
+      background-color: rgba(244, 58, 58, 0.4); }
   body details, .md details {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -172,15 +166,37 @@ body, .md {
     .md > p > img._12 {
       padding-left: 12px;
       padding-right: 12px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 760px) {
     body > figure img,
     body > p > figure img,
     body > p > img, .md > figure img,
     .md > p > figure img,
     .md > p > img {
-      max-width: calc(100% + 48px);
-      width: calc(auto + 48px);
-      margin-left: -24px; } }
+      max-width: calc(100% + 40px);
+      width: calc(100% + 40px);
+      margin-left: -20px; } }
+  body figure figcaption, .md figure figcaption {
+    text-align: center;
+    hyphens: none;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    box-shadow: none;
+    padding-left: 0;
+    position: relative; }
+    body figure figcaption::after, .md figure figcaption::after {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.16);
+      transform: translate(-50%, 0);
+      left: 50%;
+      bottom: -1.5rem; }
   body hr[class*="grid"] + ul, .md hr[class*="grid"] + ul {
     margin: 1.5rem 0;
     padding: 0;
@@ -188,7 +204,7 @@ body, .md {
     list-style: none;
     grid-column-gap: 2px;
     grid-row-gap: 2px; }
-    @media only screen and (max-width: 672px) {
+    @media only screen and (max-width: 680px) {
       body hr[class*="grid"] + ul, .md hr[class*="grid"] + ul {
         max-width: 10000px;
         width: calc(100% + 48px);
@@ -210,7 +226,7 @@ body, .md {
   body hr[class*="grid"][class*="-9"] + ul, .md hr[class*="grid"][class*="-9"] + ul {
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     padding-right: 4px; }
-    @media only screen and (max-width: 672px) {
+    @media only screen and (max-width: 680px) {
       body hr[class*="grid"][class*="-9"] + ul, .md hr[class*="grid"][class*="-9"] + ul {
         max-width: 10000px;
         width: calc(100% + 48px);
@@ -223,7 +239,7 @@ body, .md {
     position: relative;
     margin: 1.5rem 0;
     padding-left: 1rem;
-    box-shadow: inset 2px 0 0 rgba(0, 0, 0, 0.8); }
+    box-shadow: inset 2px 0 0 rgba(0, 0, 0, 0.88); }
     body blockquote > *, .md blockquote > * {
       font-size: 87.5% !important; }
       body blockquote > * *, .md blockquote > * * {
@@ -294,23 +310,31 @@ body, .md {
     margin-top: 1em;
     margin-bottom: 1rem;
     font-weight: 500;
-    text-align: left;
-    hyphens: none; }
+    text-align: left; }
   body h1, .md h1 {
-    font-size: 1.5rem; }
+    font-size: 1.75rem; }
   body h2, .md h2 {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   body h3, .md h3 {
-    font-size: 1.125rem; }
-  body h4, body h5, body h6, .md h4, .md h5, .md h6 {
+    font-size: 1.25rem; }
+  body h4, .md h4 {
+    font-size: 1.125rem;
     font-size: 1rem; }
   @media only screen and (max-width: 414px) {
     body h1, .md h1 {
-      font-size: 1.25rem; }
+      font-size: 1.5rem; }
     body h2, .md h2 {
+      font-size: 1.25rem; }
+    body h3, .md h3 {
       font-size: 1.125rem; }
-    body h3, body h4, body h5, body h6, .md h3, .md h4, .md h5, .md h6 {
+    body h4, .md h4 {
       font-size: 1rem; } }
+  body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before, body .id::before, .md h1::before, .md h2::before, .md h3::before, .md h4::before, .md h5::before, .md h6::before, .md .id::before {
+    content: "";
+    display: block;
+    margin-top: calc(-1em - 56px);
+    height: calc(1em + 56px);
+    visibility: hidden; }
   body p, .md p {
     font-size: 1rem;
     line-height: 2;
@@ -382,7 +406,7 @@ body, .md {
       line-height: 2rem;
       height: 2rem;
       margin-top: calc(1.5rem - 1px);
-      color: rgba(0, 0, 0, 0.8); }
+      color: rgba(0, 0, 0, 0.88); }
       body .inputView input::placeholder, .md .inputView input::placeholder {
         font-size: 1rem;
         color: rgba(0, 0, 0, 0.16);
@@ -640,3 +664,48 @@ body, .md {
       border-bottom: none;
       top: 0;
       left: 1.5rem; }
+  body div.title, .md div.title {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+    body div.title h1.title, .md div.title h1.title {
+      font-size: 2.25rem;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      hyphens: none !important; }
+      @media only screen and (max-width: 414px) {
+        body div.title h1.title, .md div.title h1.title {
+          font-size: 2rem; } }
+    body div.title h3.subtitle, .md div.title h3.subtitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: rgba(0, 0, 0, 0.48); }
+    body div.title div.caption, .md div.title div.caption {
+      display: flex;
+      margin-top: 1rem; }
+      body div.title div.caption img.portrait, .md div.title div.caption img.portrait {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+        float: left;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.16); }
+      body div.title div.caption .info, .md div.title div.caption .info {
+        margin-left: 0.75rem;
+        float: left;
+        flex: 1 1 50%;
+        color: rgba(0, 0, 0, 0.48); }
+        body div.title div.caption .info .author, body div.title div.caption .info .time, .md div.title div.caption .info .author, .md div.title div.caption .info .time {
+          font-weight: normal;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          margin: 0; }
+        body div.title div.caption .info .author, .md div.title div.caption .info .author {
+          color: rgba(0, 0, 0, 0.88); }
+          body div.title div.caption .info .author a, .md div.title div.caption .info .author a {
+            color: inherit;
+            text-decoration: none; }
