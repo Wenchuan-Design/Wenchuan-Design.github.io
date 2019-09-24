@@ -5,15 +5,21 @@
         <title data-n-head="true">Lorem ipsum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="./css/wenchuan.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" rel="stylesheet">
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 extensions: ["tex2jax.js"],
                 "HTML-CSS": {
                     // scale: 100
-                    availableFonts : ["Latin-Modern"],
-                    preferredFont : "Latin-Modern",
-                    webFont : "Latin-Modern",
-                    imageFont : null
+                    // availableFonts : ["Latin-Modern"],
+                    // preferredFont : "Latin-Modern",
+                    // webFont : "Latin-Modern",
+                    // imageFont : null
                 }
             });
             MathJax.Hub.Config({
@@ -45,8 +51,17 @@
                 </figure>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac risus vulputate, feugiat purus sed, dictum leo. Pellentesque ultricies ornare quam, a ultrices nibh finibus id. Fusce enim nisl, pellentesque vitae scelerisque efficitur, tempus ut ligula. Quisque egestas id elit quis ullamcorper. Suspendisse nulla lorem, euismod fringilla lacus vitae, molestie vestibulum magna. Donec enim neque, lobortis lobortis leo vulputate, egestas interdum velit. Duis velit libero, consequat nec faucibus vel, malesuada at erat. Praesent nec hendrerit mi, dictum rutrum mi. Aliquam gravida ultricies lacus sed auctor. Proin id lobortis felis, in vulputate magna. Maecenas non pharetra felis. Nullam gravida in diam ut malesuada. Integer id eleifend lectus, a pretium eros. Sed ac dolor id nulla congue dapibus sed in sapien. Proin vitae viverra leo. Suspendisse interdum ultricies est nec accumsan.
+                    Lorem 趙文川 ipsum dolor sit amet, consectetur adipiscing elit. In ac risus vulputate, feugiat purus sed, dictum leo. Pellentesque ultricies ornare quam, a ultrices nibh finibus id. Fusce enim nisl, pellentesque vitae scelerisque efficitur, tempus ut ligula. Quisque egestas id elit quis ullamcorper. Suspendisse nulla lorem, euismod fringilla lacus vitae, molestie vestibulum magna. Donec enim neque, lobortis lobortis leo vulputate, egestas interdum velit. Duis velit libero, consequat nec faucibus vel, malesuada at erat. Praesent nec hendrerit mi, dictum rutrum mi. Aliquam gravida ultricies lacus sed auctor. Proin id lobortis felis, in vulputate magna. Maecenas non pharetra felis. Nullam gravida in diam ut malesuada. Integer id eleifend lectus, a pretium eros. Sed ac dolor id nulla congue dapibus sed in sapien. Proin vitae viverra leo. Suspendisse interdum ultricies est nec accumsan.
                 </p>
+
+                <p>\(A=\{ a, b, c, ... \}\) means that \(A\) consists of the elements \(a, b, c, ...\) .  In particular, \(A=\{a,b\}\) consists of \(a\) and \(b\); \(A = \{p\}\) consists of \(p\) alone. The <em>empty</em> or <em>void</em> set, \(\emptyset\), has <em>no</em> elements. Equality (\(=\)) means <em>logical identity</em>.</p>
+
+                <p>If all members of \(A\) are also in \(B\), we call \(A\) a <em>subset</em> of \(B\) (and \(B\) a <em>superset</em> of \(A\)), and write \(A \subseteq B\) or \(B \supseteq A\). It is an axiom that <em>the sets \(A\) and \(B\) are equal</em> (\(A=B\)) <em>if they have the same members</em>, i.e.,</p>
+
+                <p>\[<br/>
+                A \subseteq B \land B \supseteq A.<br/>
+                \]</p>
+
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac risus vulputate, feugiat purus sed, dictum leo. Pellentesque ultricies ornare quam, a ultrices nibh finibus id. Fusce enim nisl, pellentesque vitae scelerisque efficitur, tempus ut ligula. Quisque egestas id elit quis ullamcorper. Suspendisse nulla lorem, euismod fringilla lacus vitae, molestie vestibulum magna. Donec enim neque, lobortis lobortis leo vulputate, egestas interdum velit. Duis velit libero, consequat nec faucibus vel, malesuada at erat. Praesent nec hendrerit mi, dictum rutrum mi. Aliquam gravida ultricies lacus sed auctor. Proin id lobortis felis, in vulputate magna. Maecenas non pharetra felis. Nullam gravida in diam ut malesuada. Integer id eleifend lectus, a pretium eros. Sed ac dolor id nulla congue dapibus sed in sapien. Proin vitae viverra leo. Suspendisse interdum ultricies est nec accumsan.
@@ -79,8 +94,13 @@
         </article>
 
         <style media="screen">
-            p {
-                line-height: 1.75rem !important;
+            html {
+                /* font-size: 18px !important; */
+            }
+            #content p {
+                font-size: 1rem;
+                line-height: 1.75;
+                text-align: left;
             }
 
             body {
@@ -88,10 +108,12 @@
             }
             #content {
                 margin: 0 auto;
-                max-width: 1600px;
+                max-width: 1400px;
                 position: relative;
+                text-align: justify;
+                hyphens: auto;
                 /* padding: 20px; */
-                
+
             }
 
             #test {
@@ -106,11 +128,31 @@
                 position: absolute;
                 max-width: 100%;
                 left: 50%;
+
                 display: table;
             }
+            #testFigure .img {
+
+            }
             #testFigcaption {
+
                 display: table-caption;
                 caption-side: bottom;
+            }
+            #content {
+                /* font-family: 'Crimson Pro', serif; */
+                /* font-family: 'Source Serif Pro', serif; */
+                /* font-family: 'Noto Serif SC', serif; */
+                font-family: Helvetica;
+                /* font-family: times; */
+                /* font-family: "Times New Roman", times; */
+                /* font-family: 'Vollkorn', serif; */
+                /* font-family: 'Roboto', sans-serif; */
+                font-family: "Palatino Linotype", Palatino;
+            }
+
+            #content h1 {
+                font-weight: bold;
             }
         </style>
 
