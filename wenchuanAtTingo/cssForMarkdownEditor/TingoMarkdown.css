@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -106,6 +105,10 @@ body, .md {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto; }
+  body .textAlign-right, .md .textAlign-right {
+    text-align: right; }
+  body .textAlign-center, .md .textAlign-center {
+    text-align: center; }
   body p a, body li a, body table a, body blockquote a, .md p a, .md li a, .md table a, .md blockquote a {
     color: #33C3C2;
     cursor: pointer; }
@@ -133,13 +136,8 @@ body, .md {
     body mark:hover, .md mark:hover {
       background-color: rgba(51, 195, 194, 0.4); }
   body u, .md u {
-    background-color: rgba(51, 195, 194, 0.24);
-    padding-top: 0.125em;
-    padding-bottom: 0.125em;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out; }
-    body u:hover, .md u:hover {
-      background-color: rgba(51, 195, 194, 0.4); }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    padding-bottom: 2px; }
   body details, .md details {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -163,8 +161,8 @@ body, .md {
   body > p > img, .md > figure,
   .md > img,
   .md > p > img {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     body > figure._12,
     body > img._12,
     body > p > img._12, .md > figure._12,
@@ -181,114 +179,27 @@ body, .md {
       max-width: calc(100% + 48px);
       width: calc(auto + 48px);
       margin-left: -24px; } }
-  body hr[class*="grid"] + ul, .md hr[class*="grid"] + ul {
-    margin: 1.5rem 0;
-    padding: 0;
-    display: grid;
-    list-style: none;
-    grid-column-gap: 2px;
-    grid-row-gap: 2px; }
-    @media only screen and (max-width: 672px) {
-      body hr[class*="grid"] + ul, .md hr[class*="grid"] + ul {
-        max-width: 10000px;
-        width: calc(100% + 48px);
-        margin-left: -24px; } }
-    body hr[class*="grid"] + ul li, .md hr[class*="grid"] + ul li {
-      position: relative;
-      padding-top: 100%; }
-      body hr[class*="grid"] + ul li img, body hr[class*="grid"] + ul li p, .md hr[class*="grid"] + ul li img, .md hr[class*="grid"] + ul li p {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-  body hr[class*="grid"][class*="-4"] + ul, .md hr[class*="grid"][class*="-4"] + ul {
-    grid-template-columns: 50% 50%;
-    padding-right: 2px; }
-  body hr[class*="grid"][class*="-9"] + ul, .md hr[class*="grid"][class*="-9"] + ul {
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    padding-right: 4px; }
-    @media only screen and (max-width: 672px) {
-      body hr[class*="grid"][class*="-9"] + ul, .md hr[class*="grid"][class*="-9"] + ul {
-        max-width: 10000px;
-        width: calc(100% + 48px);
-        margin-left: -24px; } }
+  body figure figcaption *, .md figure figcaption * {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.48); }
   body blockquote, .md blockquote {
     background: none;
     border: none;
-    padding: 0;
+    padding: 1px 16px;
     color: inherit;
     position: relative;
     margin: 1.5rem 0;
     padding-left: 1rem;
-    box-shadow: inset 2px 0 0 rgba(0, 0, 0, 0.8); }
+    box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.02); }
     body blockquote > *, .md blockquote > * {
       font-size: 87.5% !important; }
       body blockquote > * *, .md blockquote > * * {
         font-size: 100%; }
     body blockquote *, .md blockquote * {
       text-align: left; }
-  body blockquote > blockquote, .md blockquote > blockquote {
-    background: none;
-    border: none;
-    color: rgba(0, 0, 0, 0.64);
-    font-size: 100% !important;
-    margin-bottom: 4rem;
-    background-color: white;
-    box-shadow: none;
-    padding-left: 0;
-    margin-left: -1rem; }
-    body blockquote > blockquote *, .md blockquote > blockquote * {
-      text-align: center;
-      hyphens: none; }
-    body blockquote > blockquote::after, .md blockquote > blockquote::after {
-      content: "";
-      position: absolute;
-      width: 3rem;
-      height: 1px;
-      background-color: rgba(0, 0, 0, 0.16);
-      transform: translate(-50%, 0);
-      left: 50%;
-      bottom: -1.5em; }
-  body .quote + blockquote, .md .quote + blockquote {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: none;
-    padding: 0 1.5em;
-    border: none;
-    position: relative;
-    box-shadow: none;
-    font-weight: 500;
-    line-height: 2; }
-    body .quote + blockquote > *, .md .quote + blockquote > * {
-      font-size: 100%; }
-      body .quote + blockquote > * *, .md .quote + blockquote > * * {
-        font-size: 100%; }
-    body .quote + blockquote *, .md .quote + blockquote * {
-      background: none;
-      text-align: left; }
-    body .quote + blockquote::before, .md .quote + blockquote::before {
-      background: none;
-      content: "“";
-      position: absolute;
-      left: 0;
-      top: -0.25em;
-      font-size: 3.5em;
-      line-height: 1;
-      color: rgba(0, 0, 0, 0.08); }
-    body .quote + blockquote::after, .md .quote + blockquote::after {
-      content: "”";
-      position: absolute;
-      font-size: 2.5em;
-      color: rgba(0, 0, 0, 0.08);
-      bottom: -2rem;
-      right: 0.5em; }
-    body .quote + blockquote > *, .md .quote + blockquote > * {
+    body blockquote.wow *, .md blockquote.wow * {
       font-size: 100% !important; }
-      body .quote + blockquote > * *, .md .quote + blockquote > * * {
-        font-size: 100%; }
   body h1, body h2, body h3, body h4, body h5, body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
     line-height: 1.75;
     margin-top: 1em;
@@ -297,34 +208,29 @@ body, .md {
     text-align: left;
     hyphens: none; }
   body h1, .md h1 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   body h2, .md h2 {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   body h3, .md h3 {
+    font-size: 1.25rem; }
+  body h4, .md h4 {
     font-size: 1.125rem; }
-  body h4, body h5, body h6, .md h4, .md h5, .md h6 {
+  body h5, body h6, .md h5, .md h6 {
     font-size: 1rem; }
-  @media only screen and (max-width: 414px) {
-    body h1, .md h1 {
-      font-size: 1.25rem; }
-    body h2, .md h2 {
-      font-size: 1.125rem; }
-    body h3, body h4, body h5, body h6, .md h3, .md h4, .md h5, .md h6 {
-      font-size: 1rem; } }
   body p, .md p {
     font-size: 1rem;
     line-height: 2;
     margin-top: 1em;
     margin-bottom: 1em; }
-  body .initial + p::first-letter, .md .initial + p::first-letter {
-    vertical-align: middle;
-    float: left;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem; }
+    body p.initial::first-letter, .md p.initial::first-letter {
+      vertical-align: middle;
+      float: left;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem; }
   body li, .md li {
     font-size: 1rem;
     line-height: 2em; }
@@ -359,50 +265,9 @@ body, .md {
       padding: 0 1rem; }
     body table thead, .md table thead {
       background-color: rgba(0, 0, 0, 0.02); }
-  body hr.fullWidth + table, .md hr.fullWidth + table {
-    width: 100%; }
-  body .inputView, .md .inputView {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    height: 3rem;
-    width: 247px;
-    background-color: rgba(0, 0, 0, 0.02);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    border-radius: 1.5rem;
-    overflow: hidden; }
-    body .inputView input, .md .inputView input {
-      position: relative;
-      width: 100%;
-      -webkit-transform: translate(0, -50%);
-      text-align: center;
-      font-size: 1.25rem;
-      letter-spacing: 4px;
-      line-height: 2rem;
-      height: 2rem;
-      margin-top: calc(1.5rem - 1px);
-      color: rgba(0, 0, 0, 0.8); }
-      body .inputView input::placeholder, .md .inputView input::placeholder {
-        font-size: 1rem;
-        color: rgba(0, 0, 0, 0.16);
-        letter-spacing: 0; }
-  body button.a, .md button.a {
-    text-align: center;
-    letter-spacing: 2px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    height: 3rem;
-    overflow: hidden;
-    background-color: #333333;
-    width: 247px;
-    border-radius: 1.5rem;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.04), 0 0 8px rgba(0, 0, 0, 0.04);
-    color: white;
-    font-size: 1rem;
-    font-weight: 500; }
+  body .table, .md .table {
+    width: 100%;
+    overflow: auto; }
   body pre[class*="language-"], body .md pre[class*="language-"], .md body pre[class*="language-"], .md pre[class*="language-"] {
     background-color: rgba(0, 0, 0, 0.02);
     border: 1px solid rgba(0, 0, 0, 0.04);
