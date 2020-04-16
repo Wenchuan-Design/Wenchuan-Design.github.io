@@ -87,107 +87,113 @@ img {
   vertical-align: middle;
   max-width: 100%; }
 
-body, .md {
+body, .md, .markdown-body {
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }
-  body, .md {
+  body, .md, .markdown-body {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 24px; }
-    @media only screen and (max-width: 768px) {
-      body, .md {
+    padding: 0 16px; }
+    @media only screen and (max-width: 752px) {
+      body, .md, .markdown-body {
         max-width: 100%; } }
-    body *::selection, .md *::selection {
+    body *::selection, .md *::selection, .markdown-body *::selection {
       background-color: rgba(51, 195, 194, 0.16); }
-  body *, .md * {
+  body *, .md *, .markdown-body * {
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto; }
-  body .textAlign-right, .md .textAlign-right {
+  body .textAlign-right, .md .textAlign-right, .markdown-body .textAlign-right {
     text-align: right; }
-  body .textAlign-center, .md .textAlign-center {
+  body .textAlign-center, .md .textAlign-center, .markdown-body .textAlign-center {
     text-align: center; }
-  body p a, body li a, body table a, body blockquote a, .md p a, .md li a, .md table a, .md blockquote a {
+  body p a, body li a, body table a, body blockquote a, .md p a, .md li a, .md table a, .md blockquote a, .markdown-body p a, .markdown-body li a, .markdown-body table a, .markdown-body blockquote a {
     color: #33C3C2;
     cursor: pointer; }
-  body sup, body sub, .md sup, .md sub {
+  body sup, body sub, .md sup, .md sub, .markdown-body sup, .markdown-body sub {
     font-size: smaller;
     line-height: 1; }
-  body sup, .md sup {
+  body sup, .md sup, .markdown-body sup {
     vertical-align: super; }
-  body sub, .md sub {
+  body sub, .md sub, .markdown-body sub {
     vertical-align: sub; }
-  body strong, body b, .md strong, .md b {
+  body strong, body b, .md strong, .md b, .markdown-body strong, .markdown-body b {
     font-weight: 500; }
-  body del, .md del {
+  body del, .md del, .markdown-body del {
     text-decoration: line-through;
     color: #858585; }
-  body em, .md em {
+  body em, .md em, .markdown-body em {
     font-weight: 500;
     font-style: normal; }
-  body mark, .md mark {
+  body mark, .md mark, .markdown-body mark {
     background-color: rgba(51, 195, 194, 0.24);
     padding-top: 0.125em;
     padding-bottom: 0.125em;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out; }
-    body mark:hover, .md mark:hover {
+    body mark:hover, .md mark:hover, .markdown-body mark:hover {
       background-color: rgba(51, 195, 194, 0.4); }
-  body u, .md u {
+  body u, .md u, .markdown-body u {
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     padding-bottom: 2px; }
-  body details, .md details {
+  body details, .md details, .markdown-body details {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem; }
-    body details summary, .md details summary {
+    body details summary, .md details summary, .markdown-body details summary {
       font-weight: bold;
       margin-left: -1rem;
       line-height: 2; }
-  body hr, .md hr {
+  body hr, .md hr, .markdown-body hr {
     border: none;
     width: auto;
     height: 2px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     margin: 1.5rem 0; }
-    body hr.dis, .md hr.dis {
+    body hr.dis, .md hr.dis, .markdown-body hr.dis {
       display: none; }
-  body img, body figure, .md img, .md figure {
+  body img, body figure, .md img, .md figure, .markdown-body img, .markdown-body figure {
     margin: 0 auto; }
   body > figure,
   body > img,
   body > p > img, .md > figure,
   .md > img,
-  .md > p > img {
+  .md > p > img, .markdown-body > figure,
+  .markdown-body > img,
+  .markdown-body > p > img {
     margin-top: 2rem;
     margin-bottom: 2rem; }
     body > figure._12,
     body > img._12,
     body > p > img._12, .md > figure._12,
     .md > img._12,
-    .md > p > img._12 {
+    .md > p > img._12, .markdown-body > figure._12,
+    .markdown-body > img._12,
+    .markdown-body > p > img._12 {
       padding-left: 12px;
       padding-right: 12px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 752px) {
     body > figure img,
     body > p > figure img,
     body > p > img, .md > figure img,
     .md > p > figure img,
-    .md > p > img {
+    .md > p > img, .markdown-body > figure img,
+    .markdown-body > p > figure img,
+    .markdown-body > p > img {
       max-width: calc(100% + 48px);
       width: calc(auto + 48px);
       margin-left: -24px; } }
-  body figure figcaption *, .md figure figcaption * {
+  body figure figcaption *, .md figure figcaption *, .markdown-body figure figcaption * {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.48); }
-  body .figcap, .md .figcap {
+  body .figcap, .md .figcap, .markdown-body .figcap {
     text-align: center;
     margin-top: -1rem;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.48); }
-  body blockquote, .md blockquote {
+  body blockquote, .md blockquote, .markdown-body blockquote {
     background: none;
     border: none;
     padding: 1px 16px;
@@ -197,37 +203,37 @@ body, .md {
     padding-left: 1rem;
     box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.08);
     background-color: rgba(0, 0, 0, 0.02); }
-    body blockquote > *, .md blockquote > * {
+    body blockquote > *, .md blockquote > *, .markdown-body blockquote > * {
       font-size: 87.5% !important; }
-      body blockquote > * *, .md blockquote > * * {
+      body blockquote > * *, .md blockquote > * *, .markdown-body blockquote > * * {
         font-size: 100%; }
-    body blockquote *, .md blockquote * {
+    body blockquote *, .md blockquote *, .markdown-body blockquote * {
       text-align: left; }
-    body blockquote.wow *, .md blockquote.wow * {
+    body blockquote.wow *, .md blockquote.wow *, .markdown-body blockquote.wow * {
       font-size: 100% !important; }
-  body h1, body h2, body h3, body h4, body h5, body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+  body h1, body h2, body h3, body h4, body h5, body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     line-height: 1.75;
     margin-top: 1em;
     margin-bottom: 1rem;
     font-weight: 500;
     text-align: left;
     hyphens: none; }
-  body h1, .md h1 {
+  body h1, .md h1, .markdown-body h1 {
     font-size: 2rem; }
-  body h2, .md h2 {
+  body h2, .md h2, .markdown-body h2 {
     font-size: 1.5rem; }
-  body h3, .md h3 {
+  body h3, .md h3, .markdown-body h3 {
     font-size: 1.25rem; }
-  body h4, .md h4 {
+  body h4, .md h4, .markdown-body h4 {
     font-size: 1.125rem; }
-  body h5, body h6, .md h5, .md h6 {
+  body h5, body h6, .md h5, .md h6, .markdown-body h5, .markdown-body h6 {
     font-size: 1rem; }
-  body p, .md p {
+  body p, .md p, .markdown-body p {
     font-size: 1rem;
     line-height: 2;
     margin-top: 1em;
     margin-bottom: 1em; }
-    body p.initial::first-letter, .md p.initial::first-letter {
+    body p.initial::first-letter, .md p.initial::first-letter, .markdown-body p.initial::first-letter {
       vertical-align: middle;
       float: left;
       font-size: 48px;
@@ -236,55 +242,55 @@ body, .md {
       text-align: center;
       margin-top: 0.5rem;
       margin-right: 0.5rem; }
-  body li, .md li {
+  body li, .md li, .markdown-body li {
     font-size: 1rem;
     line-height: 2em; }
-  body > ul, body > ol, .md > ul, .md > ol {
+  body > ul, body > ol, .md > ul, .md > ol, .markdown-body > ul, .markdown-body > ol {
     margin-top: 1rem;
     margin-bottom: 1rem; }
-  body ul, body ol, .md ul, .md ol {
+  body ul, body ol, .md ul, .md ol, .markdown-body ul, .markdown-body ol {
     padding-left: 2rem; }
-  body ol, .md ol {
+  body ol, .md ol, .markdown-body ol {
     list-style-type: decimal; }
-  body ul, .md ul {
+  body ul, .md ul, .markdown-body ul {
     list-style-type: disc; }
-  body li ol, .md li ol {
+  body li ol, .md li ol, .markdown-body li ol {
     list-style-type: lower-roman; }
-  body li ul, .md li ul {
+  body li ul, .md li ul, .markdown-body li ul {
     list-style-type: circle; }
-  body li li ol, .md li li ol {
+  body li li ol, .md li li ol, .markdown-body li li ol {
     list-style-type: lower-alpha; }
-  body li li ul, .md li li ul {
+  body li li ul, .md li li ul, .markdown-body li li ul {
     list-style-type: square; }
-  body li.task-list-item, .md li.task-list-item {
+  body li.task-list-item, .md li.task-list-item, .markdown-body li.task-list-item {
     list-style-type: none; }
-  body table, .md table {
+  body table, .md table, .markdown-body table {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     margin: 1.5rem 0; }
-    body table, body table td, body table th, .md table, .md table td, .md table th {
+    body table, body table td, body table th, .md table, .md table td, .md table th, .markdown-body table, .markdown-body table td, .markdown-body table th {
       border: 1px solid #ebebeb;
       vertical-align: middle;
       font-size: 1rem;
       line-height: 2;
       padding: 0 1rem; }
-    body table thead, .md table thead {
+    body table thead, .md table thead, .markdown-body table thead {
       background-color: rgba(0, 0, 0, 0.02); }
-  body .table, .md .table {
+  body .table, .md .table, .markdown-body .table {
     width: 100%;
     overflow: auto; }
-  body pre[class*="language-"], body .md pre[class*="language-"], .md body pre[class*="language-"], .md pre[class*="language-"] {
+  body pre[class*="language-"], body .md pre[class*="language-"], .md body pre[class*="language-"], body .markdown-body pre[class*="language-"], .markdown-body body pre[class*="language-"], .md pre[class*="language-"], .markdown-body pre[class*="language-"] {
     background-color: rgba(0, 0, 0, 0.02);
     border: 1px solid rgba(0, 0, 0, 0.04);
     padding: 1.25rem; }
-  body pre[class*="language-"].line-numbers, .md pre[class*="language-"].line-numbers {
+  body pre[class*="language-"].line-numbers, .md pre[class*="language-"].line-numbers, .markdown-body pre[class*="language-"].line-numbers {
     position: relative;
     padding-left: 3.75em;
     counter-reset: linenumber; }
-  body pre[class*="language-"].line-numbers > code, .md pre[class*="language-"].line-numbers > code {
+  body pre[class*="language-"].line-numbers > code, .md pre[class*="language-"].line-numbers > code, .markdown-body pre[class*="language-"].line-numbers > code {
     position: relative;
     white-space: inherit; }
-  body .line-numbers .line-numbers-rows, .md .line-numbers .line-numbers-rows {
+  body .line-numbers .line-numbers-rows, .md .line-numbers .line-numbers-rows, .markdown-body .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
     top: 0;
@@ -297,33 +303,33 @@ body, .md {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  body .line-numbers-rows > span, .md .line-numbers-rows > span {
+  body .line-numbers-rows > span, .md .line-numbers-rows > span, .markdown-body .line-numbers-rows > span {
     pointer-events: none;
     display: block;
     counter-increment: linenumber; }
-  body .line-numbers-rows > span:before, .md .line-numbers-rows > span:before {
+  body .line-numbers-rows > span:before, .md .line-numbers-rows > span:before, .markdown-body .line-numbers-rows > span:before {
     content: counter(linenumber);
     color: #adadad;
     display: block;
     padding-right: 0.75em;
     text-align: right; }
-  body div.code-toolbar, .md div.code-toolbar {
+  body div.code-toolbar, .md div.code-toolbar, .markdown-body div.code-toolbar {
     position: relative; }
-  body div.code-toolbar > .toolbar, .md div.code-toolbar > .toolbar {
+  body div.code-toolbar > .toolbar, .md div.code-toolbar > .toolbar, .markdown-body div.code-toolbar > .toolbar {
     position: absolute;
     cursor: default;
     top: 0.25rem;
     right: 0.5rem;
     opacity: 1; }
-  body div.code-toolbar:hover > .toolbar, .md div.code-toolbar:hover > .toolbar {
+  body div.code-toolbar:hover > .toolbar, .md div.code-toolbar:hover > .toolbar, .markdown-body div.code-toolbar:hover > .toolbar {
     opacity: 1; }
-  body div.code-toolbar:focus-within > .toolbar, .md div.code-toolbar:focus-within > .toolbar {
+  body div.code-toolbar:focus-within > .toolbar, .md div.code-toolbar:focus-within > .toolbar, .markdown-body div.code-toolbar:focus-within > .toolbar {
     opacity: 1; }
-  body div.code-toolbar > .toolbar .toolbar-item, .md div.code-toolbar > .toolbar .toolbar-item {
+  body div.code-toolbar > .toolbar .toolbar-item, .md div.code-toolbar > .toolbar .toolbar-item, .markdown-body div.code-toolbar > .toolbar .toolbar-item {
     display: inline-block; }
-  body div.code-toolbar > .toolbar a, .md div.code-toolbar > .toolbar a {
+  body div.code-toolbar > .toolbar a, .md div.code-toolbar > .toolbar a, .markdown-body div.code-toolbar > .toolbar a {
     cursor: pointer; }
-  body div.code-toolbar > .toolbar button, .md div.code-toolbar > .toolbar button {
+  body div.code-toolbar > .toolbar button, .md div.code-toolbar > .toolbar button, .markdown-body div.code-toolbar > .toolbar button {
     background: none;
     border: 0;
     color: inherit;
@@ -338,7 +344,9 @@ body, .md {
   body div.code-toolbar > .toolbar button,
   body div.code-toolbar > .toolbar span, .md div.code-toolbar > .toolbar a,
   .md div.code-toolbar > .toolbar button,
-  .md div.code-toolbar > .toolbar span {
+  .md div.code-toolbar > .toolbar span, .markdown-body div.code-toolbar > .toolbar a,
+  .markdown-body div.code-toolbar > .toolbar button,
+  .markdown-body div.code-toolbar > .toolbar span {
     color: rgba(0, 0, 0, 0.24);
     font-size: 0.75rem;
     line-height: 1;
@@ -353,13 +361,20 @@ body, .md {
   .md div.code-toolbar > .toolbar button:hover,
   .md div.code-toolbar > .toolbar button:focus,
   .md div.code-toolbar > .toolbar span:hover,
-  .md div.code-toolbar > .toolbar span:focus {
+  .md div.code-toolbar > .toolbar span:focus, .markdown-body div.code-toolbar > .toolbar a:hover,
+  .markdown-body div.code-toolbar > .toolbar a:focus,
+  .markdown-body div.code-toolbar > .toolbar button:hover,
+  .markdown-body div.code-toolbar > .toolbar button:focus,
+  .markdown-body div.code-toolbar > .toolbar span:hover,
+  .markdown-body div.code-toolbar > .toolbar span:focus {
     text-decoration: none; }
   body code,
   body code[class*="language-"],
   body pre[class*="language-"], .md code,
   .md code[class*="language-"],
-  .md pre[class*="language-"] {
+  .md pre[class*="language-"], .markdown-body code,
+  .markdown-body code[class*="language-"],
+  .markdown-body pre[class*="language-"] {
     color: #5c5c5c;
     font-size: 1rem;
     line-height: 2;
@@ -378,40 +393,47 @@ body, .md {
     hyphens: none; }
   body *:not(pre) > code[class*="language-"],
   body *:not(pre) > code, .md *:not(pre) > code[class*="language-"],
-  .md *:not(pre) > code {
+  .md *:not(pre) > code, .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code {
     margin: 0; }
-  body *:not(pre) > code, .md *:not(pre) > code {
+  body *:not(pre) > code, .md *:not(pre) > code, .markdown-body *:not(pre) > code {
     color: #5c5c5c; }
   body pre[class*="language-"]::-moz-selection, body pre[class*="language-"] ::-moz-selection,
   body code[class*="language-"]::-moz-selection, body code[class*="language-"] ::-moz-selection, .md pre[class*="language-"]::-moz-selection, .md pre[class*="language-"] ::-moz-selection,
-  .md code[class*="language-"]::-moz-selection, .md code[class*="language-"] ::-moz-selection {
+  .md code[class*="language-"]::-moz-selection, .md code[class*="language-"] ::-moz-selection, .markdown-body pre[class*="language-"]::-moz-selection, .markdown-body pre[class*="language-"] ::-moz-selection,
+  .markdown-body code[class*="language-"]::-moz-selection, .markdown-body code[class*="language-"] ::-moz-selection {
     text-shadow: none; }
   body pre[class*="language-"]::selection, body pre[class*="language-"] ::selection,
   body code[class*="language-"]::selection, body code[class*="language-"] ::selection, .md pre[class*="language-"]::selection, .md pre[class*="language-"] ::selection,
-  .md code[class*="language-"]::selection, .md code[class*="language-"] ::selection {
+  .md code[class*="language-"]::selection, .md code[class*="language-"] ::selection, .markdown-body pre[class*="language-"]::selection, .markdown-body pre[class*="language-"] ::selection,
+  .markdown-body code[class*="language-"]::selection, .markdown-body code[class*="language-"] ::selection {
     text-shadow: none; }
   @media print {
     body code[class*="language-"],
     body pre[class*="language-"], .md code[class*="language-"],
-    .md pre[class*="language-"] {
+    .md pre[class*="language-"], .markdown-body code[class*="language-"],
+    .markdown-body pre[class*="language-"] {
       text-shadow: none; } }
-  body pre[class*="language-"], .md pre[class*="language-"] {
+  body pre[class*="language-"], .md pre[class*="language-"], .markdown-body pre[class*="language-"] {
     overflow: auto;
     -webkit-overflow-scrolling: touch; }
   body *:not(pre) > code[class*="language-"],
   body *:not(pre) > code,
   body pre[class*="language-"], .md *:not(pre) > code[class*="language-"],
   .md *:not(pre) > code,
-  .md pre[class*="language-"] {
+  .md pre[class*="language-"], .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code,
+  .markdown-body pre[class*="language-"] {
     border-radius: 4px; }
   body *:not(pre) > code[class*="language-"],
   body *:not(pre) > code, .md *:not(pre) > code[class*="language-"],
-  .md *:not(pre) > code {
+  .md *:not(pre) > code, .markdown-body *:not(pre) > code[class*="language-"],
+  .markdown-body *:not(pre) > code {
     margin: 0;
     padding: 2px;
     background: rgba(0, 0, 0, 0.04);
     white-space: normal; }
-  body *:not(pre) > code, .md *:not(pre) > code {
+  body *:not(pre) > code, .md *:not(pre) > code, .markdown-body *:not(pre) > code {
     color: #5c5c5c; }
   body .token.comment,
   body .token.prolog,
@@ -419,11 +441,14 @@ body, .md {
   body .token.cdata, .md .token.comment,
   .md .token.prolog,
   .md .token.doctype,
-  .md .token.cdata {
+  .md .token.cdata, .markdown-body .token.comment,
+  .markdown-body .token.prolog,
+  .markdown-body .token.doctype,
+  .markdown-body .token.cdata {
     color: #c2c2c2; }
-  body .token.punctuation, .md .token.punctuation {
+  body .token.punctuation, .md .token.punctuation, .markdown-body .token.punctuation {
     color: #858585; }
-  body .namespace, .md .namespace {
+  body .namespace, .md .namespace, .markdown-body .namespace {
     opacity: 0.7; }
   body .token.property,
   body .token.tag,
@@ -437,7 +462,13 @@ body, .md {
   .md .token.number,
   .md .token.constant,
   .md .token.symbol,
-  .md .token.deleted {
+  .md .token.deleted, .markdown-body .token.property,
+  .markdown-body .token.tag,
+  .markdown-body .token.boolean,
+  .markdown-body .token.number,
+  .markdown-body .token.constant,
+  .markdown-body .token.symbol,
+  .markdown-body .token.deleted {
     color: #be2db4; }
   body .token.selector,
   body .token.attr-name,
@@ -449,7 +480,12 @@ body, .md {
   .md .token.string,
   .md .token.char,
   .md .token.builtin,
-  .md .token.inserted {
+  .md .token.inserted, .markdown-body .token.selector,
+  .markdown-body .token.attr-name,
+  .markdown-body .token.string,
+  .markdown-body .token.char,
+  .markdown-body .token.builtin,
+  .markdown-body .token.inserted {
     color: #21b460; }
   body .token.operator,
   body .token.entity,
@@ -459,38 +495,48 @@ body, .md {
   .md .token.entity,
   .md .token.url,
   .md .language-css .token.string,
-  .md .style .token.string {
+  .md .style .token.string, .markdown-body .token.operator,
+  .markdown-body .token.entity,
+  .markdown-body .token.url,
+  .markdown-body .language-css .token.string,
+  .markdown-body .style .token.string {
     color: #c76f1e; }
   body .token.atrule,
   body .token.attr-value,
   body .token.keyword, .md .token.atrule,
   .md .token.attr-value,
-  .md .token.keyword {
+  .md .token.keyword, .markdown-body .token.atrule,
+  .markdown-body .token.attr-value,
+  .markdown-body .token.keyword {
     color: #307FEC; }
   body .token.function,
   body .token.class-name, .md .token.function,
-  .md .token.class-name {
+  .md .token.class-name, .markdown-body .token.function,
+  .markdown-body .token.class-name {
     color: #F43A3A; }
   body .token.regex,
   body .token.important,
   body .token.variable, .md .token.regex,
   .md .token.important,
-  .md .token.variable {
+  .md .token.variable, .markdown-body .token.regex,
+  .markdown-body .token.important,
+  .markdown-body .token.variable {
     color: #FF9E4D; }
   body .token.important,
   body .token.bold, .md .token.important,
-  .md .token.bold {
+  .md .token.bold, .markdown-body .token.important,
+  .markdown-body .token.bold {
     font-weight: bold; }
-  body .token.italic, .md .token.italic {
+  body .token.italic, .md .token.italic, .markdown-body .token.italic {
     font-style: italic; }
-  body .token.entity, .md .token.entity {
+  body .token.entity, .md .token.entity, .markdown-body .token.entity {
     cursor: help; }
-  body .styleShow, .md .styleShow {
+  body .styleShow, .md .styleShow, .markdown-body .styleShow {
     border: 1px solid rgba(0, 0, 0, 0.16);
     border-radius: 4px;
     margin: 2rem 0;
     position: relative; }
-    body .styleShow::before, .md .styleShow::before {
+    body .styleShow::before, .md .styleShow::before, .markdown-body .styleShow::before {
       position: absolute;
       content: "Max Width";
       color: rgba(0, 0, 0, 0.16);
@@ -500,10 +546,10 @@ body, .md {
       font-size: 0.75rem;
       background-color: white;
       padding: 0 8px; }
-    body .styleShow::after, .md .styleShow::after {
+    body .styleShow::after, .md .styleShow::after, .markdown-body .styleShow::after {
       position: absolute;
       content: "";
-      width: calc(100% - 50px);
+      width: calc(100% - 16px);
       height: 100%;
       border: 1px dashed rgba(0, 0, 0, 0.16);
       border-top: none;

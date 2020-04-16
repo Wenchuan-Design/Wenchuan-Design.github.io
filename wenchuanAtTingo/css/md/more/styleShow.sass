@@ -16,13 +16,14 @@
         padding: 0 8px
 
     &::after
+        $myMargin: $mdHorizontalMargin * 2
         position: absolute
         content: ""
-        width: calc(100% - 50px)
+        width: calc(100% - 2rem)
         height: 100%
         // background-color: $rgbaLightPale
         border: 1px dashed $rgbaPale
         border-top: none
         border-bottom: none
         top: 0
-        left: 1.5rem
+        left: 1rem

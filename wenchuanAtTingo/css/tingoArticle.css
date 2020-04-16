@@ -95,8 +95,8 @@ img {
   .markdown-body {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 24px; }
-    @media only screen and (max-width: 768px) {
+    padding: 0 16px; }
+    @media only screen and (max-width: 752px) {
       .md,
       .markdown-body {
         max-width: 100%; } }
@@ -200,16 +200,16 @@ img {
     .markdown-body > p > img._12 {
       padding-left: 12px;
       padding-right: 12px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 752px) {
     .md > figure img,
     .md > p > figure img,
     .md > p > img,
     .markdown-body > figure img,
     .markdown-body > p > figure img,
     .markdown-body > p > img {
-      max-width: calc(100% + 48px);
-      width: calc(auto + 48px);
-      margin-left: -24px; } }
+      max-width: calc(100% + 2rem);
+      width: calc(auto + 2rem);
+      margin-left: -1rem; } }
   .md figure figcaption *,
   .markdown-body figure figcaption * {
     font-size: 14px;
@@ -231,15 +231,13 @@ img {
     padding-left: 1rem;
     box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.08);
     background-color: rgba(0, 0, 0, 0.02); }
-    .md blockquote > *,
-    .markdown-body blockquote > * {
-      font-size: 87.5% !important; }
-      .md blockquote > * *,
-      .markdown-body blockquote > * * {
-        font-size: 100%; }
+    .md blockquote > * *,
+    .markdown-body blockquote > * * {
+      font-size: 100%; }
     .md blockquote *,
     .markdown-body blockquote * {
-      text-align: left; }
+      text-align: left;
+      font-weight: 500; }
     .md blockquote.wow *,
     .markdown-body blockquote.wow * {
       font-size: 100% !important; }
@@ -617,13 +615,13 @@ img {
     .markdown-body .styleShow::after {
       position: absolute;
       content: "";
-      width: calc(100% - 50px);
+      width: calc(100% - 2rem);
       height: 100%;
       border: 1px dashed rgba(0, 0, 0, 0.16);
       border-top: none;
       border-bottom: none;
       top: 0;
-      left: 1.5rem; }
+      left: 1rem; }
 
 @media only screen and (min-width: 415px) {
   header.contentHeader img.cover {
@@ -631,11 +629,11 @@ img {
     object-fit: cover; } }
 header.contentHeader div.title {
   max-width: 720px;
-  padding: 0 24px;
+  padding: 0 16px;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 752px) {
     header.contentHeader div.title {
       max-width: 100%;
       padding: 0 1.5rem; } }
