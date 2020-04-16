@@ -30,7 +30,17 @@ figure
             color: $rgbaGrey
 
 .figcap
-    text-align: center
+    // text-align: center
     margin-top: -1rem
     font-size: 14px
     color: $rgbaGrey
+
+    &::before
+        content: ''
+        display: inline-block
+        width: 8px
+        height: 8px
+        margin-right: .5em
+
+        border: 0.5px solid $brandColor
+        border-radius: 50%
