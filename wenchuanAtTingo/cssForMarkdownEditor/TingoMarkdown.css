@@ -182,17 +182,29 @@ body, .md, .markdown-body {
     .md > p > img, .markdown-body > figure img,
     .markdown-body > p > figure img,
     .markdown-body > p > img {
-      max-width: calc(100% + 48px);
-      width: calc(auto + 48px);
-      margin-left: -24px; } }
+      max-width: calc(100% + 2rem);
+      width: calc(auto + 2rem);
+      margin-left: -1rem; } }
   body figure figcaption *, .md figure figcaption *, .markdown-body figure figcaption * {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.48); }
   body .figcap, .md .figcap, .markdown-body .figcap {
-    text-align: center;
+    text-indent: 1em;
     margin-top: -1rem;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.48); }
+    color: rgba(0, 0, 0, 0.48);
+    position: relative; }
+    body .figcap::before, .md .figcap::before, .markdown-body .figcap::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border: 0.5px solid #33C3C2;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(0, -50%);
+      top: 14px;
+      left: 0; }
   body blockquote, .md blockquote, .markdown-body blockquote {
     background: none;
     border: none;
@@ -203,12 +215,11 @@ body, .md, .markdown-body {
     padding-left: 1rem;
     box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.08);
     background-color: rgba(0, 0, 0, 0.02); }
-    body blockquote > *, .md blockquote > *, .markdown-body blockquote > * {
-      font-size: 87.5% !important; }
-      body blockquote > * *, .md blockquote > * *, .markdown-body blockquote > * * {
-        font-size: 100%; }
+    body blockquote > * *, .md blockquote > * *, .markdown-body blockquote > * * {
+      font-size: 100%; }
     body blockquote *, .md blockquote *, .markdown-body blockquote * {
-      text-align: left; }
+      text-align: left;
+      font-weight: 500; }
     body blockquote.wow *, .md blockquote.wow *, .markdown-body blockquote.wow * {
       font-size: 100% !important; }
   body h1, body h2, body h3, body h4, body h5, body h6, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
@@ -549,10 +560,10 @@ body, .md, .markdown-body {
     body .styleShow::after, .md .styleShow::after, .markdown-body .styleShow::after {
       position: absolute;
       content: "";
-      width: calc(100% - 16px);
+      width: calc(100% - 2rem);
       height: 100%;
       border: 1px dashed rgba(0, 0, 0, 0.16);
       border-top: none;
       border-bottom: none;
       top: 0;
-      left: 1.5rem; }
+      left: 1rem; }

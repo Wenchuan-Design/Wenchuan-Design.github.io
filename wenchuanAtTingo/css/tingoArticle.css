@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -89,87 +90,87 @@ img {
 
 .md,
 .markdown-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px; }
+  @media only screen and (max-width: 752px) {
+    .md,
+    .markdown-body {
+      max-width: 100%; } }
+  .md *::selection,
+  .markdown-body *::selection {
+    background-color: rgba(51, 195, 194, 0.16); }
+.md *,
+.markdown-body * {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+.md .textAlign-right,
+.markdown-body .textAlign-right {
+  text-align: right; }
+.md .textAlign-center,
+.markdown-body .textAlign-center {
+  text-align: center; }
+.md p a, .md li a, .md table a, .md blockquote a,
+.markdown-body p a,
+.markdown-body li a,
+.markdown-body table a,
+.markdown-body blockquote a {
+  color: #33C3C2;
+  cursor: pointer; }
+.md sup, .md sub,
+.markdown-body sup,
+.markdown-body sub {
+  font-size: smaller;
+  line-height: 1; }
+.md sup,
+.markdown-body sup {
+  vertical-align: super; }
+.md sub,
+.markdown-body sub {
+  vertical-align: sub; }
+.md strong, .md b,
+.markdown-body strong,
+.markdown-body b {
+  font-weight: 500; }
+.md del,
+.markdown-body del {
+  text-decoration: line-through;
+  color: #858585; }
+.md em,
+.markdown-body em {
+  font-weight: 500;
+  font-style: normal; }
+.md mark,
+.markdown-body mark {
+  background-color: rgba(51, 195, 194, 0.24);
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; }
+  .md mark:hover,
+  .markdown-body mark:hover {
+    background-color: rgba(51, 195, 194, 0.4); }
+.md u,
+.markdown-body u {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-bottom: 2px; }
+.md details,
+.markdown-body details {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem; }
+  .md details summary,
+  .markdown-body details summary {
+    font-weight: bold;
+    margin-left: -1rem;
+    line-height: 2; }
+.md,
+.markdown-body {
   /* Separate line b/c rules are thrown out if selector is invalid.
    * IE11 and old Edge versions don't support :focus-within. */ }
-  .md,
-  .markdown-body {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 16px; }
-    @media only screen and (max-width: 752px) {
-      .md,
-      .markdown-body {
-        max-width: 100%; } }
-    .md *::selection,
-    .markdown-body *::selection {
-      background-color: rgba(51, 195, 194, 0.16); }
-  .md *,
-  .markdown-body * {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; }
-  .md .textAlign-right,
-  .markdown-body .textAlign-right {
-    text-align: right; }
-  .md .textAlign-center,
-  .markdown-body .textAlign-center {
-    text-align: center; }
-  .md p a, .md li a, .md table a, .md blockquote a,
-  .markdown-body p a,
-  .markdown-body li a,
-  .markdown-body table a,
-  .markdown-body blockquote a {
-    color: #33C3C2;
-    cursor: pointer; }
-  .md sup, .md sub,
-  .markdown-body sup,
-  .markdown-body sub {
-    font-size: smaller;
-    line-height: 1; }
-  .md sup,
-  .markdown-body sup {
-    vertical-align: super; }
-  .md sub,
-  .markdown-body sub {
-    vertical-align: sub; }
-  .md strong, .md b,
-  .markdown-body strong,
-  .markdown-body b {
-    font-weight: 500; }
-  .md del,
-  .markdown-body del {
-    text-decoration: line-through;
-    color: #858585; }
-  .md em,
-  .markdown-body em {
-    font-weight: 500;
-    font-style: normal; }
-  .md mark,
-  .markdown-body mark {
-    background-color: rgba(51, 195, 194, 0.24);
-    padding-top: 0.125em;
-    padding-bottom: 0.125em;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out; }
-    .md mark:hover,
-    .markdown-body mark:hover {
-      background-color: rgba(51, 195, 194, 0.4); }
-  .md u,
-  .markdown-body u {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-    padding-bottom: 2px; }
-  .md details,
-  .markdown-body details {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem; }
-    .md details summary,
-    .markdown-body details summary {
-      font-weight: bold;
-      margin-left: -1rem;
-      line-height: 2; }
   .md hr,
   .markdown-body hr {
     border: none;
@@ -216,18 +217,23 @@ img {
     color: rgba(0, 0, 0, 0.48); }
   .md .figcap,
   .markdown-body .figcap {
+    text-indent: 1em;
     margin-top: -1rem;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.48); }
+    color: rgba(0, 0, 0, 0.48);
+    position: relative; }
     .md .figcap::before,
     .markdown-body .figcap::before {
       content: "";
       display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin-right: 0.5em;
+      width: 6px;
+      height: 6px;
       border: 0.5px solid #33C3C2;
-      border-radius: 50%; }
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(0, -50%);
+      top: 14px;
+      left: 0; }
   .md blockquote,
   .markdown-body blockquote {
     background: none;
@@ -349,6 +355,73 @@ img {
   .markdown-body .table {
     width: 100%;
     overflow: auto; }
+  .md .markup br,
+  .markdown-body .markup br {
+    display: none; }
+  .md .reset-br br,
+  .markdown-body .reset-br br {
+    display: block; }
+  .md .jumpTo,
+  .markdown-body .jumpTo {
+    margin: 1rem 0;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+    .md .jumpTo:active,
+    .markdown-body .jumpTo:active {
+      background-color: rgba(0, 0, 0, 0.04); }
+    .md .jumpTo::before,
+    .markdown-body .jumpTo::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 44px;
+      background-color: white;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      margin: 16px;
+      background-size: 100%; }
+    .md .jumpTo .name,
+    .markdown-body .jumpTo .name {
+      position: absolute;
+      top: 50%;
+      margin: 0;
+      transform: translate(0, -50%);
+      line-height: calc(1em + 8px);
+      left: 70px;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 500;
+      width: calc(100%);
+      padding-right: 86px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .md .jumpTo .name::after,
+      .markdown-body .jumpTo .name::after {
+        color: rgba(0, 0, 0, 0.32);
+        display: block;
+        content: "";
+        font-size: 12px;
+        line-height: calc(12px + 8px);
+        margin-top: 2px; }
+    .md .jumpTo.NMusic::before,
+    .markdown-body .jumpTo.NMusic::before {
+      background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/NMusic-colored.png); }
+    .md .jumpTo.NMusic .name::after,
+    .markdown-body .jumpTo.NMusic .name::after {
+      content: "长按 - 打开《网易云音乐》"; }
+    .md .jumpTo.QQMusic::before,
+    .markdown-body .jumpTo.QQMusic::before {
+      background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/QQMusic-colored.png); }
+    .md .jumpTo.QQMusic .name::after,
+    .markdown-body .jumpTo.QQMusic .name::after {
+      content: "长按 - 打开《QQ音乐》"; }
   .md pre[class*="language-"],
   .markdown-body pre[class*="language-"] {
     background-color: rgba(0, 0, 0, 0.02);

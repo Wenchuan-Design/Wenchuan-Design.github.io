@@ -1,0 +1,87 @@
+$jumpToBoxSize: 80px
+$jumpToBoxPadding: 16px
+$jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2) - 4px
+
+.jumpTo
+	margin: 1rem 0
+
+	position: relative
+
+	box-sizing: border-box
+	display: block
+	width: 100%
+	height: $jumpToBoxSize
+	background-color: #fafafa
+	border-radius: 8px
+	border: 1px solid rgba(0, 0, 0, 0.08)
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04)
+
+	&:active
+		background-color: rgba(black, 0.04)
+
+	&::before
+		content: ''
+		display: block
+		width: $jumpToBoxIcon
+		height: $jumpToBoxIcon
+		background-color: white
+		border-radius: 50%
+		border: 1px solid rgba(black, 0.04)
+
+		margin: $jumpToBoxPadding
+
+		background-size: 100%
+
+
+
+	.name
+		$left: $jumpToBoxPadding + $jumpToBoxIcon + 2px + 8px
+		$line-height: calc(1em + 8px)
+
+		position: absolute
+		top: 50%
+		margin: 0
+		transform: translate(0, -50%)
+		line-height: $line-height
+		left: $left
+
+		color: rgba(black, 0.8)
+		font-weight: 500
+
+		width: calc(100%)
+		padding-right: $left + 16px
+
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+		&::after
+			color: rgba(black, 0.32)
+
+			display: block
+			content: ''
+
+			font-size: 12px
+			line-height: calc(12px + 8px)
+
+			margin-top: 2px
+
+
+
+
+	&.NMusic
+
+		&::before
+			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/NMusic-colored.png)
+
+		.name
+			&::after
+				content: '长按 - 打开《网易云音乐》'
+
+	&.QQMusic
+		&::before
+			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/QQMusic-colored.png)
+
+		.name
+			&::after
+				content: '长按 - 打开《QQ音乐》'
