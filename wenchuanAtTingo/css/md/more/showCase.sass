@@ -1,0 +1,37 @@
+.media-info
+    border: 0.5px solid $rgbaLightPale
+    border-radius: 8px
+    margin: 2rem 0
+    padding: 1rem 1rem
+    position: relative
+
+    transition: 300ms
+
+
+    display: block
+    line-height: 2
+    margin: 1rem 0
+    font-size: 14px
+    font-weight: 500
+    color: $rgbaDarkGrey
+
+    &::before
+        position: absolute
+        content: "Media Info"
+        color: rgba(0, 0, 0, 0.16)
+        transform: translate(-50%, -50%)
+        top: 0
+        left: 50%
+        font-size: 0.75rem
+        background-color: white
+        padding: 0 8px
+
+        transition: 300ms
+
+    &:active
+        border-color: $rgbaPale
+
+        color: $rgbaDark
+
+        &::before
+            color: $rgbaDarkPale

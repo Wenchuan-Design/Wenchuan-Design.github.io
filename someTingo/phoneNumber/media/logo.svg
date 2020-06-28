@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>logo/cu</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#33C3C2" offset="0%"></stop>
+            <stop stop-color="#338FC3" offset="100%"></stop>
+        </linearGradient>
+        <path d="M67.2997713,20.0863408 L67.4624141,20.1320459 L97.9908684,29.6556183 C99.4995791,30.1262716 100.340427,31.7287388 99.868955,33.2348291 C99.4143212,34.6871305 97.9054426,35.5195004 96.4454779,35.1550974 L96.2835169,35.1096538 L69.4707809,26.7446812 L69.47,43.614 L97.9908684,52.5121921 C99.1288035,52.8671791 99.9208911,53.8860253 99.9937477,55.0617395 L99.9992353,55.2392098 L99.9992353,83.8099269 C99.9992353,85.3878441 98.7178552,86.6669987 97.1371927,86.6669987 C95.6129824,86.6669987 94.367059,85.4775807 94.2800086,83.9778016 L94.2751501,83.8099269 L94.2751501,57.3391575 L69.47,49.601 L69.4707809,73.8101759 C69.4707809,88.129774 57.9585416,99.7652145 43.6692406,99.9964913 L43.2353905,100 C28.7459844,100 17,88.2744164 17,73.8101759 C17,59.3459355 28.7459844,47.6203519 43.2353905,47.6203519 C49.1212463,47.6203519 54.7184839,49.564071 59.2780573,53.0859977 C60.5281818,54.0516246 60.7574507,55.8460859 59.7901437,57.0940391 C58.8228368,58.3419923 57.0252535,58.570863 55.775129,57.6052361 C52.209771,54.8512658 47.8419975,53.3344953 43.2353905,53.3344953 C31.9073094,53.3344953 22.7240852,62.5017698 22.7240852,73.8101759 C22.7240852,85.1185821 31.9073094,94.2858566 43.2353905,94.2858566 C54.4501908,94.2858566 63.5628168,85.3010109 63.7439478,74.1487788 L63.7466957,73.8101759 L63.7460241,45.7394309 C63.7458458,45.7174459 63.7459234,45.6954304 63.7462592,45.6733884 L63.7466957,22.8590637 C63.7466957,20.9882592 65.5109149,19.6384504 67.2997713,20.0863408 Z" id="path-2"></path>
+        <filter x="-1.8%" y="-1.9%" width="103.6%" height="103.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.764705882   0 0 0 0 0.760784314  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="logo/cu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="120" height="120"></rect>
+        <g id="Combined-Shape">
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

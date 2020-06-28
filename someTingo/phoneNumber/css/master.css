@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  padding: 0;
+  margin: 0;
+  vertical-align: center; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8); }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, PingFang SC,  BlinkMacSystemFont, "Apple Color Emoji", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif; }
+
+body {
+  padding: 0 1.5rem; }
+
+.pageStart {
+  margin: 50px; }
+
+figure.logo {
+  position: relative;
+  width: 280px;
+  margin: 0 auto; }
+  figure.logo .frame {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background-image: linear-gradient(#f9f9f9, #f1f1f1);
+    padding: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.04); }
+    figure.logo .frame img {
+      border-radius: 50%;
+      width: 100%; }
+
+.title {
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.75rem; }
+
+.input {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 280px; }
+  .input input {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    top: 48%;
+    transform: translate(0, -50%);
+    padding: 0 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8); }
+    .input input::placeholder {
+      color: rgba(0, 0, 0, 0.16); }
+  .input.leftAndRight input {
+    width: 180px; }
+  .input.leftAndRight .btn {
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    transform: translate(0, -50%);
+    top: 50%;
+    color: #33C3C2; }
+    .input.leftAndRight .btn:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.08);
+      left: 0;
+      transform: translate(0, -50%);
+      top: 50%; }
+
+.bigBtn {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 48px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  margin-top: 40px; }
+
+.hint {
+  font-size: 12px;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.32);
+  font-weight: 400; }
