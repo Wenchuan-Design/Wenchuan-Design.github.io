@@ -1,0 +1,18 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+}
+
+
+
+code,
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: 'Source Code Pro', monospace;
+  // font-family: monospace
+}

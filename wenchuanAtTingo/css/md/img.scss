@@ -1,0 +1,63 @@
+// 这里要加上 figure，因为在 MWeb 中，可以设置在 img 上增加 `<figure>` 父类
+img, figure {
+  margin: 0 auto;
+}
+
+
+&> {
+  figure,
+  img,
+  p > img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+&> {
+  figure img,
+  p > figure img,
+  p > img {
+    @media only screen and (max-width: $mdMaxWidth + ($mdHorizontalMargin * 2)) {
+      max-width: calc(100% + 2rem);
+      width: calc(auto + 2rem);
+      margin-left: -1rem;
+    }
+  }
+}
+
+
+figure {
+  figcaption {
+    * {
+      font-size: 14px;
+      color: $rgbaGrey;
+    }
+  }
+}
+
+
+// 要把这个地方打组，通用到所有类型图注
+.figcap, {
+  // text-align: center
+  text-indent: 1em;
+  margin-top: -1rem;
+  font-size: 14px;
+  color: $rgbaGrey;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    // margin-right: .5em
+
+    border: 0.5px solid $brandColor;
+    border-radius: 50%;
+
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 14px;
+    left: 0;
+  }
+}

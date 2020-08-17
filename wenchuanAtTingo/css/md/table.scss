@@ -1,0 +1,23 @@
+table {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+
+  &, td, th {
+    border: 1px solid $hexLightPale;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 1rem;
+}
+
+  thead {
+    background-color: $rgbaBg2;
+  }
+}
+
+
+.table {
+  width: 100%;
+  overflow: auto;
+}

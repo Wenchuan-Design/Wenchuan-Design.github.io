@@ -1,0 +1,240 @@
+$jumpToBoxSize: 80px;
+$jumpToBoxPadding: 16px;
+$jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2);
+
+.jumpTo {
+	margin: 1rem 0;
+
+	position: relative;
+	z-index: 1;
+
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: $jumpToBoxSize;
+	background-color: #fafafa;
+	border-radius: 8px;
+	border: 0.5px solid rgba(0, 0, 0, 0.08);
+	// box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+	// border: 1px dashed rgba(0, 0, 0, 0.08);
+
+	overflow: hidden;
+
+	&:active {
+		background-color: rgba(black, 0.04)
+	}
+
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 1rem;
+		height: 1rem;
+		background-color: white;
+
+		right: 0.5rem;
+		bottom: 0.5rem;
+
+		border-radius: 50%;
+
+		background-size: cover;
+
+		border: 2px solid white;
+		box-shadow: 0 1px 4px rgba(black, 0.08), 0 1px 1px rgba(black, 0.08);
+	}
+
+
+	.cover {
+		width: $jumpToBoxIcon;
+		height: $jumpToBoxIcon;
+		background-color: white;
+		border-radius: 50%;
+		box-shadow: 0 1px 12px rgba(black, 0.08), 0 1px 1px rgba(black, 0.08);
+
+		margin: $jumpToBoxPadding;
+
+		object-fit: cover;
+		border: 2px solid white;
+	}
+
+
+	.name {
+		$left: $jumpToBoxPadding + $jumpToBoxIcon + 2px + 8px;
+		$line-height: calc(1em + 8px);
+
+		position: absolute;
+		top: 50%;
+		margin: 0;
+		transform: translate(0, -50%);
+		line-height: $line-height;
+		left: $left;
+
+		color: rgba(black, 0.8);
+		font-weight: 500;
+
+		width: calc(100%);
+		padding-right: $left + 16px;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&::after {
+			color: rgba(black, 0.32);
+
+			display: block;
+			content: '';
+
+			font-size: 12px;
+			line-height: calc(12px + 8px);
+
+			margin-top: 2px;
+		}
+	}
+
+
+
+
+
+	&.NMusic {
+		&::before {
+			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/NMusic-colored-tiny.png);
+		}
+
+		.name {
+			&::after {
+				content: '长按 - 在《网易云音乐》中打开';
+			}
+		}
+	}
+
+
+
+	&.QQMusic {
+		&::before {
+			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/QQMusic-colored-tiny.png);
+		}
+
+		.name {
+			&::after {
+				content: '长按 - 在《QQ音乐》中打开';
+			}
+		}
+	}
+
+
+	&.bilibili {
+		&::before {
+			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/bilibili-colored-tiny.png)
+		}
+
+		.name {
+			&::after {
+				content: '长按 - 在《哔哩哔哩》中打开';
+			}
+		}
+	}
+}
+
+
+.miniShop {
+	margin: 1rem 0;
+	box-sizing: border-box;
+	list-style-type: none;
+
+	border-radius: 8px;
+	// border: 0.5px solid rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+
+	background-color: #fafafa;
+
+	a {
+		display: flex;
+		justify-content: flex-start;
+
+		.cover {
+			display: block;
+			flex: 0 0 100px;
+			height: 100px;
+			// margin-right: 12px;
+			margin: 12px;
+			margin-right: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+
+		.info {
+			display: block;
+			flex: 1 1 40px;
+
+			display: flex;
+			flex-direction: column;
+
+			margin: 12px;
+
+			.name, .price {
+				line-height: calc(1em + 8px);
+				display: block;
+				font-weight: 500;
+				text-align: left;
+			}
+
+			.name {
+				flex: 1 1 20px;
+
+				&::after {
+					display: block;
+					content: '长按 - 打开购买链接';
+					font-size: 12px;
+					color: rgba(black, 0.32);
+				}
+			}
+
+
+			.price {
+				position: relative;
+				font-size: 18px;
+				color: #FF4747;
+				margin-left: 10px;
+
+				&::before {
+					position: absolute;
+					line-height: 1;
+					content: '¥';
+					font-size: 13px;
+					left: -10px;
+					bottom: 4px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

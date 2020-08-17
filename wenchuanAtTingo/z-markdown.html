@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title data-n-head="true">Tingo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="./css/tingoArticle.css">
+        <script src="./js/codeStyle.js"></script>
+
+        </script>
+    </head>
+    <body>
+
+        <header class="contentHeader">
+            <img class="cover" src="./media/eg-1.jpg" alt="">
+
+
+            <div class="title">
+                <h1 class="title">听果文章基础元素</h1>
+                <p class="caption">来自：<a>趙文川</a></p>
+            </div>
+
+        </header>
+
+        <!-- 到这里为止由向程写原生 -->
+
+<div class="md">
+
+    <p class="initial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex neque, vulputate vel turpis at, volutpat gravida nisl. Aenean scelerisque vulputate urna, sit amet tempus nunc tristique sed. Nulla facilisi. Aenean interdum diam at odio mattis, at laoreet lacus vulputate. Etiam sollicitudin felis et pretium pharetra.</p>
+
+    <ul class="miniShop">
+        <a href="https://m.youtube.com/">
+            <li class="cover">
+                <img class="cover" src="./media/eg-1.jpg" alt="">
+            </li>
+            <li class="info">
+
+                <span class="name">
+                    叶炫清《幻想家》正品音乐专辑
+                </span>
+                <span class="price">
+                    98.00
+                </span>
+            </li>
+        </a>
+    </ul>
+
+    <p class="media-info">歌曲名称：君をのせて<br>作词：宫崎骏<br>作曲：久石让<br>演唱：井上杏美<br></p>
+
+    <p>
+        <a href="http://music.163.com/song/26159657/?userid=256138834" class="markup jumpTo QQMusic">
+            <img src="http://p2.music.126.net/fCmJ_vmSlosNS0uhsr1L4w==/2279287604401210.jpg?param=130y130" class="cover">
+        	<span class="name">Prélude en harpègement - Marin Marais</span>
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.bilibili.com/video/BV1Fk4y1R7qU?from=search&seid=15580066725121482508" class="markup jumpTo bilibili"><img src="https://pic.xiami.net/images/album/img21/55721/5071191334298015.jpg" class="cover"><span class="name">Vai Hugonet Ses Bistensa - Jordi Savall</span></a>
+    </p>
+
+    <p>
+        <img src="./media/eg-1.jpg" alt="">
+        <p class='figcap'>
+            下面，我只列举了 3.0 中必要的文章元素。其实非常少，甚至比基本的 markdown 元素都少。不用担心，我们的文章不复杂，上来支持这么点绝逼够了。另外，其中某些元素与蓝湖上的设计图有一丝丝的出入，例如此处的引用样式的文字比设计图中小了一点。对此，也不用担心，既然我是设计师，这一定不是失误！
+        </p>
+    </p>
+
+
+<blockquote>
+
+<p>下面，我只列举了 3.0 中必要的文章元素。其实非常少，甚至比基本的 markdown 元素都少。不用担心，我们的文章不复杂，上来支持这么点绝逼够了。另外，其中某些元素与蓝湖上的设计图有一丝丝的出入，例如此处的引用样式的文字比设计图中小了一点。对此，也不用担心，既然我是设计师，这一定不是失误！👙</p>
+
+<p class="textAlign-right">——文川按 💅</p>
+</blockquote>
+
+<hr>
+
+<h2 id="toc_0">测试</h2>
+
+<p>如果需要在浏览器中测试，请浏览：</p>
+
+<pre><code class="language-text">该文件夹/css/tingoArticle.css
+</code></pre>
+
+<p>如果需要在 Markdown 编辑器中测试，请浏览：</p>
+
+<pre><code class="language-text">该文件夹/cssForMarkdownEditor/TingoMarkdown.css
+</code></pre>
+
+
+
+<h2 id="toc_0">禁止项目</h2>
+
+<p>3.0 编辑器中禁止以下标签的使用：</p>
+
+<pre><code class="language-markup">&lt;p style=&quot;color: #3a3a3a;&quot;&gt; 👈注意左侧这个 style 碧池！ &lt;/p&gt;
+</code></pre>
+
+<h2 id="toc_1">标题</h2>
+
+<p>关于标题，需要注意的是，为了今后方便处理，这个文档的标题标签从 <code>&lt;h2&gt;</code> 开始——虽然我同样规定了 <code>&lt;h1&gt;</code> 的样式，但不鼓励使用。所以，假设你使用的是富文本编辑器，“标题”格式实际上是给 <code>&lt;h2&gt;</code> 的。</p>
+
+<pre><code class="language-markup">&lt;h2&gt; 标题 &lt;/h2&gt;
+&lt;h3&gt; 副标题 &lt;/h3&gt;
+&lt;h4&gt; 小标题 &lt;/h4&gt;
+</code></pre>
+
+<div class="md styleShow">
+<h2> 标题 </h2>
+<h3> 副标题 </h3>
+<h4> 小标题 </h4>
+</div>
+
+<h2 id="toc_2">行内元素</h2>
+
+<p>如果为富文本编辑器，则只有这两种是必要的，其余的随意。</p>
+
+<pre><code class="language-markup">&lt;b&gt; 加粗 &lt;/b&gt;
+&lt;u&gt; 标注 &lt;/u&gt;
+&lt;mark&gt; 标注 &lt;/mark&gt;
+</code></pre>
+
+<div class="md styleShow">
+<p><b> 加粗 </b></p>
+<p><u> 下划线 </u></p>
+<p><mark> 标注 </mark></p>
+</div>
+
+<h2 id="toc_3">文字排列</h2>
+
+<pre><code class="language-markup">&lt;any class=&quot;textAlign-center&quot;&gt;
+  这行文字剧中了
+&lt;/any&gt;
+&lt;any class=&quot;textAlign-right&quot;&gt;
+  这行文字剧右了
+&lt;/any&gt;
+</code></pre>
+
+<div class="md styleShow">
+<p class="textAlign-center">
+  这行文字剧中了
+</p>
+<p class="textAlign-right">
+  这行文字剧右了
+</p>
+</div>
+
+<h2 id="toc_4">图片</h2>
+
+<p>图片采用最传统的标签模式，即裸图和 figure 两种。</p>
+
+<h3 id="toc_5">裸图</h3>
+
+<pre><code class="language-markup">&lt;p&gt;
+    &lt;img src=&quot;./media/eg-1.jpg&quot;&gt;
+&lt;/p&gt;
+</code></pre>
+
+<div class="md styleShow">
+<p>
+    <img src="./media/eg-1.jpg">
+</p>
+</div>
+
+<h3 id="toc_6">Figure</h3>
+
+<pre><code class="language-markup">&lt;figure&gt;
+    &lt;img src=&quot;./media/eg-1.jpg&quot;&gt;
+    &lt;figcaption&gt;
+        &lt;p&gt;
+            图注走这里
+        &lt;/p&gt;
+    &lt;figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<div class="md styleShow">
+<figure>
+    <img src="./media/eg-1.jpg">
+    <figcaption>
+        <p>
+            图注走这里
+        </p>
+    <figcaption>
+</figure>
+</div>
+
+<h3 id="toc_7">引用</h3>
+
+<pre><code class="language-markup">&lt;blockquote&gt;
+    &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam nisl, sodales at sapien vel, eleifend elementum diam. Nunc interdum in nunc ac mollis. Nunc pulvinar convallis tristique. Mauris purus nibh, placerat eget elit sed, porttitor imperdiet justo. Cras maximus velit id rhoncus posuere. Fusce vel rutrum elit. Mauris vel tortor tortor. Sed ornare nec massa quis dictum.
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+
+<div class="md styleShow">
+<blockquote>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam nisl, sodales at sapien vel, eleifend elementum diam. Nunc interdum in nunc ac mollis. Nunc pulvinar convallis tristique. Mauris purus nibh, placerat eget elit sed, porttitor imperdiet justo. Cras maximus velit id rhoncus posuere. Fusce vel rutrum elit. Mauris vel tortor tortor. Sed ornare nec massa quis dictum.
+    </p>
+</blockquote>
+</div>
+
+<h3 id="toc_8">列表</h3>
+
+<pre><code class="language-markup">&lt;ol&gt;
+  &lt;li&gt;有序列表&lt;/li&gt;
+  &lt;li&gt;有序列表&lt;/li&gt;
+  &lt;li&gt;有序列表&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;无序列表&lt;/li&gt;
+  &lt;li&gt;无序列表&lt;/li&gt;
+  &lt;li&gt;无序列表&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<div class="md styleShow">
+<ol>
+  <li>有序列表</li>
+  <li>有序列表</li>
+  <li>有序列表</li>
+</ol>
+
+<ul>
+  <li>无序列表</li>
+  <li>无序列表</li>
+  <li>无序列表</li>
+</ul>
+</div>
+
+<h3 id="toc_9">结尾</h3>
+
+<p>这个包中还包括一些隐藏元素，是我手闲写的，例如：</p>
+
+<pre><code class="language-markup">&lt;p class=&quot;initial&quot;&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam nisl, sodales at sapien vel, eleifend elementum diam. Nunc interdum in nunc ac mollis. Nunc pulvinar convallis tristique. Mauris purus nibh, placerat eget elit sed, porttitor imperdiet justo. Cras maximus velit id rhoncus posuere. Fusce vel rutrum elit. Mauris vel tortor tortor. Sed ornare nec massa quis dictum.
+&lt;/p&gt;
+</code></pre>
+
+<div class="md styleShow">
+<p class="initial">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam nisl, sodales at sapien vel, eleifend elementum diam. Nunc interdum in nunc ac mollis. Nunc pulvinar convallis tristique. Mauris purus nibh, placerat eget elit sed, porttitor imperdiet justo. Cras maximus velit id rhoncus posuere. Fusce vel rutrum elit. Mauris vel tortor tortor. Sed ornare nec massa quis dictum.
+</p>
+</div>
+
+<p>他们大多数都没写完，但代码放着也不会有什么影响，因此你不用管它们。</p>
+
+
+
+
+        </div>
+
+        <div class="end">
+
+        </div>
+
+    </body>
+</html>

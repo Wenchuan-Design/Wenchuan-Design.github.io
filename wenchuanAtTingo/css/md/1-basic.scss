@@ -1,0 +1,136 @@
+& {
+  max-width: $mdMaxWidth;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+// 以上是 Markdown 页面的基本设置，导出为 Markdown CSS 时，请记得加上 body 父类
+
+
+* {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
+
+.textAlign-right {
+  text-align: right;
+}
+
+
+.textAlign-center {
+  text-align: center;
+}
+
+
+
+// ====================
+// 链接们
+// ====================
+p, li, table, blockquote {
+  a {
+    color: $brandColor;  cursor: pointer;
+  }
+}
+
+
+
+// ====================
+// 上标和下标们
+// ====================
+sup, sub {
+  font-size: smaller;
+  line-height: 1;
+}
+
+
+sup {
+  vertical-align: super;
+}
+
+
+sub {
+  vertical-align: sub;
+}
+
+
+// ====================
+// 强调们
+// ====================
+strong, b {
+  font-weight: 500;
+}
+
+
+del {
+  text-decoration: line-through;
+  color: $hexGrey;
+}
+
+
+em {
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+mark {
+  background-color: rgba($brandColor, 0.24);
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba($brandColor, 0.40) ;
+  }
+}
+
+
+u {
+  border-bottom: 1px solid $rgbaPale;
+  padding-bottom: 2px;
+}
+
+
+
+
+// ====================
+// 细节们
+// ====================
+details {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+
+  summary {
+    font-weight: bold;
+    margin-left: -1rem;
+    line-height: 2;
+  }
+}
+
+
+
+
+& {
+  @import "hr";
+
+  @import "img";
+  @import "blockquotes";
+  @import "headings";
+  @import "paragraphs";
+  @import "list";
+  @import "table";
+
+  @import "more/0-more";
+}
+
+
+//
