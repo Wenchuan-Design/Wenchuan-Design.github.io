@@ -221,7 +221,25 @@ $jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2);
 }
 
 
+.uploader {
+	display: flex;
+	background-color: rgba($brandColor, 0.08);
 
+	.portrait {
+		width: 24px; height: 24px;
+		border-radius: 1000px;
+		overflow: hidden;
+
+		img {
+			width: 100%; height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.name {
+		font-weight: 500;
+	}
+}
 
 
 

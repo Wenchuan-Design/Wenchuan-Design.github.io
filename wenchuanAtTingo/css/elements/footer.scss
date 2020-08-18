@@ -1,0 +1,20 @@
+.theBigFootOfTingo {
+  background-color: rgba($brandColor, 0.12);
+  padding: 16px;
+
+  &.perry {
+    border-top: 2px dashed white;
+  }
+
+  .poweredBy {
+    color: rgba(black, 0.32);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 64px;
+
+    a {
+      color: $brandColor;
+    }
+  }
+}

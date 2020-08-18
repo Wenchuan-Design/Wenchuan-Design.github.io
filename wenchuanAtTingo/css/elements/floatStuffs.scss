@@ -1,0 +1,14 @@
+.openApp {
+  position: fixed;
+  z-index: 1000px;
+  transform: translate(-50%, -100%);
+  bottom: 0px;
+  left: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: $brandColor;
+  padding: 12px 24px;
+  border-radius: 1000px;
+  box-shadow: 0 2px 8px rgba($brandColor, 0.4);
+}

@@ -89,6 +89,19 @@ img {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px; }
+  .md.moment p,
+  .markdown-body.moment p {
+    line-height: 1.75;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+  .md.moment h1, .md.moment h2, .md.moment h3, .md.moment h4, .md.moment h5, .md.moment h6,
+  .markdown-body.moment h1,
+  .markdown-body.moment h2,
+  .markdown-body.moment h3,
+  .markdown-body.moment h4,
+  .markdown-body.moment h5,
+  .markdown-body.moment h6 {
+    line-height: 1.5; }
 .md *,
 .markdown-body * {
   text-align: justify;
@@ -277,6 +290,26 @@ img {
       margin-top: 0.5rem;
       margin-right: 0.5rem;
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.16); }
+    .md p.small,
+    .markdown-body p.small {
+      color: #adadad;
+      font-size: 12px; }
+    .md p.tingoTopic,
+    .markdown-body p.tingoTopic {
+      color: #33C3C2;
+      font-size: 14px;
+      font-weight: 500; }
+      .md p.tingoTopic:before,
+      .markdown-body p.tingoTopic:before {
+        content: "";
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        background-image: url(media/icons/topic_green.png);
+        background-size: cover;
+        position: relative;
+        top: 3px;
+        margin-right: 4px; }
   .md li,
   .markdown-body li {
     font-size: 1rem;
@@ -477,6 +510,24 @@ img {
             font-size: 13px;
             left: -10px;
             bottom: 4px; }
+  .md .uploader,
+  .markdown-body .uploader {
+    display: flex;
+    background-color: rgba(51, 195, 194, 0.08); }
+    .md .uploader .portrait,
+    .markdown-body .uploader .portrait {
+      width: 24px;
+      height: 24px;
+      border-radius: 1000px;
+      overflow: hidden; }
+      .md .uploader .portrait img,
+      .markdown-body .uploader .portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .md .uploader .name,
+    .markdown-body .uploader .name {
+      font-weight: 500; }
   .md pre[class*="language-"],
   .markdown-body pre[class*="language-"] {
     background-color: rgba(0, 0, 0, 0.02);
@@ -892,30 +943,208 @@ div.title {
     .like .supporters .portrait {
       width: 24px;
       height: 24px;
-      object-fit: cover;
+      overflow: hidden;
       margin-left: 4px;
       margin-right: 4px;
       border-radius: 1000px;
       background-color: rgba(0, 0, 0, 0.04); }
+      .like .supporters .portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
       .like .supporters .portrait.more {
         background-image: url(media/icons/ldots_dark.png);
         background-size: cover; }
 
-.refArtists {
+.commentSection {
+  padding: 0 16px;
+  margin-top: 32px;
+  margin-bottom: 32px; }
+  .commentSection .commentHead {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+  .commentSection .comment {
+    margin-top: 24px; }
+    .commentSection .comment .userHead {
+      display: flex;
+      justify-content: space-between; }
+      .commentSection .comment .userHead .portrait {
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        border-radius: 1000px; }
+        .commentSection .comment .userHead .portrait img {
+          width: 100%;
+          height: 100%; }
+
+.videoContainer {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  overflow: hidden;
+  background-color: black;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16); }
+  .videoContainer video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    vertical-align: middle; }
+
+.videoBg {
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%; }
+
+.relatedVideos {
+  background-color: white;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 16px; }
+  .relatedVideos:before {
+    content: "更多视频";
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.12); }
+  .relatedVideos .relatedVideo {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 16px; }
+    .relatedVideos .relatedVideo:not(:last-child) {
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.12); }
+    .relatedVideos .relatedVideo .preview {
+      flex: 0 0 120px;
+      height: 120px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative; }
+      .relatedVideos .relatedVideo .preview img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .relatedVideos .relatedVideo .preview:before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(0, 0, 0, 0.48);
+        border-radius: 1000px;
+        background-image: url(media/icons/mediaPause.png);
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%; }
+    .relatedVideos .relatedVideo .info {
+      margin-left: 8px;
+      position: relative;
+      height: 120px; }
+      .relatedVideos .relatedVideo .info .uploader {
+        display: flex;
+        object-fit: flex-start; }
+        .relatedVideos .relatedVideo .info .uploader .portrait {
+          width: 20px;
+          height: 20px;
+          margin-top: 2px;
+          overflow: hidden;
+          border-radius: 1000px; }
+          .relatedVideos .relatedVideo .info .uploader .portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .relatedVideos .relatedVideo .info .uploader .name {
+          line-height: 24px;
+          margin-left: 4px;
+          font-size: 14px;
+          font-weight: 500; }
+      .relatedVideos .relatedVideo .info .mood {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
+      .relatedVideos .relatedVideo .info .tingoTopic {
+        color: #33C3C2;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 5px;
+        font-weight: 500; }
+        .relatedVideos .relatedVideo .info .tingoTopic:before {
+          content: "";
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+          background-image: url(media/icons/topic_green.png);
+          background-size: cover;
+          position: relative;
+          top: 3px;
+          margin-right: 4px; }
+      .relatedVideos .relatedVideo .info .time {
+        position: absolute;
+        bottom: 0;
+        color: #adadad;
+        font-size: 12px;
+        line-height: 20px; }
+
+.theBigFootOfTingo {
+  background-color: rgba(51, 195, 194, 0.12);
+  padding: 16px; }
+  .theBigFootOfTingo.perry {
+    border-top: 2px dashed white; }
+  .theBigFootOfTingo .poweredBy {
+    color: rgba(0, 0, 0, 0.32);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 64px; }
+    .theBigFootOfTingo .poweredBy a {
+      color: #33C3C2; }
+
+.openApp {
+  position: fixed;
+  z-index: 1000px;
+  transform: translate(-50%, -100%);
+  bottom: 0px;
+  left: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #33C3C2;
+  padding: 12px 24px;
+  border-radius: 1000px;
+  box-shadow: 0 2px 8px rgba(51, 195, 194, 0.4); }
+
+.tingoNameCard {
+  margin: 24px 0;
   padding: 16px;
   background-color: rgba(51, 195, 194, 0.08);
   display: flex;
   justify-content: space-between; }
-  .refArtists .portrait {
+  .tingoNameCard .portrait {
     height: 48px;
     flex: 0 0 48px;
     position: relative; }
-    .refArtists .portrait img {
+    .tingoNameCard .portrait img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 1000px; }
-    .refArtists .portrait:before {
+    .tingoNameCard .portrait:before {
       content: "";
       position: absolute;
       display: block;
@@ -926,15 +1155,15 @@ div.title {
       border-radius: 1000px;
       background-image: url(media/icons/v.png);
       background-size: cover; }
-  .refArtists .info {
+  .tingoNameCard .info {
     flex: 1 1 20px;
     min-width: 20px;
     margin-left: 8px; }
-    .refArtists .info .name {
+    .tingoNameCard .info .name {
       line-height: 24px;
       font-size: 16px;
       font-weight: 500; }
-    .refArtists .info .brief {
+    .tingoNameCard .info .brief {
       line-height: 20px;
       font-size: 12px;
       color: rgba(0, 0, 0, 0.32);
@@ -943,7 +1172,7 @@ div.title {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-  .refArtists [class*="btn"] {
+  .tingoNameCard [class*="btn"] {
     background-color: #33C3C2;
     color: white;
     height: 28px;
@@ -952,14 +1181,6 @@ div.title {
     padding: 0 20px;
     border-radius: 1000px;
     margin-top: 10px; }
-
-.comment {
-  padding: 0 16px;
-  margin-top: 32px;
-  margin-bottom: 32px; }
-  .comment .commentHead {
-    font-size: 18px;
-    line-height: 26px; }
 
 .end {
   height: 123px; }
