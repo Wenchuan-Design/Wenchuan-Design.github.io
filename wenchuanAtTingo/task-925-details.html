@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title data-n-head="true">#925</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="./css/tingoArticle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-925">
+
+      <!-- 列表 -->
+      <div class="grid-925">
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-1.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-2.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-3.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-1.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-2.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-3.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="media/eg-1.jpg" alt=""> -->
+          <div class="imgFrame">
+            <img src="media/eg-1.jpg" alt="">
+          </div>
+          <div class="caption">
+            <p class="name">自然哲学之数学原理 x 活着</p>
+            <p class="price"><span class="ima">245</span><span class="moto">22245</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 列表的 style -->
+      <style media="screen">
+        .grid-925 {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-column-gap: 8px;
+          grid-row-gap: 8px;
+          margin: 24px 16px;
+          width: calc(100% - 40px);
+          margin-bottom: 56px;
+        }
+
+        .grid-925 .card {
+          background-color: white;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 00px 02px 06px rgba(0, 0, 0, 0.08),
+                      00px 01px 02px rgba(0, 0, 0, 0.04);
+        }
+
+        .grid-925 .card .imgFrame {
+          padding-top: 100%;
+          position: relative;
+        }
+
+        .grid-925 .card .imgFrame img {
+          position: absolute;
+          width: 100%; height: 100%;
+          top: 0; left: 0;
+          object-fit: cover;
+        }
+
+        .grid-925 .card .caption {
+          margin: 12px;
+        }
+
+        .grid-925 .card .caption .name {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .grid-925 .card .caption .price {
+          font-size: 18px;
+          line-height: 26px;
+          margin-top: 4px;
+          font-weight: 500;
+          color: #FF4747;
+        }
+        /* .grid-925 .card .caption .price::after {
+          content: "T币";
+          font-size: 14px;
+
+          margin-left: 4px;
+        } */
+
+        .price {
+          position: relative;
+          color: #FF9600 !important;
+          text-shadow: 1px 1px 0 rgba(225, 150, 0, 0.2);
+        }
+
+        .price .ima {
+          padding-left: 0.85em;
+        }
+
+        .price .ima::before {
+          display: inline-block;
+          content: "";
+          background-color: white;
+          background-image: url(css/media/icons/T.png);
+          /* opacity: 0.72; */
+          font-weight: 400;
+          width: 0.75em;
+          height: 0.75em;
+          transform: translate(0, -50%);
+          position: absolute;
+          top: 55%;
+          margin-top: -1px;
+
+          /* margin-left: 3px; */
+          margin-left: -0.85em;
+          background-size: cover;
+          opacity: 0.9;
+        }
+
+        .price .moto {
+          text-shadow: none;
+          color: #D6D6D6;
+          text-decoration: line-through;
+          font-size: 0.7em;
+          margin-left: 6px;
+        }
+
+        /* .price .moto::before {
+          display: inline-block;
+          content: "";
+          background-color: white;
+          background-image: url(css/media/icons/T.png);
+          /* opacity: 0.72; */
+          font-weight: 400;
+          width: 0.75em;
+          height: 0.75em;
+          transform: translate(0, -50%);
+          position: absolute;
+          top: 55%;
+          /* margin-top: -1px; */
+          mix-blend-mode: luminosity;
+
+          /* margin-left: 3px; */
+          margin-left: -0.85em;
+          background-size: cover;
+          opacity: 0.5;
+        } */
+      </style>
+
+      <!-- 详情 -->
+      <div class="popup-925" style="display: block;">
+
+        <div class="box">
+          <div class="xxx"></div>
+          <div class="details">
+            <img class="cover" src="media/eg-2.jpg" alt="">
+            <p class="price"><span class="ima">814</span> <span class=moto>1925</span></p>
+            <p class="title">加拿大日报｜1,000 人死于地震 家属游行拒绝有偿超度 净空法师帅维稳部队强制介入</p>
+            <p class="subTitle">商品详情</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus ullamcorper, fermentum metus eu, vestibulum neque. Morbi dictum tortor arcu, vitae mattis nulla facilisis quis. Proin congue aliquet congue. Aliquam non urna sapien. Proin rhoncus lacus in nibh porta, nec pellentesque lectus tristique. In ac diam in felis egestas aliquet.</p>
+            <p>Donec sit amet lorem justo. Duis euismod eros tellus, at tincidunt lacus lacinia sed. Ut sit amet consequat nisi. Fusce mattis tincidunt eleifend. Sed ullamcorper ultrices tellus ut pharetra. Aenean eleifend dapibus libero, nec imperdiet velit pellentesque eu. Etiam massa lorem, efficitur ut vulputate ullamcorper, convallis sit amet neque.</p>
+
+            <img src="media/eg-1.jpg" alt="">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus ullamcorper, fermentum metus eu, vestibulum neque. Morbi dictum tortor arcu, vitae mattis nulla facilisis quis. Proin congue aliquet congue. Aliquam non urna sapien. Proin rhoncus lacus in nibh porta, nec pellentesque lectus tristique. In ac diam in felis egestas aliquet.</p>
+          </div>
+
+
+
+          <div class="nav-925">
+            <div class="price"><span class="ima">814</span> <span class=moto>1925</span></div>
+            <div class="btn">立即兑换</div>
+          </div>
+        </div>
+      </div>
+
+      <style media="screen">
+        .popup-925 {
+          position: fixed;
+          top: 0; left: 0;
+          background-color: rgba(0, 0, 0, 0.56);
+          width: 100%; height: 100%;
+        }
+
+        .popup-925 .box {
+          position: relative;
+          width: calc(100% - 48px);
+          height: calc(100% - 120px);
+          margin-top: 60px;
+          margin-left: 24px;
+          background-color: white;
+
+          overflow: hidden;
+          overflow-y: scroll;
+
+          border-radius: 16px;
+        }
+
+        .popup-925 .box .details {
+          position: relative;
+          /* margin: 0 16px; */
+          margin-bottom: 100px;
+        }
+
+        .popup-925 .box .details .price {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 500;
+          color: #FF4747;
+          margin-top: 16px;
+          padding: 0 16px;
+        }
+
+        .popup-925 .box .details .price .ima::before {
+          top: 50%;
+        }
+
+        .popup-925 .box .details .title {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 500;
+          padding: 0 16px;
+          margin-top: 12px;
+          border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+          padding-bottom: 16px;
+        }
+
+        .popup-925 .box .details .subTitle {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0 16px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+
+        .popup-925 .box .details .subTitle::before {
+          content: "";
+          display: inline-block;
+          width: 4px; height: 20px;
+          position: relative; top: 4px;
+          margin-right: 8px;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .popup-925 .box .details p {
+          padding: 0 16px;
+          line-height: 24px;
+          font-size: 15px;
+        }
+
+        .popup-925 .box .details img {
+          margin: 24px 0;
+        }
+
+        .popup-925 .box .details img.cover {
+          margin: 0;
+        }
+
+        .popup-925 .box .nav-925 {
+          position: fixed;
+          bottom: 60px;
+          left: 24px;
+          width: calc(100% - 48px);
+
+          z-index: 1000;
+
+          display: flex;
+          justify-content: space-between;
+
+          height: 56px;
+          background-color: white;
+          box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
+
+          border-radius: 0 0 16px 16px;
+        }
+
+        .popup-925 .box .nav-925 .price {
+          line-height: 56px;
+          font-size: 20px;
+          font-weight: 500;
+          color: #FF4747;
+          margin-left: 16px;
+        }
+
+        .popup-925 .box .nav-925 .price .ima::before {
+          top: 53%;;
+        }
+
+        .popup-925 .box .nav-925 .price .moto {
+          margin-left: 4px;
+        }
+
+        .popup-925 .box .nav-925 .btn {
+          margin-right: 0;
+          font-size: 17px;
+          line-height: 40px;
+          height: 40px;
+          background-color: #FF4747;
+          color: white;
+          margin-top: 8px;
+          margin-right: 8px;
+          padding: 0 24px;
+          border-radius: 1000px;
+
+          box-shadow: 0 2px 4px rgba(255, 71, 71, 0.24);
+        }
+
+        .popup-925 .xxx {
+          position: fixed;
+          right: calc(24px + 12px);
+          top: calc(60px + 12px);
+          z-index: 100;
+
+          width: 32px;
+          height: 32px;
+          border-radius: 1000px;
+
+          background-color: white;
+
+          background-image: url(css/media/icons/x.png);
+          background-position: center;
+          background-size: 24px;
+
+        }
+      </style>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->

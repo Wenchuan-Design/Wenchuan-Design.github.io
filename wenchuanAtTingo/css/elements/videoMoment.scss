@@ -3,15 +3,22 @@
 // ===============
 
 .videoContainer {
-  position: fixed;
-  z-index: 1000;
+  position: relative;
+
+  &.fixed-top {
+    margin: 0;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(black, 0.16);
+    top: 0;
+  }
 
   width: 100%;
   height: auto;
   padding-top: 56.25%;
   overflow: hidden;
   background-color: black;
-  top: 0;
+
 
   video {
     width: 100%;
@@ -22,14 +29,14 @@
     vertical-align: middle;
   }
 
-  box-shadow: 0 2px 8px rgba(black, 0.16);
+  & + .videoBg {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+  }
 }
 
-.videoBg {
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-}
+
 
 // ===============
 // 屁股
@@ -67,8 +74,8 @@
     }
 
     .preview {
-      flex: 0 0 120px;
-      height: 120px;
+      flex: 0 0 92px;
+      height: 92px;
       border-radius: 8px;
       overflow: hidden;
       position: relative;
@@ -99,7 +106,7 @@
     .info {
       margin-left: 8px;
       position: relative;
-      height: 120px;
+      // height: 120px;
 
       .uploader {
         display: flex;
@@ -153,8 +160,8 @@
       }
 
       .time {
-        position: absolute;
-        bottom: 0;
+        // position: absolute;
+        // bottom: 0;
         color: $hexLightGrey;
         font-size: 12px;
         line-height: 20px;

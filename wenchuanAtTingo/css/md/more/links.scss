@@ -94,12 +94,23 @@ $jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2);
 	}
 
 
-
+	&.TikTok {
+		&::before {
+			border: none;
+			box-shadow: none;
+			background: none;
+		}
+		.name {
+			&::after {
+				content: '长按 - 在《抖音》中打开';
+			}
+		}
+	}
 
 
 	&.NMusic {
 		&::before {
-			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/NMusic-colored-tiny.png);
+			background-image: url(media/icons/NMusic-colored-tiny.png);
 		}
 
 		.name {
@@ -113,7 +124,7 @@ $jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2);
 
 	&.QQMusic {
 		&::before {
-			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/QQMusic-colored-tiny.png);
+			background-image: url(media/icons/QQMusic-colored-tiny.png);
 		}
 
 		.name {
@@ -126,7 +137,7 @@ $jumpToBoxIcon: $jumpToBoxSize - ($jumpToBoxPadding * 2);
 
 	&.bilibili {
 		&::before {
-			background-image: url(http://pic-qiniu.du-nang.com/media/0-general/icons/bilibili-colored-tiny.png)
+			background-image: url(media/icons/bilibili-colored-tiny.png)
 		}
 
 		.name {

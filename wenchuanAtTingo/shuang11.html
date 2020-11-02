@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="cn" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title data-n-head="true">#925</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="./css/tingoArticle.css">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  </head>
+  <body class="body-shuang11">
+
+
+
+    <div class="shuang11">
+      <!-- <div class="toast">
+        <p>💃 领取成功 💃</p>
+      </div> -->
+
+      <!-- 封面图 -->
+      <div class="cover">
+        <img src="media/me.png" alt="">
+      </div>
+
+      <div class="messageBoxBg">
+        <div class="messageBox">
+          <p class="title">🎉 Hi, 您有一个优惠代领取! 🎉</p>
+
+          <div class="quan">
+            <div class="leftAndRight">
+              <div class="left">
+                <p class="name">通用红包</p>
+                <p class="caption"><span class="tag">听果专用会员红包</span>满 200 可用</p>
+              </div>
+              <div class="right">
+                <p class="price">12</p>
+              </div>
+            </div>
+            <p class="validBound">
+              有效期至2912年3月30日
+            </p>
+          </div>
+
+          <div class="ww-input">
+            <input type="number" name="" value="" placeholder="请输入手机号号～">
+          </div>
+
+          <div class="ww-btn disabled">
+            立即领取
+          </div>
+        </div>
+      </div>
+
+      <div class="introduction">
+        <p class="title">使用说明</p>
+        <p>These theories are usually studied in the context of real and complex numbers and functions. Analysis evolved from calculus, which involves the elementary concepts and techniques of analysis. Analysis may be distinguished from geometry; however, it can be applied to any space of mathematical objects that has a definition of nearness (a topological space) or specific distances between objects (a metric space).</p>
+        <p>Analysis evolved from calculus, which involves the elementary concepts and techniques of analysis.</p>
+      </div>
+    </div>
+
+
+
+    <style media="screen">
+      /* 本页通用 */
+      .body-shuang11 {
+        background-color: #fafafa;
+      }
+
+      .body-shuang11 p {
+        line-height: calc(1em + 8px);
+      }
+
+      /* 封面图样式 */
+      .shuang11 .cover {
+        position: relative;
+        z-index: 1;
+        padding-top: 56.25%;
+        /* overflow: hidden; */
+      }
+
+      /* 正文样式 */
+      .shuang11 .cover img {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+
+      .shuang11 .messageBox {
+        position: relative;
+        z-index: 10;
+        margin: 0 16px;
+        background-color: #fafafa;
+        border-radius: 16px;
+        margin-top: -48px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04),
+                    0 1px 2px rgba(0, 0, 0, 0.04),
+                    0 0 1px rgba(0, 0, 0, 0.02);
+        /* padding: 0 16px; */
+
+      }
+
+      .shuang11 .messageBox p {
+        padding: 0 16px;
+      }
+
+      .shuang11 .messageBox .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+      }
+
+      .shuang11 .messageBox .quan {
+        margin: 16px;
+        overflow: hidden;
+        /* border: 1px solid rgba(0, 0, 0, 0.08); */
+        border-radius: 8px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    1px 1px 8px rgba(0, 0, 0, 0.08),
+                    -1px 1px 8px rgba(0, 0, 0, 0.08);
+        /* padding: 12px 0; */
+        padding-top: 12px;
+        background-color: white;
+      }
+
+      .shuang11 .messageBox .quan .leftAndRight {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .shuang11 .messageBox .quan .name {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(225, 71, 71, 1);;
+      }
+
+      .shuang11 .messageBox .quan .caption {
+        font-size: 12px;
+        /* line-height: 24px; */
+        margin-top: 4px;
+        color: grey;
+      }
+
+      .shuang11 .messageBox .quan .caption .tag {
+        background-color: #33C3C2;
+        font-size: 12px;
+        display: inline-block;
+        line-height: 18px;
+        color: white;
+        padding: 0 4px;
+        border-radius: 4px;
+        margin-right: 4px;
+      }
+
+      .shuang11 .messageBox .quan .price {
+        color: rgba(225, 71, 71, 1);;
+        font-size: 40px;
+        font-weight: 500;
+        text-shadow: 2px 2px 0 rgba(225, 71, 71, 0.2);
+      }
+
+      .shuang11 .messageBox .quan .price::before {
+        content: "¥";
+        font-size: 16px;
+      }
+
+      .shuang11 .messageBox .quan .validBound {
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        line-height: 32px;
+        background-color: #fafafa;
+        border-top: 1px dashed rgba(0, 0, 0, 0.06);
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.32);
+      }
+
+      /* 领取成功 */
+      .ww-hint {
+        text-align: center;
+        background-color: #EFFBFB;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 12px 0;
+
+        border-radius: 8px;
+        border: 1px dashed #bce8f1;
+        margin-bottom: -6px;
+      }
+
+      .ww-hint p {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.56);
+        margin-top: 4px;
+      }
+
+      .ww-hintHead {
+        /* color: */
+      }
+
+      .ww-hint .ww-important {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.8);
+        color: #33C3C2;
+        text-shadow: 1px 1px 0 rgba(51, 195, 194, 0.2);
+      }
+
+      .ww-hint .ww-important span {
+        text-shadow: none;
+        margin-left: 8px;
+        color: #33C3C2;
+        font-size: 14px;
+      }
+
+      .ww-hint .ww-important span::after {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: url(css/media/icons/refresh.png);
+        background-size: cover;
+        vertical-align: middle;
+        margin-left: 2px;
+      }
+
+      .ww-hint .ww-who {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        /* opacity: 0.64; */
+      }
+
+      .ww-hint .ww-who span {
+        color: #31708f;
+        font-size: 12px;
+        background-color: white;
+        width: auto;
+        padding: 4px 8px;
+        border-radius: 100px;
+
+      }
+
+
+      /* input */
+      .shuang11 .messageBox .ww-input {
+        background-color: white;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04), inset 0 1px 4px rgba(0, 0, 0, 0.04), inset 0 0 1px rgba(0, 0, 0, 0.08);
+        position: relative;
+        display: block;
+        height: 48px;
+        margin: 24px 16px;
+        border-radius: 8px;
+      }
+
+      .shuang11 .messageBox .ww-input input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        transform: translate(0, -50%);
+        top: 50%;
+        padding: 0 1rem;
+      }
+
+      .shuang11 .messageBox .ww-btn {
+        font-size: 18px;
+        margin: 24px 48px;
+        margin-bottom: 0;
+        background-color: #33C3C2;
+        color: white;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 118px;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(51, 195, 194, 0.24)
+      }
+
+      .shuang11 .messageBox .ww-btn.disabled {
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.16);
+      }
+
+      .shuang11 .messageBox {padding-bottom: 24px;}
+
+      /* 使用说明 */
+      .shuang11 .introduction {
+        padding: 0 16px;
+        margin-top: 24px;
+      }
+
+      .shuang11 .introduction p {
+        font-size: 13px;
+        color: grey;
+        margin-top: 0.5em;
+      }
+
+      .shuang11 .introduction p.title {
+        font-weight: 500;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+        padding-bottom: 0.5em;
+      }
+
+      .shuang11 .introduction p.title::before {
+        content: "";
+        display: block;
+        float: left;
+        width: 3px;
+        height: 14px;
+        background-color: grey;
+        margin-right: 4px;
+        margin-top: 3px;
+        opacity: 0.5;
+      }
+
+      .shuang11 .toast {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.56);
+        width: 100%; height: 100%;
+        z-index: 10000;
+      }
+
+      .shuang11 .toast p {
+        position: absolute;
+        display: block;
+        top: 50%; left: 50%;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        /* width: calc(100% - 80px); */
+        white-space: nowrap;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: 500;
+      }
+    </style>
+
+    <!-- 新增背景 -->
+    <style media="screen">
+      .messageBoxBg {
+        background-color: #FFDCE6;
+        padding-bottom: 24px;
+        border-bottom: 2px dashed #fafafa;
+      }
+    </style>
+
+
+    <footer class="theBigFootOfTingo perry" style="margin-top: 56px; border-color: #fafafa;">
+      <p class="poweredBy">Powered by <a href="http://a.app.qq.com/o/simple.jsp?pkgname=cn.tzmedia.dudumusic">听果音乐</a> @Tingo</p>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
